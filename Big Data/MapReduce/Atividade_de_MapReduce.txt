@@ -1,1 +1,5 @@
-
+O teste do MapReduce foi realizado com um arquivo com alguns nomes,
+porém ocorreu um erro em que era lido o arquivo do professor,
+e não de nomes que eu selecionei depois de outro teste o arquivo 
+lia os nomes, porém mostrava as idades que estavam dentro do arquivo.
+Em outro teste alterando os erros no arquivo de nomes ele ocorreu corretamente.

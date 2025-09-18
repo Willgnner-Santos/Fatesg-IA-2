@@ -1,4 +1,5 @@
 Subindo uma Aplicação Flask com Docker e Docker Compose
+
 Olá! Este projeto é parte de uma atividade de graduação em Inteligência Artificial com foco em Bancos de Dados Não Relacionais. O objetivo aqui foi pegar uma aplicação simples em Python com o framework Flask, empacotá-la em um container Docker e orquestrar sua execução usando o Docker Compose.
 
 O exercício me permitiu explorar como o Docker pode ser usado para criar ambientes isolados e reproduzíveis, o que é fundamental para o desenvolvimento e implantação de aplicações.

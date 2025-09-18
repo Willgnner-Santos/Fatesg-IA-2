@@ -1,3 +1,4 @@
+
 version: '3.8'  # A versão do Docker Compose que estamos usando.
 
 services:
@@ -9,4 +10,5 @@ services:
       - .:/app  # Opcional: monta o diretório atual da sua máquina no diretório /app do container.
                 # Isso é ótimo para desenvolvimento, pois as mudanças no código local são refletidas no container sem precisar reconstruir a imagem.
     environment:
+
       FLASK_ENV: development  # Define uma variável de ambiente, útil para modo de desenvolvimento.

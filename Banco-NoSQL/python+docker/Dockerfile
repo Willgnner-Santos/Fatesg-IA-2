@@ -1,3 +1,4 @@
+
 # Usa uma imagem base oficial do Python.
 # O "slim" significa que é uma versão mais leve da imagem, sem ferramentas extras.
 FROM python:3.9-slim
@@ -20,4 +21,5 @@ EXPOSE 5000
 
 # Define o comando que será executado quando o container for iniciado.
 # O comando python app.py é o que inicia o nosso servidor Flask.
+
 CMD ["python", "app.py"]

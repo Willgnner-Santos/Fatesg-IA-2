@@ -1,0 +1,36 @@
+Questões para Pesquisa e Resposta:
+Definição e Características:
+a) O que caracteriza um banco de dados não-relacional?
+//É um tipo de banco de dados que não utiliza a estrutura tradicional de tabelas com linhas e colunas fixas.
+b) Quais são as vantagens desse tipo de banco em relação aos bancos relacionais?
+//Feito para lidar com uma maior quantidade de tráfego de dados, boa escalabilidade.
+c) Cite ao menos 3 situações práticas em que um banco de dados não-relacional é mais indicado.
+//Documentos, chave valor (Key-Value store), Grafos.
+Tipos de Bancos de Dados Não-Relacionais:
+a) Explique as diferenças entre os quatro principais tipos:
+Orientados a Documentos.
+//Armazena dados em ‘documentos’, que são unidades autônomas de informação, geralmente em JSON. ( b) mongoDB.
+Chave-Valor.
+//É um modelo simples, os dados são armazenados como um par: uma “chave” única e um “valor”. ( b) Amazon DynamoDB
+Colunas Amplas.
+//Armazena dados em tabelas, mas de forma otimizada para colunas, não para linhas. Cada linha pode ter um conjunto diferente de colunas. ( b)  Apache Cassandra
+Grafos.
+//Foram criados especificamente para armazenar e navegar pelos relacionamento entre dados. Os dados são representados como nós e as conexões são arestas. ( b) Amazon Neptune 
+
+b) Dê exemplos de ferramentas populares para cada tipo.
+// respondida nas questões
+Comparação Prática:
+a) Qual a principal diferença entre o modelo relacional e o modelo de grafos?
+// Os modelos relacionais são armazenados em tabelas, os grafos são armazenados como nós.
+b) Em um cenário de redes sociais, qual tipo de banco de dados seria mais adequado? Justifique.
+// Banco de dados de grafos; Os grafos essencialmente são formados por conexões ou “nós” (seguir, curtir, comentar).
+Escalabilidade e Flexibilidade:
+a) Explique como a escalabilidade horizontal funciona em bancos não-relacionais.
+// Funciona distribuindo os dados e a carga de trabalho entre múltiplos servidores, que juntos forma um cluster. 
+b) Por que a flexibilidade de schema é importante em bancos orientados a documentos?
+// Agilidade e velocidade no desenvolvimento, capacidade de lidar com dados variados.
+Estudo de Caso:
+a) Pesquise um caso de uso real de uma empresa que utiliza bancos de dados não-relacionais.
+// Netflix, ela precisa armazenar o histórico de visualização de todos os seus mais de 200 milhões de assinantes no mundo todo.
+b) Descreva como esse banco é utilizado e quais foram os benefícios obtidos.
+// Usado para armazenar os dados dos usuarios, foi usado o Apache Cassandra.

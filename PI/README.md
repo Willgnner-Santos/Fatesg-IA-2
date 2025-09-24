@@ -1,1 +1,1 @@
-# Projeto Integrador - Luciano Sales
+# Projeto Integrador

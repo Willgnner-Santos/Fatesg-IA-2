@@ -1,0 +1,47 @@
+Célula 1:
+Atualiza a lista de pacotes do sistema.
+Instala o Java 8 (necessário para rodar o Apache Spark).
+Configura a variável de ambiente JAVA_HOME para o Java instalado.
+Define o Java 8 como versão padrão do sistema.
+Verifica a versão do Java instalada.
+Instala a biblioteca PySpark para usar Spark com Python.
+Clona um repositório com arquivos de exemplo e logs da NASA.
+Descompacta os arquivos de log para formato legível.
+Mostra o tamanho e conta as linhas dos arquivos de log.
+Exibe as primeiras linhas do arquivo para inspecionar o formato dos dados.
+
+celula 2:
+O RDD é a fundação flexível e robusta do Spark. Ele te dá o controle total sobre como os dados são processados e distribuídos,especialmente útil para dados que não se encaixam bem no formato tabular de um banco de dados.
+
+celula 3:
+Essa célula é o passo de "ligar a ignição" da sua aplicação Spark, garantindo que ela saiba onde e como rodar, e quanta memória deve usar. O objeto resultante, sc, será usado em todas as operações subsequentes com RDDs.
+
+celula 5:
+Em seguida, verifica-se o tipo dessa variável (type(exemplo)), confirmando que é uma string. Depois, usa-se o método split() sem argumentos para quebrar a linha em pedaços (tokens), usando espaços em branco como separador. O resultado é uma lista, onde cada item é uma parte do log. Por exemplo: o primeiro item é o host/IP (operacao[0]).
+Depois, o código aplica isso a dados reais: pega o RDD chamado julho (que contém as linhas do log de julho) e usa map com uma função lambda para extrair apenas o primeiro token de cada linha (ou seja, o host que fez a requisição). O método take(5) coleta e mostra os 5 primeiros hosts.
+Na sequência, mostra uma variação usando split(' '), que também divide a string por espaço (igual ao split() padrão). Aqui, aplica-se distinct() para remover duplicatas e depois count() para calcular quantos hosts únicos fizeram acessos no mês. Como count() é uma action, ele realmente dispara o processamento no Spark e retorna o número final.
+
+celula 6:
+O principal conceito aqui é o encapsulamento: colocar um bloco de código (a sequência de Transformações e Ações) dentro de uma função Python (obterQtdHosts) para que ele possa ser facilmente aplicado a diferentes RDDs (julho e agosto).
+
+celula 7:
+Esta célula configura e inicializa o ambiente Spark localmente, preparando o contexto para executar operações distribuídas com RDDs, além de importar uma função útil para somas em operações de redução.
+
+celula 8 :
+aplica o filtro 404 de forma distribuída, separando os logs de erro dos logs de sucesso. O uso do .cache() otimiza o código, garantindo que o resultado desse filtro não precise ser recalculado nas próximas análises.
+
+celula 9 :
+Esta é uma otimização crucial. Ela instrui o Spark a armazenar o resultado dessa transformação (a lista de logs 404 de Julho) na memória dos executors assim que ela for calculada pela primeira vez. Isso garante que, se você usar erros404_julho novamente (por exemplo, para contar hosts únicos ou ver as URLs), o Spark não precisará refazer a filtragem e a leitura do arquivo original.
+
+celula 10 :
+A função top5_hosts404 é um pipeline completo de análise de dados. Ao ser chamada com erros404_julho ou erros404_agosto, ela retorna uma lista simples de Python contendo as 5 tuplas (URL, Contagem) que indicam quais recursos geraram mais erros 404 naquele mês. Isso é o objetivo final de muitas análises de log: transformar dados brutos em insights acionáveis.
+
+celula 11:
+A célula usa split() para isolar a chave de interesse (o host) dentro da string de log. Em seguida, usa a capacidade distribuída do Spark (map, distinct) para extrair e contar quantos desses hosts são únicos, uma operação fundamental em análise de logs.
+
+celula 12:
+Quando você usa .collect(), os dados já estão na memória do Driver. Usar o sorted() nativo do Python é muito mais rápido para o passo final de ordenação de resultados agregados.
+
+celula 13:
+Caso o campo seja inválido (por exemplo, o caractere '-' que aparece em alguns logs, ou se for negativo), cai no except e retorna 0, significando que não houve transferência de dados naquela linha.
+Depois, o RDD passa por um map(contador), transformando cada linha em um número inteiro (bytes transferidos). Em seguida, aplica-se um reduce(add), que soma todos esses valores de forma distribuída, resultando no total de bytes acumulados.

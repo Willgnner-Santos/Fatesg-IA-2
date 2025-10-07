@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Cache com Memcached</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; background-color: #f4f4f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        .button { background-color: #007bff; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block; }
+        .info { background-color: #e7f3fe; border-left: 6px solid #2196F3; margin: 20px 0; padding: 15px; }
+        .info p { margin: 5px 0; }
+        .api { border-left-color: #f44336; background-color: #ffebee; }
+        .cache { border-left-color: #4CAF50; background-color: #e8f5e9; }
+        .user-list { list-style: none; padding: 0; }
+        .user-list li { background: #fafafa; border: 1px solid #ddd; padding: 10px; margin-bottom: 5px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Demonstração de Cache com Memcached</h1>
+        <p>Clique no botão abaixo para buscar uma lista de usuários. Observe a "Origem dos dados" e o "Tempo de resposta" na primeira e na segunda vez que você clicar.</p>
+        <a href="/" class="button">Buscar Dados de Usuários</a>
+        
+        {% if source and duration %}
+            <div class="info {{ 'api' if source == 'API Externa' else 'cache' }}">
+                <p><strong>Origem dos dados:</strong> {{ source }}</p>
+                <p><strong>Tempo de resposta:</strong> {{ "%.4f"|format(duration) }} segundos</p>
+            </div>
+        {% endif %}
+
+        {% if users %}
+            <h2>Usuários Encontrados:</h2>
+            <ul class="user-list">
+                {% for user in users %}
+                    <li>{{ user.name }} ({{ user.email }})</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>

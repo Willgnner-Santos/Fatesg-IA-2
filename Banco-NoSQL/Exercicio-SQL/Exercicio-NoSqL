@@ -1,0 +1,58 @@
+1 - Definições e Características:
+
+A) É caracterizado um banco de dados que não caracteriza um modelo tradicional de tabelas com linhas e colunas, ele utiliza diferentes modelos de armazenamento,
+como chave-valor, documento, grafos ou colunas largas, permitindo maior flexibilidade e escalabilidade.
+
+B) A vantagem relação do Banco de Dados NoSQL para o Banco de dados é a exigência de grandes volumes de dados e alta velocidade de acesso. As principais vantagens
+são é a escalabilidade horizontal que permite adicionar facilmente mais servidores e armazenar grandes volumes de dados, Flexibilidade de esquema que é adicionar 
+campos novos sem afetar a estrutura existente, desenvolvimento rápido é não se preocupar com a estrutura dos dados que permite que iterem rapidamente e a ultima 
+vantagem é alto desempenho para determinar os tipos de consulta e cargas de trabalho, os bancos de dados não relacionais podem oferecer um desempenho superior as 
+bancos de dados relacionáveis.
+
+C) Os que mais são indicados são: Armazenamento de grande volumes de dados, processamento de dados em tempo real e integração cm tecnologias de nuvem.
+
+2 - Tipos de Bancos de Dados Não-Relacionais:
+
+A) 
+
+- Orientação a documentos: Refere-se a um modelo de banco de dados que armazena e manipula dados em formato de documento como JSON, BSON U XML.
+
+- Chave valor: Armazena dados como pares de chave valor que é usada para recuperar o valor correspondente.
+
+- Colunas Amplas: Armazenas dados em colunas, cada linha pode ter diferentes colunas e os dados são organizados em grandes volumes de dados distribuídos para 
+facilitar a consulta como data warehouses.
+
+- Grafos: São otimizados para representar e consultar relações complexas entre dados, com redes sociais ou mecanismos de recomendação, armazena dados com
+nós e arestas.
+
+B)
+
+- Orientados a Documentos (ferramentas): MongoDB
+
+- Chave-Valor (ferramenta): Redis
+
+- Colunas Amplas (ferramenta): HBase
+
+-Grafos (ferramenta): Amazon Neptune
+
+3 - Comparação Prática:
+ 
+A) A principal diferença é o modelo relacional e o modelo de grafos está na forma como eles representam e gerenciam os relacionados entre os dados que prioriza
+entidades organizadas em tabelas, enquanto o modelo de grafos prioriza os relacionamentos complexos representados entre nós.
+
+B) O melhor banco de dados para rede sociais são os grafos. Por causa das grandes quantidades de usuários e utiliza conexões complexas e multidimensionais.
+
+4 - Escalabilidade e Flexibilidade:
+
+A) Ela funciona no aumento de mais máquinas para dividir o trabalho e armazenar os dados, fazendo rodar mais rápido e sem trava. Como se fosse dividir um 
+arquivo em várias partes menores para cada computador assegurar.
+
+B) É importante em bancos orientados a documentos que permite que cada documento tenha uma estrutura diferente que prevê como os dados devem ser organizados.
+
+5 - Estudo de Caso:
+
+A) A Amazon utiliza NoSQL, por causa que apresenta uma abordagem e recuperação de dados que difere dos tradicionais bancos de dados relacionais, isso permite
+uma modelagem estruturada mais dinâmica, como documentos, grafos ou pares chave-valor.
+
+B) Ele é usado na estrutura dos arquivos que permitiu a vantagem de estabilidade horizontal eficiente, flexibilidade de esquemas, desempenho otimizado e 
+leituras de grande volumes de dados.

@@ -1,0 +1,14 @@
+# Código para: .gitignore
+
+# Ambiente Virtual
+venv/
+/venv/
+
+# Caches do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de IDE (Exemplo para VS Code)
+.vscode/

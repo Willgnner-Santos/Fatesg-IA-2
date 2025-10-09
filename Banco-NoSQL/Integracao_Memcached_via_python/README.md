@@ -1,91 +1,151 @@
-Memcached & Python: Projeto de Integração e TTL (Time To Live)
-Este repositório contém a implementação e documentação de um projeto de integração do sistema de caching Memcached com a linguagem Python. O objetivo principal foi pesquisar, implementar e comprovar o funcionamento do mecanismo de expiração automática de dados (TTL - Time To Live).
+🚀 Demonstração Profissional: Integração Memcached via Python e WSL
+Este projeto contém a documentação e os scripts de demonstração prática da integração de um sistema de caching Memcached com aplicações Python, utilizando o WSL (Windows Subsystem for Linux) como ambiente de desenvolvimento e execução.
 
-Alunos
-Maria Clara Ribeiro Di Bragança
+1. Contextualização: O que é Memcached e por que Caching?
+Memcached é um sistema de armazenamento de chave-valor distribuído na memória (RAM), projetado para acelerar aplicações web e reduzir a carga sobre bancos de dados. Sua função é servir dados frequentemente acessados com latência ultrabaixa.
 
-Frederico Lemes Rosa
+Vantagem Principal: Acesso à RAM é até 10.000 vezes mais rápido que a leitura de disco (SSD/HDD), crucial para performance e escalabilidade.
 
-Objetivo da Atividade
-Demonstrar a importância e a funcionalidade do Memcached como uma camada de cache em memória para acelerar aplicações, focando em três pilares:
+Plataforma (WSL): O WSL foi escolhido para prover um ambiente Linux (Ubuntu) nativo, ideal para instalar e gerenciar o serviço Memcached, enquanto mantém a produtividade no Windows.
 
-Integração Funcional: Conectar um cliente Python a um servidor Memcached real.
+2. Passo a Passo Técnico Detalhado
+Siga estes passos no terminal do seu WSL para configurar e executar o ambiente de demonstração.
 
-Manipulação de Dados: Implementar comandos essenciais como SET, GET e DELETE.
+2.1. Preparação do Ambiente e Instalação do Memcached
+Passo
 
-Comprovação do TTL: Validar que o Memcached remove automaticamente os dados após um tempo de vida definido.
+Comando
 
-Stack Tecnológica
-Sistema Operacional: Ubuntu (via WSL - Windows Subsystem for Linux)
+Descrição
 
-Servidor de Cache: Memcached
+1.
 
-Linguagem de Programação: Python 3
-
-Biblioteca Cliente: python-memcached
-
-Guia de Implementação no WSL (Passo a Passo)
-A implementação foi realizada em um ambiente real (Ubuntu WSL) e exigiu a superação de desafios comuns de ambiente.
-
-1. Instalação e Ativação do Servidor Memcached
-O servidor foi instalado e ativado no Ubuntu, rodando em daemon na porta padrão (11211).
-
-# 1. Instalar o Memcached
 sudo apt update
+
+Atualiza a lista de pacotes do sistema.
+
+2.
+
 sudo apt install memcached
 
-# 2. Iniciar o serviço
+Instala o daemon do Memcached.
+
+3.
+
 sudo systemctl start memcached
 
-# 3. Verificar o status (deve retornar 'active (running)')
+Inicia o serviço do Memcached.
+
+4.
+
 ps aux | grep memcached
 
-2. Preparação do Ambiente Python (VENV)
-Enfrentamos o erro externally-managed-environment ao usar o pip diretamente no sistema. A solução correta foi criar um Ambiente Virtual (venv) para isolar as dependências do projeto.
+Confirma que o serviço está ativo e rodando.
 
-# 1. Criar e acessar a pasta do projeto
-mkdir memcached_project
-cd memcached_project
+2.2. Configuração do Python e Dependências
+Passo
 
-# 2. Criar e Ativar o Ambiente Virtual
+Comando
+
+Descrição
+
+5.
+
+sudo apt install python3-venv
+
+Instala o módulo para criar ambientes virtuais.
+
+6.
+
+mkdir memcached_project && cd memcached_project
+
+Cria e navega para o diretório do projeto.
+
+7.
+
 python3 -m venv .venv
+
+Cria o ambiente virtual isolado.
+
+8.
+
 source .venv/bin/activate
 
-# 3. Instalar a biblioteca cliente
+Ativa o ambiente virtual (o prompt mostrará (.venv)).
+
+9.
+
 pip install python-memcached
 
-3. Scripts de Teste
-Dois scripts foram desenvolvidos para comprovar as funcionalidades.
+Instala a biblioteca cliente Python para interagir com o Memcached.
 
-A. memcached_teste_ttl.py (Comprovação do TTL)
-Objetivo: Armazenar um valor com TTL de 5 segundos, lê-lo imediatamente e, após 6 segundos (time.sleep), tentar lê-lo novamente para comprovar sua expiração.
+3. Principais Comandos do Cliente Python
+Os scripts demonstram o uso dos métodos centrais da biblioteca python-memcached:
 
-Comandos Chave:
+Comando
 
-# Conexão
-mc = memcache.Client(['127.0.0.1:11211'], debug=0) 
+Sintaxe no Python
 
-# Armazenamento com TTL
-mc.set(chave_teste, valor_teste, 5) 
+Função
 
-# Pausa para expiração
-time.sleep(6) 
+SET
 
-# Tentativa de leitura após expiração (retorna None)
-valor_expirado = mc.get(chave_teste) 
+mc.set(key, value, time)
 
-B. memcached_detalhe.py (Aprofundamento)
-Objetivo: Demonstrar as operações de manipulação (SET para criar/atualizar, DELETE para remover) e o TTL em um contexto mais detalhado.
+Grava ou sobrescreve um dado. time (opcional) define o TTL.
 
-Conclusão e Aprendizados
-O projeto demonstrou que a integração do Python com o Memcached é simples e extremamente eficiente.
+GET
 
-Principais Vantagens Comprovadas:
-Velocidade: Leitura e escrita de dados diretamente na RAM (memória).
+mc.get(key)
 
-TTL (Time To Live): O mecanismo de expiração automática garante que os dados em cache não fiquem obsoletos, sendo a principal prova de conceito do nosso projeto.
+Recupera o valor de uma chave. Retorna None se não for encontrado ou se tiver expirado.
 
-Simplicidade: O uso da API da biblioteca python-memcached é intuitivo e direto.
+DELETE
 
-Ganhos Técnicos:
-Dominamos a configuração de um servidor de cache real e aprendemos a melhor prática de desenvolvimento Python utilizando Ambientes Virtuais (VENV) para gerenciar as dependências do projeto de forma isolada e segura.
+mc.delete(key)
+
+Remove imediatamente e de forma forçada uma chave do cache.
+
+4. Scripts de Demonstração
+Execute os scripts a seguir para visualizar os comandos e o TTL em tempo real.
+
+4.1. Demonstração de TTL (script_ttl.py)
+Focado na expiração automática de dados.
+
+python script_ttl.py
+
+Resultado Esperado:
+O script irá armazenar uma chave com 7 segundos de TTL e mostrar uma contagem regressiva até que o Memcached a remova automaticamente.
+
+4.2. Demonstração Detalhada (script_detalhado.py)
+Demonstra o ciclo de vida completo: criação, atualização, remoção forçada e expiração automática de dados.
+
+python script_detalhado.py
+
+Resultado Esperado:
+O script confirma as operações de SET, GET, UPDATE e DELETE, finalizando com a comprovação da remoção automática por TTL.
+
+5. Conclusão e Aprendizados Chave
+Benefícios do Memcached
+Velocidade: Leitura em milissegundos a partir da RAM.
+
+Escalabilidade: Arquitetura distribuída que permite adicionar mais servidores de cache.
+
+Controle de Dados (TTL): Gerenciamento eficiente da memória, removendo dados obsoletos automaticamente.
+
+Aprendizado da Atividade Prática
+Conceito
+
+Habilidade Adquirida
+
+Conceito de Caching
+
+Entendimento prático do ciclo de vida do dado (SET, GET, DELETE) e sua manipulação via código.
+
+Gerenciamento de Serviços Linux
+
+Habilidade em instalar, iniciar e verificar o status de serviços críticos de servidor (memcached) no WSL.
+
+Melhores Práticas Python
+
+Uso de ambientes virtuais (venv) para isolamento de dependências.

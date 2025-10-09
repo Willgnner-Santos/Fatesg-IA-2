@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração Memcached via Python</title>
+    <!-- Carregamento do Tailwind CSS para estilo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Cores de Destaque: Cyan Neon para títulos/ênfase */
+        :root {
+            --color-primary: #00FFFF; /* Cyan Neon */
+            --color-secondary: #72f1b8; /* Verde Neon para Código/Comandos */
+            --color-bg-dark: #0d1117;
+            --color-surface: #161b22;
+            --color-border: #30363d;
+            --font-size-base: 28px;
+        }
+
+        /* Configuração de Fonte Padrão e Estilos Gerais (Visual e Mínimal) */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg-dark); 
+            color: #f0f6fc; 
+            font-size: var(--font-size-base); 
+            line-height: 1.5; 
+            transition: all 0.3s ease; /* Transição global para suavidade */
+        }
+        
+        /* Tipografia de Alta Visibilidade (Mínimo 28px) */
+        .text-sm, .text-base, .text-lg { font-size: var(--font-size-base) !important; }
+        .text-xl { font-size: 30px !important; }
+        .text-2xl { font-size: 36px !important; } /* Aumentado */
+        .text-3xl { font-size: 44px !important; } /* Aumentado */
+        .text-4xl { font-size: 52px !important; } /* Aumentado */
+
+        /* Estilização para blocos de código (simulando terminal - Alto Contraste) */
+        pre {
+            background-color: var(--color-surface);
+            padding: 2rem; 
+            border-radius: 0.75rem; 
+            overflow-x: auto;
+            border: 1px solid var(--color-border);
+            font-size: var(--font-size-base) !important; 
+            line-height: 1.6; 
+            white-space: pre-wrap; 
+        }
+        
+        .pre-result {
+            white-space: pre-wrap;
+            line-height: 1.5 !important; 
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.1); /* Sombra suave ciano */
+        }
+
+        /* Estilo para comandos inline */
+        code {
+            background-color: #30363d;
+            padding: 0.4rem 0.6rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            color: var(--color-secondary); /* Verde Neon para comandos */
+            font-size: var(--font-size-base) !important; 
+            transition: color 0.2s;
+        }
+        
+        /* Estilização de tabelas com hover */
+        .table-custom th, .table-custom td {
+            padding: 1.5rem 1.5rem; 
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+            font-size: var(--font-size-base) !important; 
+            transition: background-color 0.3s ease;
+        }
+        .table-custom tbody tr:hover {
+            background-color: rgba(0, 255, 255, 0.05); /* Efeito hover sutil Cyan */
+        }
+        .table-custom th {
+            background-color: #1f2a37;
+            color: var(--color-primary);
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: 0.75rem; 
+        }
+        
+        /* Cores de destaque para melhor visualização */
+        .header-bg {
+            background-color: #1a202c; 
+            box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2); /* Sombra Cyan */
+        }
+        .section-bg {
+             background-color: var(--color-surface);
+             border: 1px solid var(--color-border);
+             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .block-spacing > * {
+            margin-bottom: 2rem; /* Margens generosas (mb-8) */
+        }
+
+        /* Estilo para o componente DETAILS (Maximizar/Minimizar) */
+        details summary {
+            background-color: #1f2a37; 
+            color: var(--color-primary); 
+            transition: background-color 0.3s ease;
+        }
+        details summary:hover {
+            background-color: rgba(0, 255, 255, 0.15);
+        }
+        details summary::after {
+            color: var(--color-secondary); /* Ícone em Verde Neon */
+        }
+        details[open] summary::after {
+            color: var(--color-secondary);
+        }
+
+        /* --- Estilos para a Barra de Navegação Lateral (Sidebar) --- */
+        .sidebar-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 50; /* Garante que fique acima de outros elementos */
+            width: 4rem; /* Largura inicial (recolhida) */
+            height: 100vh;
+            background-color: #11151a; 
+            padding-top: 2rem;
+            transition: width 0.3s ease-in-out; /* Transição suave */
+            overflow-x: hidden; 
+            box-shadow: 4px 0 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .sidebar-nav:hover {
+            width: 18rem; /* Largura expandida ao passar o mouse */
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1rem 1rem 1.5rem;
+            color: #f0f6fc;
+            text-decoration: none;
+            white-space: nowrap;
+            font-size: var(--font-size-base) !important;
+            transition: all 0.2s ease;
+        }
+        .sidebar-link:hover {
+            background-color: rgba(0, 255, 255, 0.1); /* Destaque Cyan */
+            color: var(--color-primary);
+        }
+        /* Ajusta o padding do conteúdo principal para compensar a barra lateral recolhida */
+        .content-wrapper {
+            margin-left: 4rem; 
+            padding-left: 2rem; /* Adiciona padding extra para garantir espaço */
+            transition: margin-left 0.3s ease-in-out;
+        }
+        @media (max-width: 640px) {
+            /* Desabilita a barra lateral em telas muito pequenas (mobile) e usa o topo padrão */
+            .sidebar-nav { display: none; }
+            .content-wrapper { margin-left: 0; }
+        }
+
+        /* --- Estilos para Cards 3D (Flip Cards) --- */
+        .flip-card-container {
+            perspective: 1500px; 
+            width: 100%; 
+            max-width: 400px; 
+            height: 380px; 
+            margin-bottom: 2rem; 
+            transition: transform 0.3s ease;
+        }
+        .flip-card-container:hover {
+            transform: scale(1.03); /* Efeito de elevação sutil */
+        }
+        @media (min-width: 768px) {
+            .flip-card-container {
+                 max-width: calc(33.33% - 1rem); 
+            }
+        }
+        
+        .flip-card {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+        }
+        .card-face {
+            padding: 1.5rem; 
+        }
+        /* AJUSTE FINAL DO TÍTULO DO CARD */
+        .card-front .text-3xl {
+            font-size: var(--font-size-base) !important; /* Exatamente 28px */
+            line-height: 1.2;
+            letter-spacing: 0.1rem; /* Espaçamento entre letras para legibilidade */
+        }
+
+        /* AJUSTE FINAL DO CONTEÚDO DO CARD */
+        .card-back p {
+            font-size: 22px !important; /* Fonte menor (22px) para caber no verso */
+            line-height: 1.4;
+        }
+
+        .card-front {
+            background: #1f2a37; 
+            color: var(--color-primary); /* Cyan Neon */
+            border: 3px solid var(--color-primary);
+        }
+        .card-back {
+            background: var(--color-surface); 
+            border: 3px solid var(--color-secondary); /* Borda em Verde Neon */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-10">
+
+    <!-- BARRA DE NAVEGAÇÃO LATERAL (SIDEBAR) -->
+    <nav class="sidebar-nav group">
+        <a href="#sec-contexto" class="sidebar-link mt-4">
+            <span class="mr-3">1.</span> <span class="group-hover:block hidden">Contextualização</span>
+        </a>
+        <a href="#sec-passo-a-passo" class="sidebar-link">
+            <span class="mr-3">2.</span> <span class="group-hover:block hidden">Passo a Passo</span>
+        </a>
+        <a href="#sec-comandos" class="sidebar-link">
+            <span class="mr-3">3.</span> <span class="group-hover:block hidden">Comandos Python</span>
+        </a>
+        <a href="#sec-resultados" class="sidebar-link">
+            <span class="mr-3">4.</span> <span class="group-hover:block hidden">Resultados</span>
+        </a>
+        <a href="#sec-conclusao" class="sidebar-link">
+            <span class="mr-3">5.</span> <span class="group-hover:block hidden">Conclusão</span>
+        </a>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL (MOVIMENTADO PELA BARRA LATERAL) -->
+    <div class="w-full content-wrapper">
+        <header class="mb-10 p-8 header-bg rounded-2xl">
+            <h1 class="text-4xl font-extrabold text-white mb-4">
+                🚀 Integração Memcached via Python
+            </h1>
+            <h2 class="text-2xl text-cyan-400">
+                Alunos: Frederico Lemes Rosa e Maria Clara Bragança
+            </h2>
+        </header>
+
+        <!-- Seção 1: Contextualização -->
+        <section id="sec-contexto" class="mb-12 p-8 section-bg rounded-xl">
+            <h3 class="text-3xl font-bold text-cyan-300 mb-6 border-b-2 border-cyan-600 pb-4">1. Contextualização: O Que É e Por Que Usamos</h3>
+
+            <div class="block-spacing">
+                <h4 class="text-xl font-semibold text-white">O que é Memcached?</h4>
+                <p class="text-gray-300">
+                    <strong>Memcached</strong> é um sistema de caching distribuído de objetos na memória (In-Memory Key-Value Store), simples e de alta performance. Seu propósito fundamental é acelerar aplicações web e sistemas, armazenando pequenos pedaços de dados (objetos) de consultas de banco de dados, resultados de chamadas de API ou dados de sessão diretamente na <strong>RAM (Memória de Acesso Aleatório)</strong>.
+                </p>
+                <ul class="list-disc list-inside ml-8 text-gray-300 space-y-2">
+                    <li><strong>Benefício Principal:</strong> Reduz drasticamente a necessidade de acessar o banco de dados (que é lento), servindo os dados diretamente da memória (que é ultra-rápida).</li>
+                    <li><strong>Modelo:</strong> Funciona no modelo "Chave-Valor", onde você armazena um <code class="text-sm">valor</code> associado a uma <code class="text-sm">chave</code> única.</li>
+                </ul>
+            </div>
+
+            <div class="mt-8 block-spacing">
+                <h4 class="text-xl font-semibold text-white">Por que usar o WSL (Windows Subsystem for Linux)?</h4>
+                <p class="text-gray-300">
+                    O <strong>WSL</strong> foi a plataforma escolhida por oferecer o melhor dos dois mundos para esta demonstração:
+                </p>
+                <ol class="list-decimal list-inside ml-8 text-gray-300 space-y-2">
+                    <li><strong>Ambiente Linux Nativo:</strong> Memcached e suas ferramentas de linha de comando rodam de forma mais eficiente no ambiente Linux (Ubuntu).</li>
+                    <li><strong>Integração com Windows:</strong> Permite executar o servidor Linux (Memcached) e o script Python de teste diretamente no sistema operacional Windows.</li>
+                    <li><strong>Performance:</strong> O WSL 2 oferece performance de I/O de disco e rede próxima à nativa, ideal para serviços de servidor.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Seção 2: Passo a Passo Técnico Detalhado -->
+        <section id="sec-passo-a-passo" class="mb-12 p-8 section-bg rounded-xl">
+            <h3 class="text-3xl font-bold text-cyan-300 mb-6 border-b-2 border-cyan-600 pb-4">2. Passo a Passo Técnico Detalhado</h3>
+            
+            <!-- 2.1 Preparação e Instalação do Memcached -->
+            <h4 class="text-2xl font-semibold text-white mt-8 mb-6">2.1. Preparação do Ambiente e Instalação do Memcached</h4>
+            <div class="table-wrapper rounded-xl">
+                <table class="w-full table-custom">
+                    <thead>
+                        <tr>
+                            <th class="w-12">Passo</th>
+                            <th class="w-1/3">Comando</th>
+                            <th>Descrição Didática</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td><code class="text-sm">sudo apt update</code></td>
+                            <td><strong>Atualização dos Repositórios:</strong> Garante que a lista de pacotes disponíveis no sistema esteja atualizada.</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td><code class="text-sm">sudo apt install memcached</code></td>
+                            <td><strong>Instalação do Serviço:</strong> Baixa e instala o daemon do Memcached no Ubuntu (WSL).</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td><code class="text-sm">sudo systemctl start memcached</code></td>
+                            <td><strong>Início do Serviço:</strong> Inicia o processo de servidor do Memcached.</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td><code class="text-sm">ps aux | grep memcached</code></td>
+                            <td><strong>Verificação de Status:</strong> Comprova que o serviço está ativo, rodando e escutando na porta padrão.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 2.2 Configuração do Python para Caching -->
+            <h4 class="text-2xl font-semibold text-white mt-10 mb-6">2.2. Configuração do Python para Caching</h4>
+            <p class="text-gray-300 mb-6">Usamos o Python para interagir com o servidor Memcached via um cliente específico.</p>
+            <div class="table-wrapper rounded-xl">
+                <table class="w-full table-custom">
+                    <thead>
+                        <tr>
+                            <th class="w-12">Passo</th>
+                            <th class="w-1/3">Comando</th>
+                            <th>Descrição Didática</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5.</td>
+                            <td><code class="text-sm">sudo apt install python3-venv</code></td>
+                            <td><strong>Instalação de venv:</strong> Instala o módulo para criar ambientes virtuais Python.</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td><code class="text-sm">mkdir memcached_project</code> / <code class="text-sm">cd memcached_project</code></td>
+                            <td><strong>Criação do Projeto:</strong> Cria e entra no diretório de trabalho.</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td><code class="text-sm">python3 -m venv .venv</code></td>
+                            <td><strong>Criação do Ambiente Virtual:</strong> Cria um ambiente isolado chamado <code class="text-sm">.venv</code>.</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td><code class="text-sm">source .venv/bin/activate</code></td>
+                            <td><strong>Ativação do Ambiente:</strong> Carrega o ambiente virtual (indicado por `(.venv)` no terminal).</td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td><code class="text-sm">pip install python-memcached</code></td>
+                            <td><strong>Instalação da Biblioteca Cliente:</strong> Instala a biblioteca Python para enviar comandos (SET, GET, DELETE) ao Memcached.</td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td><code class="text-sm">nano script_ttl.py</code> / <code class="text-sm">nano script_detalhado.py</code></td>
+                            <td><strong>Criação dos Scripts:</strong> Abre o editor <code class="text-sm">nano</code> para escrever e salvar os scripts de demonstração em Python.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Nova Seção 3: Comandos do Cliente Python -->
+        <section id="sec-comandos" class="mb-12 p-8 section-bg rounded-xl">
+            <h3 class="text-3xl font-bold text-cyan-300 mb-6 border-b-2 border-cyan-600 pb-4">3. Principais Comandos do Cliente Python</h3>
+            <p class="text-gray-300 mb-6">Estes são os métodos centrais da biblioteca <code class="text-sm">python-memcached</code> utilizados para interagir com o servidor de caching.</p>
+
+            <div class="table-wrapper rounded-xl">
+                <table class="w-full table-custom">
+                    <thead>
+                        <tr>
+                            <th class="w-1/4">Comando</th>
+                            <th class="w-1/4">Sintaxe no Python</th>
+                            <th>Descrição Funcional</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>SET</strong></td>
+                            <td><code class="text-sm">mc.set(key, value, time)</code></td>
+                            <td>Grava um dado (chave-valor) no cache. O parâmetro opcional <code class="text-sm">time</code> define o TTL (Time To Live). Se a chave já existir, o valor é sobrescrito.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GET</strong></td>
+                            <td><code class="text-sm">mc.get(key)</code></td>
+                            <td>Recupera o valor associado a uma chave específica. Se a chave não for encontrada (cache miss) ou se tiver expirado, retorna <code class="text-sm">None</code>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>DELETE</strong></td>
+                            <td><code class="text-sm">mc.delete(key)</code></td>
+                            <td>Remove imediatamente e de forma forçada uma chave do cache, independentemente do seu TTL. Usado para invalidar dados obsoletos antes da expiração natural.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- Fim da Nova Seção 3 -->
+
+        <!-- Seção 4 (Antiga 3): Comprovação e Resultados -->
+        <section id="sec-resultados" class="mb-12 p-8 section-bg rounded-xl">
+            <h3 class="text-3xl font-bold text-cyan-300 mb-6 border-b-2 border-cyan-600 pb-4">4. Comprovação da Execução e Resultados</h3>
+            <p class="text-gray-300 mb-8">Os scripts demonstram o controle completo sobre o ciclo de vida dos dados: criação, atualização, remoção forçada e expiração automática (TTL).</p>
+
+            <!-- NOVO 4.1: Demonstração de TTL (antigo 4.2) -->
+            <div class="bg-gray-700 bg-opacity-30 p-8 rounded-xl shadow-lg mb-10">
+                <h4 class="text-2xl font-semibold text-pink-400 mb-6">4.1. Demonstração de TTL (Time To Live)</h4>
+                <p class="text-gray-400 mb-4"><strong>Objetivo:</strong> Monitorar a expiração automática de um dado após 7 segundos de vida.</p>
+                <div class="mb-6">
+                    <p class="font-bold mb-4">Script Python (<code class="text-sm">script_ttl.py</code>):</p>
+                    
+                    <!-- IMPLEMENTAÇÃO DO BOTÃO MAXIMIZAR/MINIMIZAR -->
+                    <details>
+                        <summary class="hover:bg-cyan-900/40">Código Completo: script_ttl.py</summary>
+                        <pre class="whitespace-pre-wrap mt-4"># Nome do Script: Demonstração Interativa do TTL
+# Objetivo: Mostrar a persistência e a expiração do Memcached segundo a segundo.
+#
+# OBSERVAÇÃO: Este script assume que o Memcached está rodando em 127.0.0.1:11211
+# e que a biblioteca python-memcached está instalada no seu ambiente virtual (VENV).
+
+import memcache
+import time
+import sys
+
+# --- Configuração ---
+mc = memcache.Client(['127.0.0.1:11211'], debug=0)
+chave_teste = "chave_secreta_do_cache"
+valor_teste = "🚀 Dados Vivos e Carregados!"
+ttl_segundos = 7  # Aumentei para 7s para uma contagem mais visível
+tempo_de_vida = ttl_segundos
+
+# Garante que a saída do console seja imediata (necessário para a animação da contagem)
+sys.stdout.reconfigure(encoding='utf-8') 
+
+print("\n" + "="*70)
+print(f"       ⏱️ INICIANDO DEMONSTRAÇÃO: TTL ({tempo_de_vida} segundos) ⏱️")
+print("="*70)
+
+# 1. Armazenamento com TTL
+print(f"\n1️⃣ GRAVANDO: Chave '{chave_teste}' armazenada com {ttl_segundos} segundos de vida...")
+mc.set(chave_teste, valor_teste, ttl_segundos)
+
+# 2. Leitura Inicial (Verificação se o dado existe)
+valor_lido = mc.get(chave_teste)
+if valor_lido is None:
+    print("   ❌ ERRO DE CONEXÃO: O Memcached não está acessível ou a chave falhou.")
+    exit()
+else:
+    # CORREÇÃO: Removido o .decode() para evitar Attribute Error.
+    print(f"   ✅ SUCESSO! Valor Lido: {valor_lido}")
+
+print("\n2️⃣ PERSISTÊNCIA: Monitorando a expiração do cache...")
+
+# 3. Loop Divertido para Mostrar a Persistência
+for i in range(tempo_de_vida + 3):  # 3 segundos a mais para mostrar o estado final
+    valor_atual = mc.get(chave_teste)
+    
+    if valor_atual is not None:
+        # Ainda está no cache
+        segundos_restantes = ttl_segundos - i
+        icone = "🟢" if segundos_restantes > 2 else "🟡"
+        
+        # Imprime na mesma linha (flush=True necessário no Python 3)
+        print(f"   {icone} {i+1}s: Cache ATIVO! Vai expirar em ~{segundos_restantes} segundos...", end='\r', flush=True)
+    else:
+        # Expira
+        print(f"   🔴 {i+1}s: CACHE EXPIRADO! A chave '{chave_teste}' foi REMOVIDA automaticamente.      ")
+        break # Sai do loop após a expiração
+
+    time.sleep(1)
+
+# 4. Verificação Final Pós-Expiração
+print("\n\n3️⃣ COMPROVAÇÃO FINAL (Nova tentativa de GET):")
+valor_final = mc.get(chave_teste)
+
+if valor_final is None:
+    print(f"   🎉 VITÓRIA TTL: O valor sumiu com sucesso! A expiração funcionou 100%.")
+else:
+    # Este bloco só deve ser atingido em caso de erro.
+    print(f"   ⚠️ ERRO: O valor ainda está lá! {valor_final}")
+
+print("\n" + "="*70)
+print("             Demonstração de Persistência Concluída!")
+print("="*70 + "\n")</pre>
+                    </details>
+                </div>
+                
+                <p class="font-bold mb-4 text-green-400">Resultado:</p>
+                <!-- Aplicando a nova classe pre-result com line-height 1.5 -->
+                <pre class="pre-result text-sm">
+1️⃣ GRAVANDO: Chave 'chave_secreta_do_cache' armazenada com 7 segundos de vida...
+   ✅ SUCESSO! Valor Lido: 🚀 Dados Vivos e Carregados!
+
+2️⃣ PERSISTÊNCIA: Monitorando a expiração do cache...
+   🔴 7s: CACHE EXPIRADO! A chave 'chave_secreta_do_cache' foi REMOVIDA automaticamente.      
+
+3️⃣ COMPROVAÇÃO FINAL (Nova tentativa de GET):
+   🎉 VITÓRIA TTL: O valor sumiu com sucesso! A expiração funcionou 100%.
+                </pre>
+            </div>
+
+            <!-- NOVO 4.2: Demonstração Detalhada (antigo 4.1) -->
+            <div class="bg-gray-700 bg-opacity-30 p-8 rounded-xl shadow-lg">
+                <h4 class="text-2xl font-semibold text-pink-400 mb-6">4.2. Demonstração Detalhada (SET, GET, DELETE e TTL)</h4>
+                <p class="text-gray-400 mb-4"><strong>Objetivo:</strong> Demonstrar o ciclo completo do dado, incluindo criação, atualização e remoção manual.</p>
+                <div class="mb-6">
+                    <p class="font-bold mb-4">Script Python (<code class="text-sm">script_detalhado.py</code>):</p>
+                    <!-- IMPLEMENTAÇÃO DO BOTÃO MAXIMIZAR/MINIMINIZAR para script_detalhado.py -->
+                    <details>
+                        <summary class="hover:bg-cyan-900/40">Código Completo: script_detalhado.py</summary>
+                        <pre class="whitespace-pre-wrap mt-4"># Nome do Script: O Show de Comandos do Memcached
+# Objetivo: Demonstrar o ciclo de vida dos dados (SET, GET, DELETE, TTL) com feedback visual em tempo real.
+
+import memcache
+import time
+import sys
+
+# Garante que a saída do console seja imediata (necessário para a animação de contagem)
+sys.stdout.reconfigure(encoding='utf-8') 
+
+# --- Bloco 1: Conexão e Definições ---
+# O cliente se conecta ao servidor Memcached (assumindo que está ativo no WSL)
+mc = memcache.Client(['17.0.0.1:11211'], debug=0)
+
+chave_nova = "usuario_logado_123"
+valor_cache = "Dados de Sessao Complexos"
+chave_expiravel = "noticia_destaque"
+valor_expiravel = "Previsao do Tempo de Hoje - QUENTE!"
+ttl_segundos = 5
+
+print("\n" + "="*70)
+print(f"       🧠 DEMONSTRAÇÃO COMPLETA DE COMANDOS MEMCACHED 🧠")
+print("="*70)
+time.sleep(1)
+
+
+# --- Bloco 2: O Comando SET (Criação e Atualização) ---
+print("\n[FLUXO 1: CRIAÇÃO E ATUALIZAÇÃO]")
+print("----------------------------------------------------------------------")
+time.sleep(1)
+
+# A. Set Inicial (Criação)
+print(f"1.1. 💾 SET: Criando a chave '{chave_nova}'...")
+resultado_set = mc.set(chave_nova, valor_cache)
+print(f"   Status: {'✅ SUCESSO na criação!' if resultado_set else '❌ FALHA!'} (Aguarde 1s)")
+time.sleep(1)
+
+# B. Get para confirmar a criação
+print(f"1.2. 🔍 GET: Lendo a chave recém-criada para confirmar...")
+valor_lido = mc.get(chave_nova)
+print(f"   Resultado: '{valor_lido}'")
+time.sleep(1)
+
+# C. Set de Atualização
+novo_valor = "Dados de Sessao ATUALIZADOS e FRESCOS"
+print(f"1.3. 🔄 SET: Atualizando a chave '{chave_nova}' com novo valor...")
+mc.set(chave_nova, novo_valor)
+time.sleep(1)
+
+# D. Get para confirmar a atualização
+print(f"1.4. 🔍 GET: Lendo após atualização...")
+valor_atualizado = mc.get(chave_nova)
+print(f"   Resultado: '{valor_atualizado}' (✅ Chave sobrescrita com sucesso!)")
+time.sleep(1)
+
+
+# --- Bloco 3: O Comando DELETE (Remoção Forçada) ---
+print("\n[FLUXO 2: REMOÇÃO FORÇADA]")
+print("----------------------------------------------------------------------")
+time.sleep(1)
+
+# A. Delete
+print(f"2.1. 🗑️ DELETE: Removendo a chave '{chave_nova}'...")
+resultado_delete = mc.delete(chave_nova)
+print(f"   Status: {'✅ SUCESSO na remoção!' if resultado_delete else '❌ FALHA!'} (Aguarde 1s)")
+time.sleep(1)
+
+# B. Get após o delete
+print(f"2.2. 🕵️‍♀️ GET: Tentando ler a chave após o DELETE...")
+valor_apos_delete = mc.get(chave_nova)
+
+if valor_apos_delete is None:
+    print("   ✅ SUCESSO: O valor retornado é None. A chave sumiu como esperado!")
+else:
+    print(f"   ❌ ERRO: A chave ainda existe! Valor lido: {valor_apos_delete}")
+print("-" * 70)
+time.sleep(1)
+
+
+# --- Bloco 4: O Comando SET com TTL (Time To Live - O Show Principal!) ---
+print("\n[FLUXO 3: O SHOW DO TTL - PERSISTÊNCIA SEGUNDO A SEGUNDO]")
+print("----------------------------------------------------------------------")
+time.sleep(1)
+
+# A. Set com TTL
+print(f"3.1. ⏱️ SET TTL: Armazenando '{chave_expiravel}' com {ttl_segundos} segundos de vida...")
+mc.set(chave_expiravel, valor_expiravel, ttl_segundos)
+time.sleep(1)
+
+# B. Loop de Contagem Regressiva e Verificação (Segundo a Segundo)
+print("\n3.2. ⏳ CONTANDO: Verificando a vida do dado no cache...")
+for i in range(ttl_segundos + 2): # Roda 2 segundos a mais para garantir a expiração visível
+    valor_atual = mc.get(chave_expiravel)
+    
+    if valor_atual is not None:
+        segundos_restantes = ttl_segundos - i
+        icone = "✨" if segundos_restantes > 0 else "💤"
+        
+        # Uso de \r (retorno de carro) para atualizar a mesma linha
+        print(f"   {icone} {i+1}s: Dado '{chave_expiravel}' ATIVO! Estou aqui até o segundo {ttl_segundos}. (Valor: {valor_atual})", end='\r', flush=True)
+    else:
+        # Expiração detectada
+        print(f"   💥 {i+1}s: CHAVE EXPIRADA! O Memcached removeu o dado automaticamente!                                                               ")
+        break # Sai do loop após a expiração
+
+    time.sleep(1)
+
+# 4. Conclusão
+print("\n\n" + "="*70)
+print("             🎉 DEMONSTRAÇÃO COMPLETA CONCLUÍDA! 🎉")
+print("======================================================================\n")</pre>
+                    </details>
+                </div>
+                
+                <p class="font-bold mb-4 text-green-400">Resultado:</p>
+                <!-- Aplicando a nova classe pre-result com line-height 1.5 -->
+                <pre class="pre-result text-sm">
+[FLUXO 1: CRIAÇÃO E ATUALIZAÇÃO]
+1.4. 🔍 GET: Lendo após atualização...
+   Resultado: 'Dados de Sessao ATUALIZADOS e FRESCOS' (✅ Chave sobrescrita com sucesso!)
+
+[FLUXO 2: REMOÇÃO FORÇADA]
+2.2. 🕵️‍♀️ GET: Tentando ler a chave após o DELETE...
+   ✅ SUCESSO: O valor retornado é None. A chave sumiu como esperado!
+
+[FLUXO 3: O SHOW DO TTL]
+3.2. ⏳ CONTANDO: Verificando a vida do dado no cache...
+   💥 5s: CHAVE EXPIRADA! O Memcached removeu o dado automaticamente!
+                </pre>
+            </div>
+        </section>
+
+        <!-- Seção 5 (Antiga 4): Conclusão -->
+        <section id="sec-conclusao" class="mb-10 p-8 bg-blue-900 bg-opacity-50 rounded-xl shadow-2xl">
+            <h3 class="text-3xl font-bold text-yellow-300 mb-6 border-b-2 border-yellow-600 pb-4">5. Conclusão e Principais Aprendizados</h3>
+
+            <div class="block-spacing">
+                <h4 class="text-2xl font-semibold text-white">Principais Benefícios do Memcached</h4>
+                <ul class="list-disc list-inside ml-8 text-gray-300 space-y-3">
+                    <li><strong>Velocidade Incomparável (Performance):</strong> Acesso a dados em milissegundos, pois as informações são lidas diretamente da <strong>RAM</strong>, que é mais rápida que o acesso a disco.</li>
+                    <li><strong>Escalabilidade Horizontal (Distribuição):</strong> Permite adicionar mais servidores de cache conforme o tráfego aumenta, protegendo o banco de dados principal.</li>
+                    <li><strong>Controle Fino de Dados (TTL):</strong> O recurso <strong>Time To Live (TTL)</strong> garante que dados obsoletos sejam <strong>removidos automaticamente</strong> da memória, otimizando o uso de recursos.</li>
+                </ul>
+
+                <h4 class="text-2xl font-semibold text-white pt-6">Aprendizado da Atividade Prática</h4>
+                <!-- Container para os cards (Display Flex para que fiquem lado a lado e quebrem a linha) -->
+                <div class="flex flex-wrap justify-start gap-6 mt-6">
+                    
+                    <!-- CARD 1: Conceito de Caching -->
+                    <div class="flip-card-container">
+                        <div class="flip-card">
+                            <div class="card-face card-front">
+                                <span class="text-3xl">Conceito de Caching</span>
+                            </div>
+                            <div class="card-face card-back">
+                                <p>Entendimento prático do ciclo de vida do dado (<strong class="text-pink-400">SET</strong>, <strong class="text-pink-400">GET</strong>, <strong class="text-pink-400">DELETE</strong>) e sua manipulação via código.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2: Gerenciamento de Serviços Linux -->
+                    <div class="flip-card-container">
+                        <div class="flip-card">
+                            <div class="card-face card-front">
+                                <span class="text-3xl">Gerenciamento de Serviços Linux</span>
+                            </div>
+                            <div class="card-face card-back">
+                                <p>Habilidade em instalar, iniciar e verificar o status de serviços críticos de servidor (<strong class="text-pink-400">memcached</strong>) no WSL.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3: Melhores Práticas Python -->
+                    <div class="flip-card-container">
+                        <div class="flip-card">
+                            <div class="card-face card-front">
+                                <span class="text-3xl">Melhores Práticas Python</span>
+                            </div>
+                            <div class="card-face card-back">
+                                <p>Uso de ambientes virtuais (<strong class="text-pink-400">venv</strong>) para isolamento de dependências, um padrão essencial no desenvolvimento profissional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-xl text-gray-500 pt-8 border-t border-gray-700">
+            <p>Demonstração Técnica Realizada em Ambiente WSL (Ubuntu) com Python e Memcached.</p>
+        </footer>
+    </div>
+</body>
+</html>

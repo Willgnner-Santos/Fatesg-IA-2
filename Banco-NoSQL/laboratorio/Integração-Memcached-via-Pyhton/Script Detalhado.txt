@@ -1,86 +1,116 @@
+# Nome do Script: O Show de Comandos do Memcached
+# Objetivo: Demonstrar o ciclo de vida dos dados (SET, GET, DELETE, TTL) com feedback visual em tempo real.
+
 import memcache
+import time
+import sys
+
+# Garante que a saída do console seja imediata (necessário para a animação de contagem)
+sys.stdout.reconfigure(encoding='utf-8') 
 
 # --- Bloco 1: Conexão e Definições ---
-# Conecta o cliente Python ao servidor Memcached rodando no localhost (127.0.0.1) na porta 11211.
-# O debug=0 evita que mensagens de erro detalhadas sejam impressas, mantendo a saída limpa.
+# CORREÇÃO: Removido o import duplicado de 'time'.
+# O cliente se conecta ao servidor Memcached (assumindo que está ativo no WSL)
 mc = memcache.Client(['127.0.0.1:11211'], debug=0)
 
 chave_nova = "usuario_logado_123"
-valor_cache = "Dados complexos de Sessao"
+valor_cache = "Dados de Sessao Complexos"
 chave_expiravel = "noticia_destaque"
-valor_expiravel = "Previsao do Tempo de Hoje"
-ttl_segundos = 3
+valor_expiravel = "Previsao do Tempo de Hoje - QUENTE!"
+ttl_segundos = 5
 
-print("--- DEMONSTRAÇÃO DETALHADA DO MEMCACHED ---")
-print(f"Status do Servidor: Conectado em 127.0.0.1:11211\n")
+print("\n" + "="*70)
+print(f"       🧠 DEMONSTRAÇÃO COMPLETA DE COMANDOS MEMCACHED 🧠")
+print("="*70)
+time.sleep(1)
 
 
 # --- Bloco 2: O Comando SET (Criação e Atualização) ---
-print("### 1. DEMONSTRAÇÃO DE SET (CRIAR E ATUALIZAR) ###")
+print("\n[FLUXO 1: CRIAÇÃO E ATUALIZAÇÃO]")
+print("----------------------------------------------------------------------")
+time.sleep(1)
 
 # A. Set Inicial (Criação)
-print(f"1.1. SET: Criando a chave '{chave_nova}'...")
+print(f"1.1. 💾 SET: Criando a chave '{chave_nova}'...")
 resultado_set = mc.set(chave_nova, valor_cache)
-print(f"   Resultado do SET: {resultado_set} (True = Sucesso)")
+print(f"   Status: {'✅ SUCESSO na criação!' if resultado_set else '❌ FALHA!'} (Aguarde 1s)")
+time.sleep(1)
 
 # B. Get para confirmar a criação
-print(f"1.2. GET: Lendo a chave recém-criada...")
+print(f"1.2. 🔍 GET: Lendo a chave recém-criada para confirmar...")
 valor_lido = mc.get(chave_nova)
-print(f"   Valor lido: '{valor_lido.decode()}'\n")
+# CORREÇÃO: Removido .decode()
+print(f"   Resultado: '{valor_lido}'")
+time.sleep(1)
 
 # C. Set de Atualização
-novo_valor = "Dados complexos de Sessao ATUALIZADOS"
-print(f"1.3. SET: Atualizando a chave '{chave_nova}' com um novo valor...")
+novo_valor = "Dados de Sessao ATUALIZADOS e FRESCOS"
+print(f"1.3. 🔄 SET: Atualizando a chave '{chave_nova}' com novo valor...")
 mc.set(chave_nova, novo_valor)
+time.sleep(1)
 
 # D. Get para confirmar a atualização
-print(f"1.4. GET: Lendo o valor após a atualização...")
+print(f"1.4. 🔍 GET: Lendo após atualização...")
 valor_atualizado = mc.get(chave_nova)
-print(f"   Valor lido: '{valor_atualizado.decode()}' (Confirma a atualização!)\n")
+# CORREÇÃO: Removido .decode()
+print(f"   Resultado: '{valor_atualizado}' (✅ Chave sobrescrita com sucesso!)")
+time.sleep(1)
 
 
-# --- Bloco 3: O Comando DELETE (Remoção) ---
-print("### 2. DEMONSTRAÇÃO DE DELETE ###")
+# --- Bloco 3: O Comando DELETE (Remoção Forçada) ---
+print("\n[FLUXO 2: REMOÇÃO FORÇADA]")
+print("----------------------------------------------------------------------")
+time.sleep(1)
 
 # A. Delete
-print(f"2.1. DELETE: Removendo a chave '{chave_nova}'...")
+print(f"2.1. 🗑️ DELETE: Removendo a chave '{chave_nova}'...")
 resultado_delete = mc.delete(chave_nova)
-print(f"   Resultado do DELETE: {resultado_delete} (True = Sucesso)")
+print(f"   Status: {'✅ SUCESSO na remoção!' if resultado_delete else '❌ FALHA!'} (Aguarde 1s)")
+time.sleep(1)
 
 # B. Get após o delete
-print(f"2.2. GET: Tentando ler a chave após a remoção...")
+print(f"2.2. 🕵️‍♀️ GET: Tentando ler a chave após o DELETE...")
 valor_apos_delete = mc.get(chave_nova)
 
 if valor_apos_delete is None:
-    print("   SUCESSO: Valor não encontrado (None). A chave foi removida.")
+    print("   ✅ SUCESSO: O valor retornado é None. A chave sumiu como esperado!")
 else:
-    print("   ERRO: A chave ainda existe! Valor lido:", valor_apos_delete.decode())
-print("-" * 40)
+    # CORREÇÃO: Removido .decode()
+    print(f"   ❌ ERRO: A chave ainda existe! Valor lido: {valor_apos_delete}")
+print("-" * 70)
+time.sleep(1)
 
 
-# --- Bloco 4: O Comando SET com TTL (Time To Live) ---
-print("### 3. DEMONSTRAÇÃO DE TTL (EXPIRAÇÃO AUTOMÁTICA) ###")
-import time # Importa a biblioteca time para a função sleep
+# --- Bloco 4: O Comando SET com TTL (Time To Live - O Show Principal!) ---
+print("\n[FLUXO 3: O SHOW DO TTL - PERSISTÊNCIA SEGUNDO A SEGUNDO]")
+print("----------------------------------------------------------------------")
+time.sleep(1)
 
 # A. Set com TTL
-print(f"3.1. SET com TTL: Armazenando a chave '{chave_expiravel}' por {ttl_segundos} segundos...")
-mc.set(chave_expiravel, valor_expiravel, time=ttl_segundos)
+print(f"3.1. ⏱️ SET TTL: Armazenando '{chave_expiravel}' com {ttl_segundos} segundos de vida...")
+mc.set(chave_expiravel, valor_expiravel, ttl_segundos)
+time.sleep(1)
 
-# B. Get Imediato
-valor_antes = mc.get(chave_expiravel)
-print(f"3.2. GET Imediato: Valor lido: '{valor_antes.decode()}'")
+# B. Loop de Contagem Regressiva e Verificação (Segundo a Segundo)
+print("\n3.2. ⏳ CONTANDO: Verificando a vida do dado no cache...")
+for i in range(ttl_segundos + 2): # Roda 2 segundos a mais para garantir a expiração visível
+    valor_atual = mc.get(chave_expiravel)
+    
+    if valor_atual is not None:
+        # CORREÇÃO: Removido .decode()
+        segundos_restantes = ttl_segundos - i
+        icone = "✨" if segundos_restantes > 0 else "💤"
+        
+        # Uso de \r (retorno de carro) para atualizar a mesma linha
+        print(f"   {icone} {i+1}s: Dado '{chave_expiravel}' ATIVO! Estou aqui até o segundo {ttl_segundos}. (Valor: {valor_atual})", end='\r', flush=True)
+    else:
+        # Expiração detectada
+        print(f"   💥 {i+1}s: CHAVE EXPIRADA! O Memcached removeu o dado automaticamente!                                                               ")
+        break # Sai do loop após a expiração
 
-# C. Aguarda a Expiração (TTL + 1 segundo)
-tempo_espera = ttl_segundos + 1
-print(f"3.3. AGUARDANDO: {tempo_espera} segundos para garantir a expiração...")
-time.sleep(tempo_espera)
+    time.sleep(1)
 
-# D. Get após a Expiração
-valor_depois = mc.get(chave_expiravel)
-
-if valor_depois is None:
-    print("3.4. GET Expirado: SU-CES-SO! Valor é None. O Memcached removeu a chave automaticamente.")
-else:
-    print(f"3.4. GET Expirado: ERRO! Valor AINDA existe: {valor_depois.decode()}")
-
-print("\n--- FIM DA DEMONSTRAÇÃO ---")
+# 4. Conclusão
+print("\n\n" + "="*70)
+print("             🎉 DEMONSTRAÇÃO COMPLETA CONCLUÍDA! 🎉")
+print("======================================================================\n")

@@ -1,42 +1,70 @@
+# Nome do Script: Demonstração Interativa do TTL
+# Objetivo: Mostrar a persistência e a expiração do Memcached segundo a segundo.
+#
+# OBSERVAÇÃO: Este script assume que o Memcached está rodando em 127.0.0.1:11211
+# e que a biblioteca python-memcached está instalada no seu ambiente virtual (VENV).
+
 import memcache
 import time
+import sys
 
 # --- Configuração ---
-# O cliente se conecta ao servidor Memcached rodando em 'localhost' na porta 11211.
-# Se você alterou a porta no Passo 1.2, use a porta correta aqui.
 mc = memcache.Client(['127.0.0.1:11211'], debug=0)
-chave_teste = "minha_chave_ttl"
-valor_teste = "Valor com Time To Live"
-ttl_segundos = 5  # Tempo de vida de 5 segundos
+chave_teste = "chave_secreta_do_cache"
+valor_teste = "🚀 Dados Vivos e Carregados!"
+ttl_segundos = 7  # Aumentei para 7s para uma contagem mais visível
+tempo_de_vida = ttl_segundos
 
-print("--- Teste de Integração Memcached e Python ---")
+# Garante que a saída do console seja imediata (necessário para a animação da contagem)
+sys.stdout.reconfigure(encoding='utf-8') 
 
-# 1. Armazena um valor com TTL de 5 segundos
-print(f"\n1. Armazenando a chave '{chave_teste}' com TTL de {ttl_segundos} segundos...")
-# set(chave, valor, tempo_expiracao)
+print("\n" + "="*70)
+print(f"       ⏱️ INICIANDO DEMONSTRAÇÃO: TTL ({tempo_de_vida} segundos) ⏱️")
+print("="*70)
+
+# 1. Armazenamento com TTL
+print(f"\n1️⃣ GRAVANDO: Chave '{chave_teste}' armazenada com {ttl_segundos} segundos de vida...")
 mc.set(chave_teste, valor_teste, ttl_segundos)
 
-# 2. Lê o valor imediatamente
-print("2. Lendo o valor imediatamente (antes da expiração)...")
+# 2. Leitura Inicial (Verificação se o dado existe)
 valor_lido = mc.get(chave_teste)
-
-if valor_lido:
-    print(f"   SUCESSO: Valor lido é '{valor_lido.decode()}'") # .decode() é necessário se a biblioteca retorna bytes
+if valor_lido is None:
+    print("   ❌ ERRO DE CONEXÃO: O Memcached não está acessível ou a chave falhou.")
+    exit()
 else:
-    print("   ERRO: Valor não encontrado!")
+    # CORREÇÃO: Removido o .decode() para evitar Attribute Error.
+    print(f"   ✅ SUCESSO! Valor Lido: {valor_lido}")
 
-# 3. Aguarda 6 segundos para simular a expiração (TTL: 5 segundos)
-tempo_espera = ttl_segundos + 1
-print(f"\n3. Aguardando {tempo_espera} segundos para simular a expiração...")
-time.sleep(tempo_espera)
+print("\n2️⃣ PERSISTÊNCIA: Monitorando a expiração do cache...")
 
-# 4. Verifica se o valor foi removido automaticamente
-print("4. Verificando se o valor foi removido automaticamente (após a expiração)...")
-valor_expirado = mc.get(chave_teste)
+# 3. Loop Divertido para Mostrar a Persistência
+for i in range(tempo_de_vida + 3):  # 3 segundos a mais para mostrar o estado final
+    valor_atual = mc.get(chave_teste)
+    
+    if valor_atual is not None:
+        # Ainda está no cache
+        segundos_restantes = tempo_de_vida - i
+        icone = "🟢" if segundos_restantes > 2 else "🟡"
+        
+        # Imprime na mesma linha (flush=True necessário no Python 3)
+        print(f"   {icone} {i+1}s: Cache ATIVO! Vai expirar em ~{segundos_restantes} segundos...", end='\r', flush=True)
+    else:
+        # Expirou
+        print(f"   🔴 {i+1}s: CACHE EXPIRADO! A chave '{chave_teste}' foi REMOVIDA automaticamente.      ")
+        break # Sai do loop após a expiração
 
-if valor_expirado is None:
-    print("   SUCESSO: O valor foi removido (expirou) como esperado!")
+    time.sleep(1)
+
+# 4. Verificação Final Pós-Expiração
+print("\n\n3️⃣ COMPROVAÇÃO FINAL (Nova tentativa de GET):")
+valor_final = mc.get(chave_teste)
+
+if valor_final is None:
+    print(f"   🎉 VITÓRIA TTL: O valor sumiu com sucesso! A expiração funcionou 100%.")
 else:
-    print(f"   ERRO: O valor AINDA está presente: '{valor_expirado.decode()}'")
+    # Este bloco só deve ser atingido em caso de erro.
+    print(f"   ⚠️ ERRO: O valor ainda está lá! {valor_final}")
 
-print("\n--- Fim do Teste ---")
+print("\n" + "="*70)
+print("             Demonstração de Persistência Concluída!")
+print("="*70 + "\n")

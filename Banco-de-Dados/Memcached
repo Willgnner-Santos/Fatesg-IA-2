@@ -1,0 +1,49 @@
+import time
+
+
+class MemcachedSimulado:
+    def __init__(self):  # Corrigido para __init__
+        self.cache = {}
+
+    def set(self, chave, valor, ttl_segundos):
+        """Armazena o valor com um tempo de vida (TTL)"""
+        expira_em = time.time() + ttl_segundos
+        self.cache[chave] = (valor, expira_em)
+        print(f"[SET] Chave '{chave}' armazenada com TTL de {ttl_segundos}s")
+
+    def get(self, chave):
+        """Recupera o valor se ainda estiver válido"""
+        if chave in self.cache:
+            valor, expira_em = self.cache[chave]
+            if time.time() < expira_em:
+                print(f"[GET] Valor encontrado: {valor}")
+                return valor
+            else:
+                print(f"[EXPIRED] Chave '{chave}' expirou.")
+                del self.cache[chave]
+        print(f"[MISS] Chave '{chave}' não encontrada.")
+        return None
+
+if __name__ == "__main__":
+
+    print("=== Simulação de Memcached com TTL ===\n")
+
+    cache = MemcachedSimulado()
+
+    # Simulação automática
+    chave = "usuario"
+    valor = "Douglas"
+    ttl = 5
+
+    print(f"Armazenando chave '{chave}' com valor '{valor}' e TTL = {ttl}s\n")
+
+    cache.set(chave, valor, ttl)
+    time.sleep(1)
+    cache.get(chave)
+
+    print("\nAguardando expiração do cache...")
+    time.sleep(ttl + 1)
+
+    cache.get(chave)
+
+    print("\n=== Fim da simulação ===")

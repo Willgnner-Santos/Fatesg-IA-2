@@ -1,0 +1,55 @@
+Questões para Pesquisa e Resposta:
+1. Definição e Características:
+a) O que caracteriza um banco de dados não-relacional?
+-	Modelo de Dados Flexível/Não-Estruturado, Armazenamento Diversificado, Escalabilidade Horizontal e Alta Disponibilidade e Desempenho
+ 
+b) Quais são as vantagens desse tipo de banco em relação aos bancos
+relacionais?
+-	Escalabilidade, Flexibilidade de Schema (Capacidade de armazenar dados com estruturas variáveis), Performance
+
+c) Cite ao menos 3 situações práticas em que um banco de dados não-
+relacional é mais indicado.
+-	Plataformas de Big Data: Para armazenar e processar grandes volumes de dados que mudam rapidamente, como logs de servidores e dados de sensores
+-	Perfis de Usuários/Catálogos de Produtos: Para armazenar documentos complexos e que evoluem constantemente, como informações de perfil de usuário
+-	Redes Sociais e Sistemas de Recomendação: Para modelar relações complexas e altamente interconectadas, como conexões entre usuários ou sugestões de amizade 
+
+2. Tipos de Bancos de Dados Não-Relacionais:
+a) Explique as diferenças entre os quatro principais tipos:
+-	 Orientados a Documentos --> Armazena dados em documentos (geralmente JSON ou BSON), que são unidades de dados autocontidas e flexíveis. 
+-	 Chave-Valor --> Modelo mais simples, onde cada item é armazenado como uma chave única e um valor (que pode ser qualquer coisa: string, objeto, lista)
+-	Colunas Amplas --> Armazena dados em famílias de colunas dinâmicas, não como linhas (registros) fixas.
+-	Grafos --> Armazena dados em nós (entidades), arestas (relacionamentos) e propriedades (informações sobre nós e arestas).
+
+b) Dê exemplos de ferramentas populares para cada tipo.
+-	 Orientados a Documentos --> MongoDB, Couchbase, Firestore 
+-	 Chave-Valor --> Redis, Memcached, DynamoDB
+-	Colunas Amplas --> Apache Cassandra, Apache HBase
+-	Grafos --> Neo4j, Amazon Neptune, OrientDB
+
+3. Comparação Prática:
+a) Qual a principal diferença entre o modelo relacional e o modelo de
+grafos?
+-	Modelo Relacional foca em dados estruturados em tabelas , onde os relacionamentos são implícitos e estabelecidos através de chaves estrangeiras e requerem operações de JOIN para serem consultados, enquanto o Modelo de Grafos foca explicitamente nos relacionamentos (arestas), tratando-os como cidadãos de primeira classe, junto com as entidades (nós), permitindo consultas rápidas e diretas em profundidade na rede de conexões
+
+b) Em um cenário de redes sociais, qual tipo de banco de dados seria
+mais adequado? Justifique.
+-	Banco de Dados de Grafos, pois permite modelar diretamente os relacionamentos complexos (arestas) entre os usuários (nós), e é altamente eficiente para consultas de conectividade, como "encontrar amigos em comum" ou "sugestões de amizade"
+
+4. Escalabilidade e Flexibilidade:
+a) Explique como a escalabilidade horizontal funciona em bancos não-
+relacionais.
+-	A escalabilidade horizontal funciona através da adição de mais servidores a um cluster de banco de dados. Em vez de melhorar um único servidor (escalabilidade vertical), o banco de dados NoSQL distribui os dados e a carga de trabalho entre esses múltiplos servidores. Isso permite lidar com um aumento massivo de dados e tráfego sem a necessidade de hardware extremamente caro
+
+b) Por que a flexibilidade de schema é importante em bancos orientados
+a documentos?
+-	Pelo Desenvolvimento Ágil alterar e evoluir a estrutura dos dados sem a necessidade de interromper o sistema para executar comandos de ALTER TABLE, além dos Dados Variáveis, documentos diferentes no mesmo "tipo" de coleção possam ter estruturas completamente diferentes.
+
+5. Estudo de Caso:
+a) Pesquise um caso de uso real de uma empresa que utiliza bancos de
+dados não-relacionais.
+-	Netflix - Apache Cassandra (Colunas Amplas)
+
+b) Descreva como esse banco é utilizado e quais foram os benefícios
+obtidos.
+-	O Cassandra é usado pela Netflix para gerenciar dados com alto volume de escrita e baixa latência, como metadados de visualização e históricos de playback. Ele armazena informações cruciais sobre o estado de visualização de cada usuário, permitindo que a reprodução seja retomada instantaneamente em qualquer dispositivo.
+-	Alta Disponibilidade e Resiliência, Escalabilidade Elástica e Baixa Latência em Escala

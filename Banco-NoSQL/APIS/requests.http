@@ -1,0 +1,72 @@
+### Arquivo de testes para VS Code (extensão "REST Client")
+### 1) Inicie o servidor: uvicorn main:app --reload
+### 2) Clique em "Send Request" acima de cada requisição
+
+@base = http://127.0.0.1:8000
+
+### Exercício 1 — GET /ping (200)
+GET {{base}}/api/v1/ping
+
+### Exercício 1 — POST /echo (201)
+POST {{base}}/api/v1/echo
+Content-Type: application/json
+
+{
+  "name": "Luca"
+}
+
+### Exercício 2 — GET /tasks (200)
+GET {{base}}/api/v1/tasks
+
+### Exercício 2 — POST /tasks (201 + Location)
+POST {{base}}/api/v1/tasks
+Content-Type: application/json
+
+{
+  "title": "Ler o slide de APIs"
+}
+
+### Exercício 2 — GET /tasks/{id} (200/404)
+GET {{base}}/api/v1/tasks/1
+
+### Exercício 2 — PUT /tasks/{id} (200)
+PUT {{base}}/api/v1/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Atualizado",
+  "done": true
+}
+
+### Exercício 2 — PATCH /tasks/{id} (200)
+PATCH {{base}}/api/v1/tasks/1
+Content-Type: application/json
+
+{
+  "done": false
+}
+
+### Exercício 2 — DELETE /tasks/{id} (204)
+DELETE {{base}}/api/v1/tasks/1
+
+### Exercício 3 — POST /auth/login (200/401) → token
+POST {{base}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "LucaAtan",
+  "password": "iA@2025"
+}
+
+### Exercício 3 — GET /secure/tasks (200) — usar o token no header
+GET {{base}}/api/v1/secure/tasks
+Authorization: Bearer LucaAtan
+
+### Exercício 3 — POST /secure/tasks (201) — criar protegido
+POST {{base}}/api/v1/secure/tasks
+Content-Type: application/json
+Authorization: Bearer LucaAtan
+
+{
+  "title": "Tarefa protegida"
+}

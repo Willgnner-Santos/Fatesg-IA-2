@@ -1,0 +1,4 @@
+fastapi
+flask
+requests
+uvicorn

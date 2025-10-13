@@ -1,0 +1,37 @@
+1-(a)
+Esquema Flexível (Schema-less ou Schema-on-Read):
+Não exige uma estrutura de tabela rígida e predefinida.
+Os dados podem ter campos diferentes dentro da mesma coleção/conjunto, facilitando a adaptação a novos requisitos e o desenvolvimento ági
+( b)
+Esquema Flexível: A principal vantagem. Não há a necessidade de definir um esquema rígido antes de inserir os dados. Isso permite que os desenvolvedores:
+Iterem Mais Rápido: Novos campos e atributos podem ser adicionados aos dados a qualquer momento, sem exigir que toda a base de dados seja reestruturada ou que a aplicação entre em downtime.
+Manipulem Dados Não-Estruturados/Semiestruturados: É ideal para armazenar documentos (JSON), imagens, vídeos e dados de sensores, que não se encaixam bem no modelo de linha e coluna.
+(c) Bancos de dados Chave-Valor, que operam in-memory (na memória RAM), fornecem tempos de leitura e escrita extremamente rápidos. Eles são perfeitos para:
+Caching: Armazenar resultados de consultas frequentes para acelerar a aplicação.
+Sessões de Usuário: Armazenar dados temporários de sessão de milhares de usuários.
+Placares de Jogos (Leaderboards): Fazer atualizações e classificações em tempo real.
+2 (a) Tipo de Banco de Dados	Unidade Fundamental	Características Principais	Ideal para	Exemplos Comuns
+Orientado a Documentos	Documento (JSON, BSON)	Flexível. Armazena a entidade completa em um único documento, permitindo que cada documento tenha um esquema diferente.	Catálogos, perfis de usuário, sistemas de gerenciamento de conteúdo (CMS).	MongoDB, Couchbase
+Chave-Valor	Par Chave-Valor	Mais simples e rápido. O valor é acessado diretamente usando uma chave única. O valor é geralmente opaco (blob).	Cache, gerenciamento de sessões, placares de jogos (leaderboards).	Redis, Memcached, DynamoDB
+Colunas Amplas	Família de Colunas	Altamente distribuído. Otimizado para escritas massivas e consultas que acessam apenas colunas específicas em grandes volumes de dados.	Logs, séries temporais, dados de IoT, Big Data Analytics.	Apache Cassandra, HBase
+Grafos	Nós e Arestas	Foca nas relações. Modelado para mostrar as conexões entre os dados, permitindo a navegação eficiente por relacionamentos complexos.	Redes sociais, sistemas de recomendação, detecção de fraudes.	Neo4j, Amazon Neptune
+(b) De longe, o DB de documento mais popular. Utiliza o formato BSON (binário do JSON) e é conhecido por sua flexibilidade e facilidade de uso em desenvolvimento ágil.
+Couchbase	Banco de dados distribuído de alta performance que combina a flexibilidade do modelo documento com a velocidade do cache (chave-valor).
+Chave-Valor	Redis	Extremamente popular. É um armazenamento in-memory de Chave-Valor, usado principalmente como cache, fila de mensagens e para gerenciamento de sessões, devido à sua velocidade incomparável.
+Amazon DynamoDB	Serviço de nuvem totalmente gerenciado (AWS) que oferece performance consistente em qualquer escala, usando um modelo que pode ser considerado Chave-Valor e Documento.
+Colunas Amplas	Apache Cassandra	Projetado para escalabilidade massiva e alta disponibilidade, sem ponto único de falha. Muito usado para dados de séries temporais e dados de IoT.
+HBase	Banco de dados distribuído de código aberto, modelado a partir do Google BigTable, que roda sobre o ecossistema Hadoop. Ideal para grandes volumes de dados esparsos.
+Grafos	Neo4j	O banco de dados de grafo mais popular. Usa a linguagem de consulta Cypher, otimizada para navegar e consultar relações complexas (amigos, rotas, dependências).
+Amazon Neptune	Serviço de banco de dados de grafo totalmente gerenciado (AWS) que suporta os modelos Property Graph e RDF (Resource Description Framework).
+3 (a) Modelo Relacional: Trata os relacionamentos como dados que precisam ser processados (usando JOINs) para serem descobertos. É excelente para dados estruturados onde a integridade transacional é crucial.
+Modelo de Grafos: Trata os relacionamentos como objetos de primeira classe que estão fisicamente armazenados no banco de dados e são nativos à estrutura, o que o torna incomparavelmente mais rápido para consultas que envolvem muitos saltos de relacionamento (ex: "quem são os amigos dos amigos dos meus amigos?").
+(b)No modelo de grafos (ex: Neo4j), os usuários são representados como Nós (vértices) e as interações (amizade, seguir, curtir, comentar) são representadas como Arestas (conexões).
+Essa modelagem espelha de forma natural a estrutura de uma rede social, tornando o modelo de dados simples e intuitivo.
+4 (a)A natureza intrinsecamente flexível e a adesão ao modelo BASE (Basic Availability, Soft-state, Eventually Consistency) tornam o NoSQL ideal para escalabilidade horizontal:
+Flexibilidade de Esquema: Como os dados são independentes do esquema rígido (como em um banco relacional), eles podem ser facilmente movidos e reestruturados entre os nós.
+riorização da Disponibilidade (Teorema CAP): Muitos bancos NoSQL relaxam as restrições de consistência rígida (ACID) em favor da disponibilidade (BASE). Isso permite que eles distribuam os dados por muitos nós e processem consultas mesmo que a sincronização completa entre todas as réplicas leve um tempo (Consistência Eventual).
+Em contraste, bancos relacionais são difíceis de particionar (sharding) de forma transparente e manter a integridade referencial (JOINs entre partições são complexos e lentos), forçando-os a depender da escalabilidade vertical (comprar um servidor mais potente).
+(b)Durante o desenvolvimento de um produto, os requisitos e a estrutura de dados mudam constantemente. Com a flexibilidade de esquema, os desenvolvedores podem adicionar, remover ou modificar campos em documentos individuais a qualquer momento, sem precisar parar o sistema ou executar comandos ALTER TABLE que afetam toda a base.
+5(A)
+Para armazenar os metadados complexos e variáveis do catálogo de filmes e séries (títulos, descrições, idiomas, legendas, informações de elenco, ratings, etc.). A estrutura flexível do documento permite adicionar novos campos e atributos a um filme sem alterar o esquema de milhões de outros documentos.
+(b)A Netflix pode adicionar novos servidores (nós) ao cluster do Cassandra de forma rápida e sob demanda, permitindo que a plataforma suporte picos de tráfego (ex: lançamentos de novas temporadas) sem comprometer a performance

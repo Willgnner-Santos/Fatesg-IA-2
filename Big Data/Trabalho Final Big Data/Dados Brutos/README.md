@@ -63,8 +63,8 @@ A seguir, a estrutura detalhada de cada tabela.
 
 Este é um **dataset sintético**, gerado artificialmente para fins educacionais e de desenvolvimento. A estrutura, os tipos de dados e os relacionamentos são realistas, mas os valores de texto (nomes, e-mails, etc.) são placeholders e não representam pessoas ou produtos reais.
 
-## 5. Uso no Projeto Principal
+## 5. Fonte dos Dados
 
-Estes arquivos são a fonte de dados brutos para o projeto de pipeline de dados, cujo código e documentação completa podem ser encontrados no seguinte repositório do GitHub:
+O dataset original está publicamente disponível na plataforma Kaggle e pode ser acedido através do seguinte link:
 
-https://github.com/Willgnner-Santos/Fatesg-IA-2/tree/f794292f6130a95d925cdeaa186dd9e0e1a548d2/Big%20Data/Trabalho%20Final%20Big%20Data
+* **Fonte:** [Synthetic E-commerce Relational Dataset - Kaggle](https://www.kaggle.com/datasets/naelaqel/synthetic-e-commerce-relational-dataset?resource=download)

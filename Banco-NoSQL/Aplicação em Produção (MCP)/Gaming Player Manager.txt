@@ -1,0 +1,4 @@
+Gaming Player Manager
+Advanced player management system with XP tracking, ETL processing, and Redis-like functionality
+
+https://v0.app/chat/ai-assistant-with-redis-rrM42BhmaQf

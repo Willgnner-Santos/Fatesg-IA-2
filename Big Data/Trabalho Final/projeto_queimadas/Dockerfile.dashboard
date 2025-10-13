@@ -1,0 +1,23 @@
+# ============================================================
+# Dockerfile para Streamlit Dashboard
+# ============================================================
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Instala dependências
+RUN pip install --no-cache-dir \
+    streamlit==1.31.0 \
+    pandas==2.2.0 \
+    psycopg2-binary==2.9.7 \
+    plotly==5.18.0
+
+# Copia o script do dashboard
+COPY dashboard_queimadas.py /app/
+
+# Expõe porta do Streamlit
+EXPOSE 8501
+
+# Comando padrão
+CMD ["streamlit", "run", "dashboard_queimadas.py", "--server.port=8501", "--server.address=0.0.0.0"]

@@ -1,0 +1,91 @@
+version: "3.9"
+
+services:
+  # PostgreSQL
+  db:
+    image: postgres:15
+    container_name: postgres_queimadas
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: queimadas_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d queimadas_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - queimadas_network
+
+  # pgAdmin
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_queimadas
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+    networks:
+      - queimadas_network
+
+  # Spark + ETL PySpark
+  spark_etl:
+    build: .
+    container_name: spark_etl_queimadas
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - PYSPARK_PYTHON=python3
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=queimadas_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./data:/app/data
+      - ./etl_queimadas_pyspark.py:/app/etl_queimadas_pyspark.py
+    command: ["python3", "etl_queimadas_pyspark.py"]
+    networks:
+      - queimadas_network
+
+  # Streamlit Dashboard
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    container_name: streamlit_dashboard
+    restart: always
+    depends_on:
+      - db
+      - spark_etl
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=queimadas_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./dashboard_queimadas.py:/app/dashboard_queimadas.py
+    command: ["streamlit", "run", "dashboard_queimadas.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    networks:
+      - queimadas_network
+
+volumes:
+  pgdata:
+
+networks:
+  queimadas_network:
+    driver: bridge

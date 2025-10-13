@@ -37,11 +37,11 @@ A solução foi desenvolvida utilizando um ecossistema de ferramentas do Google 
 4.  **Modelagem:** Executar o script SQL (`.sql`) no BigQuery para criar a `VIEW` que une as tabelas.
 5.  **Visualização:** Conectar o Looker Studio como uma nova fonte de dados à `VIEW` criada no BigQuery para desenvolver os relatórios.
 
-## 5. Sobre o Dataset
+## 5. Fonte dos Dados
 
-O dataset utilizado é sintético e simula as operações de uma loja virtual, contendo 5 tabelas (`Customers`, `Products`, `Orders`, `Order_Items`, `Product_Reviews`) e um total de 40 milhões de registros na tabela principal (`Order_Items`). Esta abordagem permitiu testar a pipeline em um cenário de grande volume de dados sem infringir questões de privacidade.
+O dataset original está publicamente disponível na plataforma Kaggle e pode ser acedido através do seguinte link:
 
-*Os dados originais para este projeto podem ser encontrados em: [Coloque aqui o link de onde você baixou os dados, ex: Kaggle, ou escreva "Dataset privado para fins acadêmicos"]*.
+* **Fonte:** [Synthetic E-commerce Relational Dataset - Kaggle](https://www.kaggle.com/datasets/naelaqel/synthetic-e-commerce-relational-dataset?resource=download)
 
 ## 6. Resultados e Dashboard
 

@@ -1,0 +1,37 @@
+Tabela 1 
+CREATE TABLE professores (
+  id INT,
+  nome STRING,
+  departamento STRING,
+  salario DECIMAL(10, 2)
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+INSERT INTO professores VALUES
+(101, 'Carlos Silva', 'Tecnologia', 8500.00),
+(102, 'Patrícia Lima', 'Negócios', 7200.50),
+(103, 'Roberto Farias', 'Tecnologia', 9100.00);
+SELECT * FROM professores;
+
+-- Exemplo de consulta adicional: Selecionar apenas professores do departamento 'Tecnologia'
+SELECT nome, salario FROM professores WHERE departamento = 'Tecnologia';
+(tabela 2 )
+CREATE TABLE disciplinas (
+  codigo INT,
+  nome_disciplina STRING,
+  carga_horaria INT,
+  id_professor INT  -- Chave para ligar à tabela 'professores'
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+NSERT INTO disciplinas VALUES
+(501, 'Introdução ao Hadoop', 60, 101),
+(502, 'Estatística Aplicada', 40, 102),
+(503, 'Modelagem de Dados', 60, 101),
+(504, 'Data Mining', 80, 103);
+SELECT * FROM disciplinas;
+
+-- Exemplo de consulta adicional: Selecionar disciplinas com carga horária maior que 50
+SELECT nome_disciplina, carga_horaria FROM disciplinas WHERE carga_horaria > 50;

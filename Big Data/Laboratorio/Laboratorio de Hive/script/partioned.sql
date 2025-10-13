@@ -1,0 +1,23 @@
+CREATE TABLE weather_partitioned(
+  station_name string,
+  dayofmonth int,
+  precipitation int,
+  temperature_max int,
+  temperature_min int
+)
+PARTITIONED BY (year int, month int)
+STORED AS ORC;
+
+INSERT INTO TABLE weather_partitioned PARTITION(year=2008, month=1) 
+SELECT
+  station_name, 
+  dayofmonth, 
+  precipitation, 
+  temperature_max, 
+  temperature_min 
+FROM
+  sfo_weather 
+WHERE 
+  year = 2008 AND month = 1;
+
+SELECT * FROM weather_partitioned;

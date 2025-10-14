@@ -1,4 +1,4 @@
-A) Ver todos os clientes e os produtos que compraram:
+# A) Ver todos os clientes e os produtos que compraram:
 Felipe Menezes
 produtos: papel A4, cola bastão, tesoura sem ponta, lapiseira 0.7, cartolina branca,
 regua 30 cm, borracha comum, caderno grande, caneta azul, caixa de clipes e branquinho.
@@ -18,7 +18,7 @@ caderno grande, caneta azul, caixa de clipes e branquinho.
 Fernando Prass
 produtos: grampeador pequeno, barbante algodao, ima quadro branco, estilete pequeno e compasso metal.
 
-B) Ver um cliente específico e seus produtos: 
+# B) Ver um cliente específico e seus produtos: 
 nome: Felipe Menezes
 produtos: papel A4 - Pacote papel A4 500 fls, cola bastão - Cola bastão grande, tesoura sem ponta - Tesoura escolar sem ponta
 lapiseira 0.7 - Lapiseira para grafite 0.7, cartolina branca - Cartolina branca comum, regua 30 cm - Régua escolar comum 30 cm
@@ -28,7 +28,7 @@ lapiseira 0.7 - Corretivo para caneta tipo branquinho 3, papel A4 - Pacote papel
 tesoura sem ponta - Tesoura escolar sem ponta 4, borracha comum - Borracha branca comum 3.
 
 
-C) Ver todos os vendedores e os produtos que venderam: 
+# C) Ver todos os vendedores e os produtos que venderam: 
 nome: José Pilintra
 produtos: papel A4, cola bastão, regua 30 cm, bloco de adesivo, apontador comum, calculadora comum,
 pacote com elasticos, caixa de giz, grampeador pequeno, caixa lapis 12, caixa lapis 24, prancheta a4,
@@ -69,10 +69,10 @@ produtos: caixa de madeira, carimbo personalizado, barbante algodao, pilha grand
 nome: Silvia Saint
 produtos: catalogo comum, apagador quadro negro, ima quadro branco e pilha comum.
 
-D) Ver produtos comprados e quem vendeu:
+#D) Ver produtos comprados e quem vendeu:
 este esta em um print que vai ser colocado o nome como 'alternativa_D'
 
-E) Ver quem trabalha em qual loja:
+#E) Ver quem trabalha em qual loja:
 loja: Paulistinha
 vendedores: José Pilintra, João Flávio da Cunha, Luciana Andrade
 
@@ -85,7 +85,7 @@ vendedores: Rogério Azevedo, Ricardo Quaresma
 loja: Cabra Macho
 vendedores: Beatriz Segal, Silvia Saint
 
-F) Produtos de um determinado distribuidor:
+# F) Produtos de um determinado distribuidor:
 
 p.produto: papel A4, cola bastão, tesoura sem ponta, lapiseira 0.7, cartolina branca, alcool comum,
 regua 30 cm, Regua 50 cm, papel canson, bloco de adesivo, apontador comum, borracha comum,

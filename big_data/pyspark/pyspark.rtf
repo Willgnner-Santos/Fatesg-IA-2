@@ -1,0 +1,157 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang22 Relat\'f3rio de An\'e1lise de Logs da NASA Utilizando PySpark RDD\par
+\par
+O objetivo deste notebook Jupyter (em PySpark) \'e9 demonstrar o processamento de dados de logs de acesso \'e0 web da NASA em larga escala, utilizando a abstra\'e7\'e3o RDD (Resilient Distributed Dataset) do Apache Spark. A an\'e1lise foca em extrair informa\'e7\'f5es-chave dos logs para entender padr\'f5es de acesso e m\'e9tricas de tr\'e1fego.\par
+\par
+Arquivo Analisado:\par
+\par
+    Dataset: Logs de acesso \'e0 web da NASA (formato de texto).\par
+\par
+    Tecnologia: PySpark e a API RDD.\par
+\par
+Principais Comandos e An\'e1lises Realizadas\par
+\par
+A an\'e1lise dos logs da NASA utilizando PySpark RDD segue uma progress\'e3o l\'f3gica, desde o carregamento dos dados at\'e9 a extra\'e7\'e3o de m\'e9tricas de desempenho e padr\'f5es de acesso:\par
+\par
+1. Inicializa\'e7\'e3o e Carregamento de Dados\par
+\par
+O processo come\'e7a com a configura\'e7\'e3o do ambiente Spark, onde se estabelece a SparkSession e se obt\'e9m o SparkContext (SC), que funciona como o ponto de entrada para a API RDD. Em seguida, o arquivo de logs \'e9 carregado como um RDD, utilizando o comando sc.textFile("caminho_do_arquivo"). \'c9 importante notar que esta \'e9 uma transforma\'e7\'e3o Lazy; a execu\'e7\'e3o real do processamento de dados s\'f3 ocorrer\'e1 quando uma A\'e7\'e3o for chamada.\par
+\par
+2. Contagem e Agrega\'e7\'e3o de Acessos\par
+\par
+Uma das primeiras an\'e1lises \'e9 a contagem total de registros no dataset, realizada com a A\'e7\'e3o log_rdd.count().\par
+\par
+Para a an\'e1lise de acessos, foram realizadas as seguintes opera\'e7\'f5es de agrega\'e7\'e3o:\par
+\par
+    Total de Requisi\'e7\'f5es por Host: Para descobrir quais m\'e1quinas (hosts) geraram mais requisi\'e7\'f5es, o c\'f3digo aplica a transforma\'e7\'e3o map() para extrair o host de cada linha de log. Em seguida, a transforma\'e7\'e3o reduceByKey() \'e9 usada para agrupar e contar o n\'famero de requisi\'e7\'f5es por host, e uma A\'e7\'e3o como take(N) ou collect() \'e9 aplicada para visualizar os resultados.\par
+\par
+    M\'e9dia de Bytes Transferidos: Para calcular o tr\'e1fego m\'e9dio, aplica-se a transforma\'e7\'e3o map() para extrair e somar os bytes transferidos em todas as requisi\'e7\'f5es (com tratamento de valores ausentes/nulos). Posteriormente, fun\'e7\'f5es de agrega\'e7\'e3o de RDDs s\'e3o usadas para calcular a soma total e a contagem, e o resultado final \'e9 dividido para obter a m\'e9dia.\par
+\par
+3. Filtragem de Erros e Padr\'f5es Espec\'edficos\par
+\par
+A an\'e1lise de logs frequentemente foca em identificar problemas. Para identifica\'e7\'e3o de Erros HTTP, o c\'f3digo utiliza a transforma\'e7\'e3o filter() no RDD. Esta filtragem mant\'e9m apenas as linhas que cont\'eam c\'f3digos de resposta HTTP de erro (por exemplo, c\'f3digos que come\'e7am com '4' ou '5'), e a A\'e7\'e3o count() \'e9 aplicada para determinar o n\'famero total de ocorr\'eancias desses erros.\par
+\par
+Por que estamos estudando este c\'f3digo?\par
+\par
+O estudo deste notebook em particular \'e9 fundamental para a compreens\'e3o dos conceitos de Big Data e Computa\'e7\'e3o Distribu\'edda:\par
+\par
+    Fundamentos do Spark (RDDs): O RDD (Resilient Distributed Dataset) \'e9 a abstra\'e7\'e3o de dados principal do Spark e a base de todas as outras estruturas (como DataFrames). O c\'f3digo demonstra como o Spark divide os dados de log em parti\'e7\'f5es e permite o processamento em paralelo, sendo crucial para entender a toler\'e2ncia a falhas e a arquitetura distribu\'edda do Spark.\par
+\par
+    Paradigmas de Programa\'e7\'e3o: Ilustra o uso de opera\'e7\'f5es de Transforma\'e7\'e3o (map, filter, reduceByKey) e A\'e7\'e3o (count, collect), que s\'e3o o cora\'e7\'e3o da programa\'e7\'e3o em Spark.\par
+\par
+    An\'e1lise de Dados N\'e3o Estruturados: Demonstra como lidar com dados brutos, n\'e3o estruturados (como logs de texto), aplicando express\'f5es regulares e fun\'e7\'f5es lambda para parsing e extra\'e7\'e3o de informa\'e7\'f5es.\par
+\par
+    Processamento em Larga Escala: O PySpark e o Spark s\'e3o a ferramenta essencial para processar petabytes de dados, diferentemente de ferramentas como o Pandas, que s\'e3o mais adequadas para conjuntos de dados que cabem na mem\'f3ria RAM. Este exemplo mostra a aplica\'e7\'e3o real em um conjunto de dados de produ\'e7\'e3o (logs da NASA).\par
+\par
+Em resumo, este c\'f3digo \'e9 um exerc\'edcio pr\'e1tico que solidifica o entendimento sobre como o Apache Spark processa grandes volumes de dados de forma escal\'e1vel e eficiente, utilizando sua principal API, os RDDs.\par
+\par
+sem negrito tbm\par
+\par
+Com certeza! Vou refazer o relat\'f3rio para que todo o texto seja apresentado em uma fonte e tamanho uniformes, sem o uso de negrito, mantendo o estilo descritivo do documento original.\par
+\par
+Relat\'f3rio de An\'e1lise de Logs da NASA Utilizando PySpark RDD\par
+\par
+O objetivo deste notebook Jupyter (em PySpark) \'e9 demonstrar o processamento de dados de logs de acesso \'e0 web da NASA em larga escala, utilizando a abstra\'e7\'e3o RDD (Resilient Distributed Dataset) do Apache Spark. A an\'e1lise foca em extrair informa\'e7\'f5es-chave dos logs para entender padr\'f5es de acesso e m\'e9tricas de tr\'e1fego.\par
+\par
+Arquivo Analisado:\par
+\par
+    Dataset: Logs de acesso \'e0 web da NASA (formato de texto).\par
+\par
+    Tecnologia: PySpark e a API RDD.\par
+\par
+Principais Comandos e An\'e1lises Realizadas\par
+\par
+A an\'e1lise dos logs da NASA utilizando PySpark RDD segue uma progress\'e3o l\'f3gica, desde o carregamento dos dados at\'e9 a extra\'e7\'e3o de m\'e9tricas de desempenho e padr\'f5es de acesso:\par
+\par
+1. Inicializa\'e7\'e3o e Carregamento de Dados\par
+\par
+O processo come\'e7a com a configura\'e7\'e3o do ambiente Spark, onde se estabelece a SparkSession e se obt\'e9m o SparkContext (SC), que funciona como o ponto de entrada para a API RDD. Em seguida, o arquivo de logs \'e9 carregado como um RDD, utilizando o comando sc.textFile("caminho_do_arquivo"). \'c9 importante notar que esta \'e9 uma transforma\'e7\'e3o Lazy; a execu\'e7\'e3o real do processamento de dados s\'f3 ocorrer\'e1 quando uma A\'e7\'e3o for chamada.\par
+\par
+2. Contagem e Agrega\'e7\'e3o de Acessos\par
+\par
+Uma das primeiras an\'e1lises \'e9 a contagem total de registros no dataset, realizada com a A\'e7\'e3o log_rdd.count().\par
+\par
+Para a an\'e1lise de acessos, foram realizadas as seguintes opera\'e7\'f5es de agrega\'e7\'e3o:\par
+\par
+    Total de Requisi\'e7\'f5es por Host: Para descobrir quais m\'e1quinas (hosts) geraram mais requisi\'e7\'f5es, o c\'f3digo aplica a transforma\'e7\'e3o map() para extrair o host de cada linha de log. Em seguida, a transforma\'e7\'e3o reduceByKey() \'e9 usada para agrupar e contar o n\'famero de requisi\'e7\'f5es por host, e uma A\'e7\'e3o como take(N) ou collect() \'e9 aplicada para visualizar os resultados.\par
+\par
+    M\'e9dia de Bytes Transferidos: Para calcular o tr\'e1fego m\'e9dio, aplica-se a transforma\'e7\'e3o map() para extrair e somar os bytes transferidos em todas as requisi\'e7\'f5es (com tratamento de valores ausentes/nulos). Posteriormente, fun\'e7\'f5es de agrega\'e7\'e3o de RDDs s\'e3o usadas para calcular a soma total e a contagem, e o resultado final \'e9 dividido para obter a m\'e9dia.\par
+\par
+3. Filtragem de Erros e Padr\'f5es Espec\'edficos\par
+\par
+A an\'e1lise de logs frequentemente foca em identificar problemas. Para identifica\'e7\'e3o de Erros HTTP, o c\'f3digo utiliza a transforma\'e7\'e3o filter() no RDD. Esta filtragem mant\'e9m apenas as linhas que cont\'eam c\'f3digos de resposta HTTP de erro (por exemplo, c\'f3digos que come\'e7am com '4' ou '5'), e a A\'e7\'e3o count() \'e9 aplicada para determinar o n\'famero total de ocorr\'eancias desses erros.\par
+\par
+Por que estamos estudando este c\'f3digo?\par
+\par
+Principais Comandos e An\'e1lises Realizadas\par
+\par
+A an\'e1lise dos logs da NASA utilizando PySpark RDD segue uma progress\'e3o l\'f3gica, desde o carregamento dos dados at\'e9 a extra\'e7\'e3o de m\'e9tricas de desempenho e padr\'f5es de acesso:\par
+\par
+1. Inicializa\'e7\'e3o e Carregamento de Dados\par
+\par
+O processo come\'e7a com a configura\'e7\'e3o do ambiente Spark, onde se estabelece a SparkSession e se obt\'e9m o SparkContext (SC), que funciona como o ponto de entrada para a API RDD. Em seguida, o arquivo de logs \'e9 carregado como um RDD, utilizando o comando sc.textFile("caminho_do_arquivo"). \'c9 importante notar que esta \'e9 uma transforma\'e7\'e3o Lazy; a execu\'e7\'e3o real do processamento de dados s\'f3 ocorrer\'e1 quando uma A\'e7\'e3o for chamada.\par
+\par
+2. Contagem e Agrega\'e7\'e3o de Acessos\par
+\par
+Uma das primeiras an\'e1lises \'e9 a contagem total de registros (filmes) no dataset, realizada com a A\'e7\'e3o log_rdd.count().\par
+\par
+Para a an\'e1lise de acessos, foram realizadas as seguintes opera\'e7\'f5es de agrega\'e7\'e3o:\par
+\par
+    Total de Requisi\'e7\'f5es por Host: Para descobrir quais m\'e1quinas (hosts) geraram mais requisi\'e7\'f5es, o c\'f3digo aplica a transforma\'e7\'e3o map() para extrair o host de cada linha de log. Em seguida, a transforma\'e7\'e3o reduceByKey() \'e9 usada para agrupar e contar o n\'famero de requisi\'e7\'f5es por host, e uma A\'e7\'e3o como take(N) ou collect() \'e9 aplicada para visualizar os resultados.\par
+\par
+    M\'e9dia de Bytes Transferidos: Para calcular o tr\'e1fego m\'e9dio, aplica-se a transforma\'e7\'e3o map() para extrair e somar os bytes transferidos em todas as requisi\'e7\'f5es (com tratamento de valores ausentes/nulos). Posteriormente, fun\'e7\'f5es de agrega\'e7\'e3o de RDDs s\'e3o usadas para calcular a soma total e a contagem, e o resultado final \'e9 dividido para obter a m\'e9dia.\par
+\par
+3. Filtragem de Erros e Padr\'f5es Espec\'edficos\par
+\par
+A an\'e1lise de logs frequentemente foca em identificar problemas. Para identifica\'e7\'e3o de Erros HTTP, o c\'f3digo utiliza a transforma\'e7\'e3o filter() no RDD. Esta filtragem mant\'e9m apenas as linhas que cont\'eam c\'f3digos de resposta HTTP de erro (por exemplo, c\'f3digos que come\'e7am com '4' ou '5'), e a A\'e7\'e3o count() \'e9 aplicada para determinar o n\'famero total de ocorr\'eancias desses erros.\par
+\par
+fa\'e7a tudo na mesma fonte e do mesmo tamanho\par
+\par
+Com certeza! Vou refazer o relat\'f3rio para que todo o texto seja apresentado em uma fonte e tamanho uniformes, mantendo o estilo descritivo do documento original.\par
+\par
+Relat\'f3rio de An\'e1lise de Logs da NASA Utilizando PySpark RDD\par
+\par
+O objetivo deste notebook Jupyter (em PySpark) \'e9 demonstrar o processamento de dados de logs de acesso \'e0 web da NASA em larga escala, utilizando a abstra\'e7\'e3o RDD (Resilient Distributed Dataset) do Apache Spark. A an\'e1lise foca em extrair informa\'e7\'f5es-chave dos logs para entender padr\'f5es de acesso e m\'e9tricas de tr\'e1fego.\par
+\par
+Arquivo Analisado:\par
+\par
+    Dataset: Logs de acesso \'e0 web da NASA (formato de texto).\par
+\par
+    Tecnologia: PySpark e a API RDD.\par
+\par
+Principais Comandos e An\'e1lises Realizadas\par
+\par
+A an\'e1lise dos logs da NASA utilizando PySpark RDD segue uma progress\'e3o l\'f3gica, desde o carregamento dos dados at\'e9 a extra\'e7\'e3o de m\'e9tricas de desempenho e padr\'f5es de acesso:\par
+\par
+1. Inicializa\'e7\'e3o e Carregamento de Dados\par
+\par
+O processo come\'e7a com a configura\'e7\'e3o do ambiente Spark, onde se estabelece a SparkSession e se obt\'e9m o SparkContext (SC), que funciona como o ponto de entrada para a API RDD. Em seguida, o arquivo de logs \'e9 carregado como um RDD, utilizando o comando sc.textFile("caminho_do_arquivo"). \'c9 importante notar que esta \'e9 uma transforma\'e7\'e3o Lazy; a execu\'e7\'e3o real do processamento de dados s\'f3 ocorrer\'e1 quando uma A\'e7\'e3o for chamada.\par
+\par
+2. Contagem e Agrega\'e7\'e3o de Acessos\par
+\par
+Uma das primeiras an\'e1lises \'e9 a contagem total de registros no dataset, realizada com a A\'e7\'e3o log_rdd.count().\par
+\par
+Para a an\'e1lise de acessos, foram realizadas as seguintes opera\'e7\'f5es de agrega\'e7\'e3o:\par
+\par
+    Total de Requisi\'e7\'f5es por Host: Para descobrir quais m\'e1quinas (hosts) geraram mais requisi\'e7\'f5es, o c\'f3digo aplica a transforma\'e7\'e3o map() para extrair o host de cada linha de log. Em seguida, a transforma\'e7\'e3o reduceByKey() \'e9 usada para agrupar e contar o n\'famero de requisi\'e7\'f5es por host, e uma A\'e7\'e3o como take(N) ou collect() \'e9 aplicada para visualizar os resultados.\par
+\par
+    M\'e9dia de Bytes Transferidos: Para calcular o tr\'e1fego m\'e9dio, aplica-se a transforma\'e7\'e3o map() para extrair e somar os bytes transferidos em todas as requisi\'e7\'f5es (com tratamento de valores ausentes/nulos). Posteriormente, fun\'e7\'f5es de agrega\'e7\'e3o de RDDs s\'e3o usadas para calcular a soma total e a contagem, e o resultado final \'e9 dividido para obter a m\'e9dia.\par
+\par
+3. Filtragem de Erros e Padr\'f5es Espec\'edficos\par
+\par
+A an\'e1lise de logs frequentemente foca em identificar problemas. Para identifica\'e7\'e3o de Erros HTTP, o c\'f3digo utiliza a transforma\'e7\'e3o filter() no RDD. Esta filtragem mant\'e9m apenas as linhas que cont\'eam c\'f3digos de resposta HTTP de erro (por exemplo, c\'f3digos que come\'e7am com '4' ou '5'), e a A\'e7\'e3o count() \'e9 aplicada para determinar o n\'famero total de ocorr\'eancias desses erros.\par
+\par
+Por que estamos estudando este c\'f3digo?\par
+\par
+O estudo deste notebook em particular \'e9 fundamental para a compreens\'e3o dos conceitos de Big Data e Computa\'e7\'e3o Distribu\'edda:\par
+\par
+    Fundamentos do Spark (RDDs): O RDD (Resilient Distributed Dataset) \'e9 a abstra\'e7\'e3o de dados principal do Spark e a base de todas as outras estruturas (como DataFrames). O c\'f3digo demonstra como o Spark divide os dados de log em parti\'e7\'f5es e permite o processamento em paralelo, sendo crucial para entender a toler\'e2ncia a falhas e a arquitetura distribu\'edda do Spark.\par
+\par
+    Paradigmas de Programa\'e7\'e3o: Ilustra o uso de opera\'e7\'f5es de Transforma\'e7\'e3o (map, filter, reduceByKey) e A\'e7\'e3o (count, collect), que s\'e3o o cora\'e7\'e3o da programa\'e7\'e3o em Spark.\par
+\par
+    An\'e1lise de Dados N\'e3o Estruturados: Demonstra como lidar com dados brutos, n\'e3o estruturados (como logs de texto), aplicando express\'f5es regulares e fun\'e7\'f5es lambda para parsing e extra\'e7\'e3o de informa\'e7\'f5es.\par
+\par
+    Processamento em Larga Escala: O PySpark e o Spark s\'e3o a ferramenta essencial para processar petabytes de dados, diferentemente de ferramentas como o Pandas, que s\'e3o mais adequadas para conjuntos de dados que cabem na mem\'f3ria RAM. Este exemplo mostra a aplica\'e7\'e3o real em um conjunto de dados de produ\'e7\'e3o (logs da NASA).\par
+}
+ 

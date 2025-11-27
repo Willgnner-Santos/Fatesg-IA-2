@@ -1,0 +1,73 @@
+Objetivo: Desenvolver uma aplicação web front-end (Single-Page Application) moderna, intuitiva e responsiva para um sistema de votação online.
+
+Restrição Principal de Conectividade: A aplicação não deve usar um MCP público. Ela deve ser projetada para se conectar a um servidor MCP Redis local que o usuário (você) está executando (por exemplo, em um container Docker na sua máquina).
+
+O código front-end (JavaScript) deve incluir uma variável de configuração clara no topo (ex: MCP_REDIS_URL) definida para o endpoint local, como ws://localhost:3000 (assumindo que 3000 é a porta que seu Docker expõe), permitindo um ajuste fácil.
+
+Funcionalidades Obrigatórias (Implementadas no Front-End):
+
+Interface de Conexão:
+
+A aplicação deve tentar se conectar ao endpoint MCP local ao carregar.
+
+Exibir um indicador de status de conexão visual (ex: "Conectando...", "Conectado", "Erro de Conexão").
+
+Criação de Enquetes:
+
+Um formulário modal para criar uma nova enquete com: Título, Múltiplas Opções (pelo menos 2) e Data/Hora de Expiração.
+
+Ao enviar, o cliente deve usar o MCP para:
+
+Gerar um ID único para a enquete (ex: poll:<uuid>).
+
+Salvar os dados da enquete como um Hash no Redis (ex: HSET poll:<id> title "..." expiration "..." options "JSON_array_opcoes").
+
+Inicializar um Sorted Set para os votos (ex: ZADD votes:<id> 0 "opcao_A" 0 "opcao_B").
+
+Votação e Controle:
+
+O usuário pode votar em apenas uma opção por enquete.
+
+Implementar um controle de "já votou" simples no lado do cliente (ex: usando localStorage) para prevenir votos duplicados na mesma sessão do navegador.
+
+Ao votar, o cliente deve usar o MCP para:
+
+Incrementar o voto da opção no Sorted Set (ex: ZINCRBY votes:<id> 1 "opcao_votada").
+
+Visualização e Rankings (Real-Time):
+
+Um "dashboard" principal que lista todas as enquetes ativas (buscadas via MCP).
+
+Ao clicar em uma enquete, exibir uma visão detalhada com as opções e a contagem de votos.
+
+Os resultados devem ser ordenados do mais votado para o menos votado (usando ZRANGE votes:<id> 0 -1 REV WITHSCORES).
+
+Atualização em Tempo Real (Pub/Sub):
+
+O cliente deve se inscrever (SUBSCRIBE) em um canal global de atualizações (ex: polls:updates).
+
+Quando um cliente registra um voto (passo 3), ele deve, além de usar ZINCRBY, enviar um PUBLISH para esse canal (ex: PUBLISH polls:updates "poll:<id>").
+
+Todos os clientes inscritos, ao receberem a mensagem, devem recarregar os dados da enquete afetada para exibir o novo total de votos instantaneamente.
+
+Auditoria (Streams):
+
+Para cada ação principal (criação de enquete, voto), o cliente deve registrar um evento em um Redis Stream (ex: XADD audit:log * action "create_poll" title "..." ou action "vote" poll_id "..." option "...").
+
+Inteligência Adicional (MemoryForge AI):
+
+No formulário de "Criação de Enquetes", adicionar um botão "Sugerir Título".
+
+Ao clicar, o cliente deve consultar o MemoryForge AI do MCP (se disponível no seu servidor) para sugerir títulos de enquetes com base em títulos de enquetes anteriores (extraídos dos dados de auditoria do Stream ou dos Hashes).
+
+Requisitos Técnicos e de Interface:
+
+Arquivo Único: Todo o código (HTML, CSS, JS) deve ser entregue em um único arquivo index.html.
+
+Design: UI/UX limpa, moderna e responsiva (mobile-first) usando Tailwind CSS (via CDN).
+
+Comentários: O código JavaScript deve ser extensivamente comentado, especialmente as funções que interagem com o MCP (conexão, HSET, ZINCRBY, PUBLISH, SUBSCRIBE, XADD).
+
+Feedback: Mensagens claras para o usuário (ex: "Enquete criada!", "Voto registrado!", "Erro ao conectar ao servidor MCP...").
+
+Entregável: Um único arquivo index.html que eu (usuário) posso salvar localmente, abrir no meu navegador e que irá se conectar ao meu servidor MCP que está rodando em ws://localhost:3000.

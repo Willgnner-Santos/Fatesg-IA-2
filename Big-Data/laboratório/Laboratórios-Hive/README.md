@@ -105,7 +105,5 @@ SELECT AVG(ArrDelay) FROM flightdelays WHERE Origin = 'LAX' AND Dest = 'SFO';
 Consulta 3: Top 10 voos com maior atraso de chegada. Esta consulta ordenou os voos por atraso de chegada (ArrDelay) em ordem decrescente (DESC) e me mostrou os 10 voos com os maiores atrasos.
 SQL
 SELECT ArrDelay FROM flightdelays ORDER BY ArrDelay DESC LIMIT 10;
-________________________________________
-Conclusão
-Este exercício de laboratório proporcionou uma experiência prática valiosa com o Hive, desde a preparação dos dados no HDFS até a execução de consultas SQL. O uso de formatos otimizados como o ORC e a criação de tabelas externas demonstram como é possível gerenciar e analisar grandes volumes de dados de forma eficiente no ecossistema Hadoop.
+
 

@@ -1,0 +1,2 @@
+user: fredericolemesrosa_db_user
+key: GODIk1zaMl9LrgbG

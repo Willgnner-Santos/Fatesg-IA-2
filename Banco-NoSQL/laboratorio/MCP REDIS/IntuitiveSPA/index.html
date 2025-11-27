@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votação Online - MCP Redis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .pulse-slow {
+            animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        .step-indicator { font-weight: 500; transition: all 0.3s ease; }
+        .step-indicator.active { color: #2563eb; font-weight: 700; }
+        .poll-template { transition: all 0.3s ease; cursor: pointer; }
+        .poll-template:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+        .filter-btn.active { background-color: #2563eb !important; color: white !important; }
+        .template-btn { transition: all 0.3s ease; }
+        .template-btn:hover { transform: scale(1.05); }
+        .poll-card { transition: all 0.3s ease; }
+        .poll-card:hover { transform: translateY(-4px); }
+        .progress-bar { background: linear-gradient(90deg, #3b82f6, #8b5cf6); }
+        .category-entertainment { background: linear-gradient(135deg, #ec4899, #8b5cf6); }
+        .category-food { background: linear-gradient(135deg, #f97316, #facc15); }
+        .category-education { background: linear-gradient(135deg, #3b82f6, #06b6d4); }
+        .category-business { background: linear-gradient(135deg, #10b981, #059669); }
+        .category-other { background: linear-gradient(135deg, #6b7280, #4b5563); }
+        .hover-scale { transition: transform 0.2s ease; }
+        .hover-scale:hover { transform: scale(1.02); }
+        @keyframes slideInTop {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .slide-in-top { animation: slideInTop 0.3s ease-out; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <h1 class="text-2xl md:text-3xl font-bold mb-2 md:mb-0">🗳️ Sistema de Votação Online</h1>
+                <div id="connectionStatus" class="flex items-center space-x-3 bg-white/20 px-4 py-2 rounded-full">
+                    <div id="statusIndicator" class="w-3 h-3 rounded-full bg-yellow-400 pulse-slow"></div>
+                    <span id="statusText" class="text-sm font-medium">Conectando...</span>
+                    <button id="reconnectBtn" onclick="manualConnect()" class="bg-white/30 hover:bg-white/50 px-3 py-1 rounded text-xs transition duration-200">
+                        🔄 Reconectar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <div class="mb-8 bg-gradient-to-r from-purple-500 to-blue-600 rounded-xl p-6 text-white">
+            <h2 class="text-2xl font-bold mb-4">🗳️ Crie sua Enquete Rapidamente</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <button class="template-btn bg-white/20 hover:bg-white/30 p-4 rounded-lg transition duration-300" data-template="restaurant">
+                    🍽️ Onde Almoçar?
+                </button>
+                <button class="template-btn bg-white/20 hover:bg-white/30 p-4 rounded-lg transition duration-300" data-template="movie">
+                    🎬 Melhor Filme
+                </button>
+                <button class="template-btn bg-white/20 hover:bg-white/30 p-4 rounded-lg transition duration-300" data-template="custom">
+                    ⚡ Enquete Personalizada
+                </button>
+            </div>
+            <button id="newPollBtn" class="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg shadow-lg transition transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                ➕ Criar Nova Enquete
+            </button>
+        </div>
+
+        <div class="mb-6 flex flex-wrap gap-3 items-center">
+            <h3 class="text-lg font-semibold text-gray-700">Filtrar por categoria:</h3>
+            <button class="filter-btn active bg-blue-500 text-white px-4 py-2 rounded-full text-sm transition" data-category="all">
+                📊 Todas
+            </button>
+            <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm transition" data-category="entertainment">
+                🎭 Entretenimento
+            </button>
+            <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm transition" data-category="food">
+                🍕 Comida
+            </button>
+            <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm transition" data-category="education">
+                📚 Educação
+            </button>
+            <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded-full text-sm transition" data-category="business">
+                💼 Negócios
+            </button>
+        </div>
+
+        <div class="mb-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="text-2xl font-bold text-blue-600" id="totalPolls">0</div>
+                <div class="text-sm text-gray-600">Enquetes Ativas</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="text-2xl font-bold text-green-600" id="totalVotes">0</div>
+                <div class="text-sm text-gray-600">Votos Totais</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="text-2xl font-bold text-purple-600" id="onlineUsers">1</div>
+                <div class="text-sm text-gray-600">Usuários Online</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="text-2xl font-bold text-orange-600" id="recentActivity">0</div>
+                <div class="text-sm text-gray-600">Atividade Recente</div>
+            </div>
+        </div>
+
+        <div class="mb-6 flex justify-between items-center">
+            <h2 class="text-2xl font-bold text-gray-800">Enquetes Ativas</h2>
+            <div class="text-sm text-gray-500">
+                Atualizadas em tempo real 🔄
+            </div>
+        </div>
+
+        <div id="feedbackMessage" class="hidden mb-4 p-4 rounded-lg shadow-md"></div>
+
+        <div id="pollsList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+
+        <div id="emptyState" class="text-center py-12 hidden">
+            <div class="text-6xl mb-4">📊</div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">Nenhuma enquete disponível</h3>
+            <p class="text-gray-500">Crie sua primeira enquete para começar!</p>
+        </div>
+    </main>
+
+    <div id="newPollModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-xl p-8 max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+
+            <div class="mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold text-gray-800">🗳️ Criar Nova Enquete</h3>
+                    <button id="closePollModal" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+                </div>
+
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+                    <div id="progressBar" class="bg-blue-600 h-2 rounded-full transition-all duration-300" style="width: 33%"></div>
+                </div>
+
+                <div class="flex justify-between text-sm text-gray-600">
+                    <span class="step-indicator active">1. Tipo</span>
+                    <span class="step-indicator">2. Detalhes</span>
+                    <span class="step-indicator">3. Opções</span>
+                </div>
+            </div>
+
+            <div id="step1" class="step-content">
+                <h4 class="text-xl font-semibold mb-4">Escolha o tipo de enquete:</h4>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="poll-template border-2 border-gray-200 hover:border-blue-500 rounded-lg p-4 cursor-pointer transition" data-template="restaurant">
+                        <div class="text-4xl mb-2">🍽️</div>
+                        <h5 class="font-semibold">Onde Almoçar?</h5>
+                        <p class="text-sm text-gray-600">Perfeito para decidir restaurantes com amigos ou colegas</p>
+                        <div class="mt-2 text-xs text-blue-600">• McDonald's • Subway • Pizza Hut • KFC</div>
+                    </div>
+
+                    <div class="poll-template border-2 border-gray-200 hover:border-blue-500 rounded-lg p-4 cursor-pointer transition" data-template="movie">
+                        <div class="text-4xl mb-2">🎬</div>
+                        <h5 class="font-semibold">Melhor Filme</h5>
+                        <p class="text-sm text-gray-600">Vote no melhor filme, série ou entretenimento</p>
+                        <div class="mt-2 text-xs text-blue-600">• Avengers • Titanic • Star Wars • Avatar</div>
+                    </div>
+
+                    <div class="poll-template border-2 border-gray-200 hover:border-blue-500 rounded-lg p-4 cursor-pointer transition" data-template="weekend">
+                        <div class="text-4xl mb-2">🎯</div>
+                        <h5 class="font-semibold">Planos de Fim de Semana</h5>
+                        <p class="text-sm text-gray-600">Decidir atividades para o fim de semana</p>
+                        <div class="mt-2 text-xs text-blue-600">• Cinema • Praia • Casa • Shopping</div>
+                    </div>
+
+                    <div class="poll-template border-2 border-gray-200 hover:border-blue-500 rounded-lg p-4 cursor-pointer transition" data-template="custom">
+                        <div class="text-4xl mb-2">⚡</div>
+                        <h5 class="font-semibold">Enquete Personalizada</h5>
+                        <p class="text-sm text-gray-600">Crie sua própria pergunta do zero</p>
+                        <div class="mt-2 text-xs text-blue-600">• Pergunta própria • Suas opções</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="step2" class="step-content hidden">
+                <h4 class="text-xl font-semibold mb-4">Detalhes da sua enquete:</h4>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Título da Enquete *</label>
+                        <input type="text" id="pollTitle" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Ex: Onde vamos almoçar hoje?">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Descrição (opcional)</label>
+                        <textarea id="pollDescription" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent" rows="3" placeholder="Adicione mais contexto sobre a enquete..."></textarea>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Categoria</label>
+                            <select id="pollCategory" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="entertainment">🎭 Entretenimento</option>
+                                <option value="food">🍕 Comida</option>
+                                <option value="education">📚 Educação</option>
+                                <option value="business">💼 Negócios</option>
+                                <option value="other">🔧 Outros</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Duração</label>
+                            <select id="pollDuration" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="1">1 hora</option>
+                                <option value="6">6 horas</option>
+                                <option value="24" selected>1 dia</option>
+                                <option value="168">1 semana</option>
+                                <option value="0">Sem limite</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="step3" class="step-content hidden">
+                <h4 class="text-xl font-semibold mb-4">Adicione as opções de votação:</h4>
+
+                <div id="optionsContainer" class="space-y-3 mb-4">
+                    <div class="option-input flex items-center space-x-3">
+                        <span class="text-2xl">🥇</span>
+                        <input type="text" class="flex-1 border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Primeira opção">
+                        <button class="remove-option text-red-500 hover:text-red-700 hidden">🗑️</button>
+                    </div>
+                    <div class="option-input flex items-center space-x-3">
+                        <span class="text-2xl">🥈</span>
+                        <input type="text" class="flex-1 border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Segunda opção">
+                        <button class="remove-option text-red-500 hover:text-red-700 hidden">🗑️</button>
+                    </div>
+                </div>
+
+                <button id="addOption" class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-lg transition mb-6">
+                    ➕ Adicionar Opção
+                </button>
+
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h5 class="font-semibold text-blue-800 mb-2">📋 Resumo da Enquete:</h5>
+                    <div id="pollPreview" class="text-sm text-blue-700">
+                        Preencha os campos para ver o resumo...
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-8">
+                <button id="prevStep" class="bg-gray-300 hover:bg-gray-400 text-gray-700 px-6 py-3 rounded-lg transition hidden">
+                    ← Anterior
+                </button>
+                <div class="flex space-x-3">
+                    <button id="nextStep" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition">
+                        Próximo →
+                    </button>
+                    <button id="createPoll" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition hidden">
+                        🚀 Criar Enquete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pollDetailModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="detailTitle" class="text-2xl font-bold text-gray-800"></h3>
+                    <button id="closePollDetailBtn" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+
+                <div id="pollDetailContent" class="space-y-4">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==========================================
+        // CONFIGURAÇÃO DO MCP REDIS
+        // ==========================================
+
+        const MCP_REDIS_URL = 'ws://localhost:3000';
+
+        // ==========================================
+        // VARIÁVEIS GLOBAIS
+        // ==========================================
+
+        let mcpSocket = null;
+        let pubSubSocket = null;
+        let isConnected = false;
+        let isPubSubConnected = false;
+        let messageId = 1;
+        let pubSubMessageId = 10000;
+        let pendingRequests = new Map();
+        let pubSubPendingRequests = new Map();
+        let pollsData = new Map();
+        let currentPollId = null;
+
+        // ==========================================
+        // ELEMENTOS DOM
+        // ==========================================
+
+        const statusIndicator = document.getElementById('statusIndicator');
+        const statusText = document.getElementById('statusText');
+        const newPollBtn = document.getElementById('newPollBtn');
+        const newPollModal = document.getElementById('newPollModal');
+        const pollDetailModal = document.getElementById('pollDetailModal');
+        const feedbackMessage = document.getElementById('feedbackMessage');
+        const pollsList = document.getElementById('pollsList');
+        const emptyState = document.getElementById('emptyState');
+
+        // ==========================================
+        // FUNÇÕES DE CONEXÃO MCP
+        // ==========================================
+
+        function connectToMCP() {
+            try {
+                console.log('🚀 Iniciando conexão com MCP Redis...');
+                console.log('🌐 URL:', MCP_REDIS_URL);
+                updateConnectionStatus('connecting', 'Conectando...');
+
+                // Conexão Comandos
+                if (mcpSocket && (mcpSocket.readyState === WebSocket.OPEN || mcpSocket.readyState === WebSocket.CONNECTING)) mcpSocket.close();
+                console.log('📡 Criando conexão de comandos...');
+                mcpSocket = new WebSocket(MCP_REDIS_URL);
+                mcpSocket.onopen = () => { console.log('✅ Conexão de COMANDOS estabelecida com MCP Redis'); isConnected = true; checkFullConnection(); };
+                mcpSocket.onmessage = (event) => handleMCPMessage(JSON.parse(event.data));
+                mcpSocket.onerror = (error) => { console.error('❌ Erro na conexão de comandos MCP:', error); isConnected = false; updateConnectionStatus('error', 'Erro de Conexão'); newPollBtn.disabled = true; pendingRequests.forEach(({ reject }) => reject(new Error('Conexão MCP perdida'))); pendingRequests.clear(); };
+                mcpSocket.onclose = () => { console.log('🔌 Conexão de comandos MCP fechada'); isConnected = false; updateConnectionStatus('disconnected', 'Desconectado'); newPollBtn.disabled = true; pendingRequests.forEach(({ reject }) => reject(new Error('Conexão MCP fechada'))); pendingRequests.clear(); setTimeout(connectToMCP, 5000); };
+
+                // Conexão Pub/Sub
+                if (pubSubSocket && (pubSubSocket.readyState === WebSocket.OPEN || pubSubSocket.readyState === WebSocket.CONNECTING)) pubSubSocket.close();
+                setupPubSubConnection();
+            } catch (error) {
+                console.error('❌ Erro ao conectar ao MCP:', error);
+                updateConnectionStatus('error', 'Erro de Conexão');
+                showFeedback('Erro ao conectar ao servidor MCP local. Verifique se ele está rodando em ' + MCP_REDIS_URL, 'error');
+            }
+        }
+
+        function setupPubSubConnection() {
+            try {
+                console.log('🔄 Configurando conexão Pub/Sub...');
+                pubSubSocket = new WebSocket(MCP_REDIS_URL);
+                pubSubSocket.onopen = () => { console.log('✅ Conexão de PUB/SUB estabelecida com MCP Redis'); isPubSubConnected = true; checkFullConnection(); subscribeToUpdates(); };
+                pubSubSocket.onmessage = (event) => handlePubSubMessage(JSON.parse(event.data));
+                pubSubSocket.onerror = (error) => { console.error('❌ Erro na conexão Pub/Sub MCP:', error); isPubSubConnected = false; if (!isConnected) updateConnectionStatus('error', 'Erro de Conexão'); pubSubPendingRequests.forEach(({ reject }) => reject(new Error('Conexão Pub/Sub perdida'))); pubSubPendingRequests.clear(); };
+                pubSubSocket.onclose = () => { console.log('🔌 Conexão Pub/Sub MCP fechada'); isPubSubConnected = false; if (!isConnected) updateConnectionStatus('disconnected', 'Desconectado'); pubSubPendingRequests.forEach(({ reject }) => reject(new Error('Conexão Pub/Sub fechada'))); pubSubPendingRequests.clear(); setTimeout(() => { console.log('🔄 Tentando reconectar Pub/Sub...'); setupPubSubConnection(); }, 5000); };
+            } catch (error) {
+                console.error('❌ Erro ao configurar conexão Pub/Sub:', error);
+                isPubSubConnected = false;
+                pubSubPendingRequests.forEach(({ reject }) => reject(new Error('Falha ao configurar Pub/Sub'))); pubSubPendingRequests.clear();
+                setTimeout(() => { console.log('🔄 Tentando reconfigurar Pub/Sub após erro...'); setupPubSubConnection(); }, 5000);
+            }
+        }
+
+        function checkFullConnection() {
+            if (isConnected && isPubSubConnected) {
+                console.log('🎉 Conexão MCP estabelecida (Completa)!');
+                updateConnectionStatus('connected', 'Conectado');
+                newPollBtn.disabled = false;
+                loadAllPolls();
+            } else if (isConnected) {
+                 updateConnectionStatus('connecting', 'Conectando Pub/Sub...');
+            } else if (isPubSubConnected) {
+                 updateConnectionStatus('connecting', 'Conectando Comandos...');
+            }
+        }
+
+        function updateConnectionStatus(status, text) {
+            statusText.textContent = text;
+            statusIndicator.className = 'w-3 h-3 rounded-full';
+            switch(status) {
+                case 'connecting': statusIndicator.classList.add('bg-yellow-400', 'pulse-slow'); break;
+                case 'connected': statusIndicator.classList.add('bg-green-400'); break;
+                case 'error': case 'disconnected': statusIndicator.classList.add('bg-red-400'); break;
+            }
+        }
+
+        function sendMCPCommand(command, args = []) {
+            return new Promise((resolve, reject) => {
+                if (!isConnected || !mcpSocket || mcpSocket.readyState !== WebSocket.OPEN) { reject(new Error('Não conectado ao MCP')); return; }
+                const id = messageId++;
+                const message = { jsonrpc: '2.0', id: id, method: 'redis.command', params: { command: command, args: args } };
+                pendingRequests.set(id, { resolve, reject, command });
+                mcpSocket.send(JSON.stringify(message));
+            });
+        }
+
+        function handleMCPMessage(message) {
+            if (message.id && pendingRequests.has(message.id)) {
+                const { resolve, reject } = pendingRequests.get(message.id);
+                pendingRequests.delete(message.id);
+                if (message.error) { console.error(`❌ Erro no comando MCP (ID: ${message.id}):`, message.error.message); reject(new Error(message.error.message || 'Erro no comando MCP')); }
+                else { resolve(message.result); }
+            } else if (message.method === 'welcome') { console.log('👋 Mensagem de boas-vindas (Comandos):', message.params.message); }
+        }
+
+        function handlePubSubMessage(message) {
+            if (message.id && pubSubPendingRequests.has(message.id)) {
+                const { resolve, reject } = pubSubPendingRequests.get(message.id);
+                pubSubPendingRequests.delete(message.id);
+                if (message.error) { console.error(`❌ Erro no Pub/Sub MCP (ID: ${message.id}):`, message.error.message); reject(new Error(message.error.message || 'Erro no Pub/Sub MCP')); }
+                else { resolve(message.result); }
+            }
+            if (message.method === 'redis.notification') { handlePubSubNotification(message.params); }
+            else if (message.method === 'welcome') { console.log('👋 Mensagem de boas-vindas (Pub/Sub):', message.params.message); }
+        }
+
+        // ==========================================
+        // FUNÇÕES DE PUB/SUB
+        // ==========================================
+
+        async function subscribeToUpdates() {
+            try {
+                await sendPubSubCommand('SUBSCRIBE', ['polls:updates']);
+                console.log('✅ Inscrito no canal polls:updates via conexão Pub/Sub dedicada');
+            } catch (error) { console.error('❌ Erro ao se inscrever no canal:', error); }
+        }
+
+        function sendPubSubCommand(command, args = []) {
+            return new Promise((resolve, reject) => {
+                if (!isPubSubConnected || !pubSubSocket || pubSubSocket.readyState !== WebSocket.OPEN) { reject(new Error('Pub/Sub não conectado ao MCP')); return; }
+                const id = pubSubMessageId++;
+                const message = { jsonrpc: '2.0', id: id, method: 'redis.command', params: { command: command, args: args } };
+                pubSubPendingRequests.set(id, { resolve, reject, command });
+                pubSubSocket.send(JSON.stringify(message));
+            });
+        }
+
+        function handlePubSubNotification(params) {
+            if (params.channel === 'polls:updates') {
+                const pollId = params.message;
+                console.log(`🔔 Atualização recebida para: ${pollId}`);
+                loadPollData(pollId).then(() => {
+                    if (currentPollId === pollId) showPollDetail(pollId);
+                    renderPolls();
+                });
+            }
+        }
+
+        async function publishUpdate(pollId) {
+            try {
+                await sendMCPCommand('PUBLISH', ['polls:updates', pollId]);
+                console.log(`📢 Publicada atualização para: ${pollId} via conexão de comandos`);
+            } catch (error) { console.error('❌ Erro ao publicar atualização:', error); }
+        }
+
+        // ==========================================
+        // FUNÇÕES DE AUDITORIA (STREAMS)
+        // ==========================================
+
+        async function logAuditEvent(action, data) {
+            try {
+                const timestamp = new Date().toISOString();
+                const args = ['audit:log', '*', 'action', action, 'timestamp', timestamp];
+                for (const [key, value] of Object.entries(data)) { args.push(key, String(value)); }
+                const streamId = await sendMCPCommand('XADD', args);
+                console.log(`📝 Evento de auditoria registrado: ${action} (${streamId})`);
+            } catch (error) { console.error('❌ Erro ao registrar evento de auditoria:', error); }
+        }
+
+        // ==========================================
+        // FUNÇÕES DE CRIAÇÃO DE ENQUETES
+        // ==========================================
+
+        function generatePollId() { return 'poll:' + crypto.randomUUID(); }
+
+        async function createPoll(title, options, expiration, description = '', category = 'other') {
+            try {
+                const pollId = generatePollId();
+                let expirationDate = new Date(expiration).toISOString();
+                console.log(`📅 Data de expiração processada: ${expirationDate}`);
+                await sendMCPCommand('HSET', [ pollId, 'title', title, 'description', description, 'category', category, 'expiration', expirationDate, 'options', JSON.stringify(options), 'created', new Date().toISOString() ]);
+                console.log(`✅ Enquete criada: ${pollId}`);
+                const zaddArgs = [`votes:${pollId}`];
+                options.forEach(option => zaddArgs.push('0', option));
+                await sendMCPCommand('ZADD', zaddArgs);
+                console.log(`✅ Votos inicializados para: ${pollId}`);
+                await sendMCPCommand('SADD', ['polls:active', pollId]);
+                await logAuditEvent('create_poll', { poll_id: pollId, title: title, options_count: options.length, category: category });
+                showFeedback('Enquete criada com sucesso!', 'success');
+                await loadAllPolls();
+            } catch (error) { console.error('❌ Erro ao criar enquete:', error); showFeedback('Erro ao criar enquete: ' + error.message, 'error'); }
+        }
+
+        // ==========================================
+        // FUNÇÕES DE VOTAÇÃO
+        // ==========================================
+
+        function hasVoted(pollId) { return localStorage.getItem(`voted_${pollId}`) === 'true'; }
+        function markAsVoted(pollId, option) { localStorage.setItem(`voted_${pollId}`, 'true'); localStorage.setItem(`voted_${pollId}_option`, option); }
+
+        /**
+         * Registra um voto em uma enquete
+         * *** CORRIGIDO: Removida a atualização manual da UI ***
+         */
+        async function vote(pollId, option) {
+            try {
+                if (hasVoted(pollId)) {
+                    showFeedback('Você já votou nesta enquete!', 'warning');
+                    document.getElementById('pollDetailModal').classList.add('hidden');
+                    return;
+                }
+                // 1. Incrementar voto
+                await sendMCPCommand('ZINCRBY', [`votes:${pollId}`, '1', option]);
+                console.log(`✅ Voto registrado: ${pollId} - ${option}`);
+                // 2. Marcar localmente
+                markAsVoted(pollId, option);
+                // 3. Logar auditoria
+                await logAuditEvent('vote', { poll_id: pollId, option: option });
+                // 4. Publicar atualização (Pub/Sub cuidará da UI)
+                await publishUpdate(pollId);
+                showFeedback('Voto registrado com sucesso!', 'success');
+                // 5. Fechar modal
+                document.getElementById('pollDetailModal').classList.add('hidden');
+                // NÃO há mais recarga/renderização aqui.
+            } catch (error) {
+                console.error('❌ Erro ao registrar voto:', error);
+                showFeedback('Erro ao registrar voto: ' + error.message, 'error');
+                document.getElementById('pollDetailModal').classList.add('hidden');
+            }
+        }
+
+
+        // ==========================================
+        // FUNÇÕES DE CARREGAMENTO DE DADOS
+        // ==========================================
+
+        async function loadAllPolls() {
+            try {
+                const pollIds = await sendMCPCommand('SMEMBERS', ['polls:active']);
+                if (!pollIds || pollIds.length === 0) { pollsList.innerHTML = ''; emptyState.classList.remove('hidden'); return; }
+                emptyState.classList.add('hidden');
+                const activePollSet = new Set(pollIds);
+                pollsData.forEach((_, pollId) => { if (!activePollSet.has(pollId)) pollsData.delete(pollId); });
+                for (const pollId of pollIds) { await loadPollData(pollId); }
+                renderPolls();
+            } catch (error) { console.error('❌ Erro ao carregar enquetes:', error); }
+        }
+
+        /**
+         * Carrega os dados de uma enquete específica do Redis
+         * *** CORRIGIDO PARA LIDAR COM RETORNO DE {score, value} DO ZRANGE WITHSCORES ***
+         */
+        async function loadPollData(pollId) {
+            try {
+                // 1. Obter dados da enquete (HGETALL)
+                const pollDataArray = await sendMCPCommand('HGETALL', [pollId]);
+                if (!pollDataArray || pollDataArray.length === 0) { pollsData.delete(pollId); return null; }
+                const poll = {};
+                for (let i = 0; i < pollDataArray.length; i += 2) { poll[pollDataArray[i]] = pollDataArray[i + 1]; }
+
+                // 2. Obter votos ordenados (ZRANGE com REV e WITHSCORES)
+                const votesData = await sendMCPCommand('ZRANGE', [ `votes:${pollId}`, '0', '-1', 'REV', 'WITHSCORES' ]);
+                console.log(`[DEBUG] Raw votesData from ZRANGE for ${pollId}:`, JSON.stringify(votesData)); // Log DEBUG
+
+                // Processar o array de objetos { score, value }
+                const votes = [];
+                if (votesData && Array.isArray(votesData)) {
+                    votesData.sort((a, b) => b.score - a.score); // Garantir ordenação (opcional)
+                    votesData.forEach(item => {
+                        if (typeof item === 'object' && item !== null && typeof item.value === 'string' && typeof item.score === 'number') {
+                             votes.push({ option: item.value, votes: Math.floor(item.score || 0) });
+                        } else { console.warn(`[DEBUG] Item inválido em votesData para ${pollId}:`, item); } // Log DEBUG
+                    });
+                } else { console.warn(`[DEBUG] votesData for ${pollId} is not a valid array:`, votesData); } // Log DEBUG
+                console.log(`[DEBUG] Processed votes array for ${pollId}:`, JSON.stringify(votes)); // Log DEBUG
+
+                const totalVotes = votes.reduce((sum, v) => sum + v.votes, 0);
+
+                let options = [];
+                try {
+                    const optionsString = poll.options || '[]';
+                    options = JSON.parse(optionsString);
+                    if (!Array.isArray(options)) { console.warn(`[DEBUG] Parsed options for ${pollId} is not an array:`, options); options = []; } // Log DEBUG
+                } catch (e) { console.error(`❌ Erro CRÍTICO ao fazer parse das opções para ${pollId}:`, poll.options, e); options = []; }
+
+                // Armazenar no cache
+                pollsData.set(pollId, { id: pollId, title: poll.title, description: poll.description, category: poll.category, expiration: poll.expiration, created: poll.created, options: options, votes: votes, totalVotes: totalVotes });
+                console.log(`[DEBUG] Updated pollsData cache for ${pollId}:`, pollsData.get(pollId)); // Log DEBUG
+                return pollsData.get(pollId);
+            } catch (error) { console.error(`❌ Erro ao carregar dados da enquete ${pollId}:`, error); return null; }
+        }
+
+
+        // ==========================================
+        // FUNÇÕES DE RENDERIZAÇÃO
+        // ==========================================
+
+        function renderPolls() {
+            pollsList.innerHTML = '';
+            if (pollsData.size === 0) { emptyState.classList.remove('hidden'); return; }
+            emptyState.classList.add('hidden');
+            const activeFilter = document.querySelector('.filter-btn.active').dataset.category;
+            let pollsToRender = Array.from(pollsData.values());
+            if (activeFilter !== 'all') { pollsToRender = pollsToRender.filter(poll => poll.category === activeFilter); }
+            if (pollsToRender.length === 0) { pollsList.innerHTML = `<div class="col-span-full text-center py-12"><div class="text-6xl mb-4">🤷</div><h3 class="text-xl font-semibold text-gray-700 mb-2">Nenhuma enquete encontrada</h3><p class="text-gray-500">Nenhuma enquete corresponde à categoria "${activeFilter}".</p></div>`; return; }
+            pollsToRender.sort((a, b) => new Date(b.created) - new Date(a.created));
+            pollsToRender.forEach((poll) => {
+                const pollId = poll.id;
+                const isExpired = new Date(poll.expiration) < new Date();
+                const voted = hasVoted(pollId);
+                const timeLeft = getTimeLeft(poll.expiration);
+                const categoryIcon = getCategoryIcon(poll.category || 'other');
+                const card = document.createElement('div');
+                card.className = `bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border-l-4 ${getCategoryColor(poll.category || 'other')}`;
+                card.innerHTML = `
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-center space-x-3 flex-1 min-w-0">
+                                <span class="text-2xl">${categoryIcon}</span>
+                                <div class="min-w-0">
+                                    <h3 class="text-lg font-bold text-gray-800 leading-tight truncate" title="${escapeHtml(poll.title)}">${escapeHtml(poll.title)}</h3>
+                                    <p class="text-sm text-gray-500 truncate">${escapeHtml(poll.description) || 'Sem descrição'}</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end space-y-1 flex-shrink-0 ml-2">
+                                ${isExpired ? '<span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-medium">⏰ Expirada</span>' : '<span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-medium">✅ Ativa</span>'}
+                                ${voted ? '<span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-medium">👍 Votado</span>' : ''}
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 mb-4 text-center">
+                            <div class="bg-gray-50 rounded-lg p-3"><div class="text-lg font-bold text-blue-600">${poll.totalVotes}</div><div class="text-xs text-gray-600">Votos</div></div>
+                            <div class="bg-gray-50 rounded-lg p-3"><div class="text-lg font-bold text-purple-600">${poll.options.length}</div><div class="text-xs text-gray-600">Opções</div></div>
+                            <div class="bg-gray-50 rounded-lg p-3"><div class="text-sm font-bold ${isExpired ? 'text-red-600' : 'text-green-600'}">${timeLeft}</div><div class="text-xs text-gray-600">Restante</div></div>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            ${poll.votes.slice(0, 3).map((voteData) => {
+                                const option = voteData.option; const optionVotes = voteData.votes; const percentage = poll.totalVotes > 0 ? (optionVotes / poll.totalVotes * 100) : 0;
+                                return `<div class="relative bg-gray-100 rounded-lg p-3 overflow-hidden"><div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-20 transition-all duration-500" style="width: ${percentage.toFixed(1)}%"></div><div class="relative flex justify-between items-center"><span class="text-sm font-medium text-gray-700 truncate">${escapeHtml(option)}</span><div class="flex items-center space-x-2 flex-shrink-0"><span class="text-sm font-bold text-gray-800">${optionVotes}</span><span class="text-xs text-gray-500">(${percentage.toFixed(1)}%)</span></div></div></div>`;
+                            }).join('')}
+                            ${poll.options.length > 3 ? `<p class="text-sm text-gray-500 text-center">+${poll.options.length - 3} opções...</p>` : ''}
+                        </div>
+                        <div class="flex space-x-3">
+                            ${!isExpired && !voted ? `<button onclick="showPollDetail('${pollId}')" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition font-medium">🗳️ Votar Agora</button>` : `<button onclick="showPollDetail('${pollId}')" class="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-lg transition font-medium">📊 Ver Resultados</button>`}
+                            <button onclick="sharePoll('${pollId}')" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg transition">📤</button>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-200 flex justify-between items-center text-xs text-gray-500"><span>Criada ${getRelativeTime(poll.created)}</span><span>ID: ${pollId.substring(5, 13)}</span></div>
+                    </div>`;
+                pollsList.appendChild(card);
+            });
+            updateStatistics();
+        }
+
+        function showPollDetail(pollId) {
+            const poll = pollsData.get(pollId);
+            if (!poll) return;
+            currentPollId = pollId;
+            const voted = hasVoted(pollId);
+            const isExpired = new Date(poll.expiration) < new Date();
+            const votedOption = localStorage.getItem(`voted_${pollId}_option`);
+            document.getElementById('detailTitle').textContent = poll.title;
+            let content = `<div class="mb-4 p-4 bg-gray-50 rounded-lg"><p class="text-sm text-gray-700 mb-3">${escapeHtml(poll.description) || 'Sem descrição.'}</p><p class="text-sm text-gray-600 mb-2"><span class="font-semibold">Total de votos:</span> ${poll.totalVotes}</p><p class="text-sm text-gray-600"><span class="font-semibold">Expira em:</span> ${formatDate(poll.expiration)}</p></div>`;
+            if (voted) { content += `<div class="mb-4 p-4 bg-blue-50 text-blue-700 rounded-lg">✓ Você votou em: <strong>${escapeHtml(votedOption)}</strong></div>`; }
+            content += '<div class="space-y-3">';
+            poll.votes.forEach((voteData, index) => {
+                const percentage = poll.totalVotes > 0 ? ((voteData.votes / poll.totalVotes) * 100).toFixed(1) : 0;
+                const isUserVote = voted && voteData.option === votedOption;
+                const canVote = !voted && !isExpired;
+                content += `<div class="border rounded-lg p-4 ${isUserVote ? 'border-blue-500 bg-blue-50' : 'border-gray-200'}"><div class="flex justify-between items-center mb-2"><span class="font-semibold text-gray-800">${index + 1}. ${escapeHtml(voteData.option)}</span><span class="text-sm font-bold text-gray-700">${voteData.votes} votos</span></div><div class="w-full bg-gray-200 rounded-full h-3 mb-2"><div class="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-full transition-all duration-500" style="width: ${percentage}%"></div></div><div class="flex justify-between items-center"><span class="text-sm text-gray-600">${percentage}%</span>${canVote ? `<button onclick="vote('${pollId}', '${escapeHtml(voteData.option)}');" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-1 rounded transition">Votar</button>` : ''}</div></div>`;
+            });
+            content += '</div>';
+            if (isExpired) { content += `<div class="mt-4 p-4 bg-red-50 text-red-700 rounded-lg text-center">Esta enquete já expirou e não aceita mais votos.</div>`; }
+            document.getElementById('pollDetailContent').innerHTML = content;
+            pollDetailModal.classList.remove('hidden');
+        }
+
+        // ==========================================
+        // FUNÇÕES DE IA (MEMORYFORGE)
+        // ==========================================
+
+        async function suggestPollTitle() {
+            try {
+                showFeedback('Consultando IA para sugestões...', 'info');
+                const streamData = await sendMCPCommand('XRANGE', ['audit:log', '-', '+']);
+                const previousTitles = [];
+                for (const entry of streamData) { const fields = entry[1]; for (let j = 0; j < fields.length; j += 2) { if (fields[j] === 'title' && fields[j + 1]) previousTitles.push(fields[j + 1]); } }
+                if (previousTitles.length > 0) {
+                    try {
+                        const aiResponse = await sendMCPCommand('AI.SUGGEST', [ 'poll_titles', JSON.stringify({ context: 'Suggest a creative poll title based on these previous polls', previous_titles: previousTitles.slice(-10) }) ]);
+                        if (aiResponse && aiResponse.suggestion) { document.getElementById('pollTitle').value = aiResponse.suggestion; showFeedback('Título sugerido pela IA!', 'success'); return; }
+                    } catch (aiError) { console.log('ℹ️ MemoryForge AI (AI.SUGGEST) não disponível, usando sugestão alternativa', aiError.message); }
+                }
+                const suggestions = [ 'Qual é a sua preferência?', 'O que você acha mais importante?', 'Qual opção você escolheria?', 'Qual é a melhor escolha?', 'Dê sua opinião sobre...', 'Qual alternativa você prefere?' ];
+                const randomSuggestion = suggestions[Math.floor(Math.random() * suggestions.length)];
+                document.getElementById('pollTitle').value = randomSuggestion;
+                showFeedback('Título sugerido! (IA não disponível, usando sugestões predefinidas)', 'info');
+            } catch (error) { console.error('❌ Erro ao sugerir título:', error); showFeedback('Erro ao consultar IA. Tente novamente.', 'error'); }
+        }
+
+        // ==========================================
+        // FUNÇÕES DE UI/UX
+        // ==========================================
+
+        function showFeedback(message, type = 'info') {
+            const colors = { success: 'bg-green-100 text-green-800 border-green-300', error: 'bg-red-100 text-red-800 border-red-300', warning: 'bg-yellow-100 text-yellow-800 border-yellow-300', info: 'bg-blue-100 text-blue-800 border-blue-300' };
+            feedbackMessage.className = `mb-4 p-4 rounded-lg shadow-md border ${colors[type] || colors.info} slide-in-top`;
+            feedbackMessage.textContent = message;
+            feedbackMessage.classList.remove('hidden');
+            setTimeout(() => { feedbackMessage.classList.add('hidden'); }, 5000);
+        }
+
+        function formatDate(isoString) { if (!isoString) return 'N/A'; const date = new Date(isoString); return date.toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }); }
+        function escapeHtml(text) { if (typeof text !== 'string') return ''; const div = document.createElement('div'); div.textContent = text; return div.innerHTML; }
+
+        // ==========================================
+        // FUNÇÕES AUXILIARES PARA O NOVO DESIGN
+        // ==========================================
+
+        function getCategoryIcon(category) { const icons = { 'entertainment': '🎭', 'food': '🍕', 'education': '📚', 'business': '💼', 'other': '🔧' }; return icons[category] || '🔧'; }
+        function getCategoryColor(category) { const colors = { 'entertainment': 'border-pink-400', 'food': 'border-orange-400', 'education': 'border-blue-400', 'business': 'border-green-400', 'other': 'border-gray-400' }; return colors[category] || 'border-gray-400'; }
+
+        function getTimeLeft(expiration) {
+            try {
+                const now = new Date(); const exp = new Date(expiration); if (isNaN(exp.getTime())) return 'Data inválida'; const diff = exp - now; if (diff <= 0) return 'Expirada';
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24)); const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                if (days > 0) return `${days}d ${hours}h`; if (hours > 0) return `${hours}h ${minutes}m`; return `${minutes}m`;
+            } catch (error) { console.error('❌ Erro ao calcular tempo restante:', error); return 'Erro na data'; }
+        }
+
+        function getRelativeTime(timestamp) {
+            try {
+                const now = new Date(); const time = new Date(timestamp); if (isNaN(time.getTime())) return 'agora mesmo'; const diff = now - time;
+                const minutes = Math.floor(diff / (1000 * 60)); const hours = Math.floor(diff / (1000 * 60 * 60)); const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                if (days > 0) return `há ${days} dia${days > 1 ? 's' : ''}`; if (hours > 0) return `há ${hours} hora${hours > 1 ? 's' : ''}`; if (minutes > 0) return `há ${minutes} minuto${minutes > 1 ? 's' : ''}`; return 'agora mesmo';
+            } catch (error) { return 'agora mesmo'; }
+        }
+
+        function updateStatistics() {
+            let totalVotes = 0; let recentActivity = 0; const oneHourAgo = new Date(Date.now() - (60 * 60 * 1000));
+            pollsData.forEach(poll => { totalVotes += poll.totalVotes; if (new Date(poll.created) > oneHourAgo) recentActivity++; });
+            document.getElementById('totalPolls').textContent = pollsData.size; document.getElementById('totalVotes').textContent = totalVotes; document.getElementById('recentActivity').textContent = recentActivity; document.getElementById('onlineUsers').textContent = Math.max(1, Math.floor(Math.random() * 5));
+        }
+
+        function sharePoll(pollId) {
+            const poll = pollsData.get(pollId); if (!poll) return; const url = `${window.location.origin}${window.location.pathname}?poll=${pollId}`;
+            try { if (navigator.share) navigator.share({ title: poll.title, text: `Vote na enquete: ${poll.title}`, url: url }); else navigator.clipboard.writeText(url).then(() => showFeedback('Link copiado para a área de transferência! 📋', 'success')); }
+            catch (error) { showFeedback('Erro ao compartilhar: ' + error.message, 'error'); }
+        }
+
+        // ==========================================
+        // TEMPLATES DE ENQUETES
+        // ==========================================
+
+        const pollTemplates = { restaurant: { title: "Onde vamos almoçar hoje?", description: "Ajude a decidir o melhor lugar para almoçar em grupo", category: "food", options: ["McDonald's", "Subway", "Pizza Hut", "KFC", "Burger King"] }, movie: { title: "Melhor filme de 2024", description: "Vote no seu filme favorito deste ano", category: "entertainment", options: ["Duna: Parte Dois", "Oppenheimer", "Barbie", "Homem-Aranha: Através do Aranhaverso"] }, weekend: { title: "O que fazer no fim de semana?", description: "Vamos decidir a melhor atividade para o fim de semana", category: "entertainment", options: ["Cinema", "Praia", "Ficar em casa", "Shopping", "Parque"] } };
+
+        // ==========================================
+        // EVENT LISTENERS MELHORADOS
+        // ==========================================
+
+        document.addEventListener('click', (e) => {
+            const templateBtn = e.target.closest('.template-btn'); if (templateBtn) { const template = templateBtn.dataset.template; if (template === 'custom') document.getElementById('newPollBtn').click(); else if (pollTemplates[template]) createTemplatePoll(template); }
+            const filterBtn = e.target.closest('.filter-btn'); if (filterBtn) { const category = filterBtn.dataset.category; document.querySelectorAll('.filter-btn').forEach(btn => { btn.classList.remove('active', 'bg-blue-500', 'text-white'); btn.classList.add('bg-gray-200', 'text-gray-700'); }); filterBtn.classList.add('active', 'bg-blue-500', 'text-white'); filterBtn.classList.remove('bg-gray-200', 'text-gray-700'); renderPolls(); }
+        });
+
+        async function createTemplatePoll(templateName) {
+            const template = pollTemplates[templateName]; if (!template) return; const expiration = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+            await createPoll( template.title, template.options, expiration, template.description, template.category );
+        }
+
+        // ==========================================
+        // EVENT LISTENERS PARA O NOVO WIZARD
+        // ==========================================
+
+        let currentStep = 1; let selectedTemplate = null;
+        document.getElementById('nextStep').addEventListener('click', () => { if (currentStep < 3 && validateStep(currentStep)) { currentStep++; updateWizardStep(); } });
+        document.getElementById('prevStep').addEventListener('click', () => { if (currentStep > 1) { currentStep--; updateWizardStep(); } });
+        document.addEventListener('click', (e) => { const template = e.target.closest('.poll-template'); if (template) { const templateType = template.dataset.template; document.querySelectorAll('.poll-template').forEach(t => { t.classList.remove('border-blue-500', 'bg-blue-50'); t.classList.add('border-gray-200'); }); template.classList.remove('border-gray-200'); template.classList.add('border-blue-500', 'bg-blue-50'); selectedTemplate = templateType; } });
+        document.getElementById('closePollModal').addEventListener('click', () => { document.getElementById('newPollModal').classList.add('hidden'); resetWizard(); });
+        document.getElementById('createPoll').addEventListener('click', async () => { if (validateStep(3)) await createPollFromWizard(); });
+        document.getElementById('addOption').addEventListener('click', () => addOptionInput());
+        document.getElementById('pollTitle').addEventListener('input', updatePreview);
+        document.getElementById('pollDescription').addEventListener('input', updatePreview);
+        document.getElementById('pollCategory').addEventListener('change', updatePreview);
+        document.getElementById('pollDuration').addEventListener('change', updatePreview);
+
+        function updateWizardStep() {
+            document.querySelectorAll('.step-content').forEach(step => step.classList.add('hidden'));
+            document.getElementById(`step${currentStep}`).classList.remove('hidden');
+            document.querySelectorAll('.step-indicator').forEach((indicator, index) => { if (index + 1 < currentStep) indicator.classList.add('active'); else if (index + 1 === currentStep) indicator.classList.add('active'); else indicator.classList.remove('active'); });
+            const progress = (currentStep - 1) * 50; document.getElementById('progressBar').style.width = `${progress}%`;
+            document.getElementById('prevStep').classList.toggle('hidden', currentStep === 1);
+            document.getElementById('nextStep').classList.toggle('hidden', currentStep === 3);
+            document.getElementById('createPoll').classList.toggle('hidden', currentStep !== 3);
+            if (currentStep === 2) { if (selectedTemplate && pollTemplates[selectedTemplate]) { const template = pollTemplates[selectedTemplate]; document.getElementById('pollTitle').value = template.title; document.getElementById('pollDescription').value = template.description; document.getElementById('pollCategory').value = template.category; } else if (selectedTemplate === 'custom' && document.getElementById('pollTitle').value === '' && document.getElementById('pollDescription').value === '') document.getElementById('pollCategory').value = 'other'; updatePreview(); }
+            if (currentStep === 3) { const container = document.getElementById('optionsContainer'); const firstOptionInput = container.querySelector('input'); const shouldFillTemplate = selectedTemplate && pollTemplates[selectedTemplate] && (container.children.length <= 2 && firstOptionInput && firstOptionInput.value === ''); if (shouldFillTemplate) { const template = pollTemplates[selectedTemplate]; container.innerHTML = ''; template.options.forEach((option, index) => { const emoji = ['🥇', '🥈', '🥉', '🏆', '⭐'][index] || '🔹'; addOptionInput(option, emoji); }); } else if (container.children.length === 0) { addOptionInput(); addOptionInput(); } updatePreview(); }
+        }
+
+        function validateStep(step) {
+            switch (step) {
+                case 1: if (!selectedTemplate) { showFeedback('Por favor, selecione um tipo de enquete', 'error'); return false; } return true;
+                case 2: const title = document.getElementById('pollTitle').value.trim(); if (!title) { showFeedback('Por favor, digite um título para a enquete', 'error'); return false; } return true;
+                case 3: const options = getWizardOptions(); if (options.length < 2) { showFeedback('Por favor, adicione pelo menos 2 opções válidas', 'error'); return false; } return true;
+                default: return true;
+            }
+        }
+
+        function addOptionInput(value = '', emoji = '') {
+            const container = document.getElementById('optionsContainer'); const index = container.children.length; const emojis = ['🥇', '🥈', '🥉', '🏆', '⭐', '🔹', '🎯', '💎', '🚀', '⚡']; const defaultEmoji = emoji || emojis[index] || '🔹';
+            const optionDiv = document.createElement('div'); optionDiv.className = 'option-input flex items-center space-x-3'; optionDiv.innerHTML = `<span class="text-2xl">${defaultEmoji}</span><input type="text" class="flex-1 border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Digite uma opção" value="${escapeHtml(value)}"><button class="remove-option text-red-500 hover:text-red-700 ${index < 2 ? 'hidden' : ''}" onclick="this.parentElement.remove(); updatePreview(); updateRemoveButtons();">🗑️</button>`;
+            optionDiv.querySelector('input').addEventListener('input', updatePreview); container.appendChild(optionDiv); updatePreview(); updateRemoveButtons();
+        }
+
+        function updateRemoveButtons() { const container = document.getElementById('optionsContainer'); const options = container.querySelectorAll('.option-input'); const canRemove = options.length > 2; options.forEach((opt) => { const btn = opt.querySelector('.remove-option'); if (btn) btn.classList.toggle('hidden', !canRemove); }); }
+        function getWizardOptions() { const inputs = document.querySelectorAll('#optionsContainer input'); return Array.from(inputs).map(input => input.value.trim()).filter(value => value); }
+
+        function updatePreview() {
+            if (currentStep !== 3 && currentStep !== 2) return;
+            const title = document.getElementById('pollTitle').value.trim(); const description = document.getElementById('pollDescription').value.trim(); const category = document.getElementById('pollCategory').value; const duration = document.getElementById('pollDuration').value; const options = (currentStep === 3) ? getWizardOptions() : [];
+            const categoryNames = { 'entertainment': 'Entretenimento', 'food': 'Comida', 'education': 'Educação', 'business': 'Negócios', 'other': 'Outros' }; const durationNames = { '1': '1 hora', '6': '6 horas', '24': '1 dia', '168': '1 semana', '0': 'Sem limite' };
+            const preview = document.getElementById('pollPreview'); if (title) { preview.innerHTML = `<strong>📋 ${escapeHtml(title)}</strong><br>${description ? `📝 ${escapeHtml(description)}<br>` : ''}🏷️ Categoria: ${categoryNames[category]}<br>⏰ Duração: ${durationNames[duration]}<br>${currentStep === 3 ? `🎯 Opções: ${options.length} (${options.slice(0, 3).map(escapeHtml).join(', ')}${options.length > 3 ? '...' : ''})` : '🎯 Opções serão adicionadas na próxima etapa'}`; } else { preview.textContent = 'Preencha os campos para ver o resumo...'; }
+        }
+
+        async function createPollFromWizard() {
+            const title = document.getElementById('pollTitle').value.trim(); const description = document.getElementById('pollDescription').value.trim(); const category = document.getElementById('pollCategory').value; const duration = parseInt(document.getElementById('pollDuration').value); const options = getWizardOptions();
+            const expiration = duration === 0 ? new Date(Date.now() + 365 * 24 * 60 * 60 * 1000) : new Date(Date.now() + duration * 60 * 60 * 1000);
+            await createPoll(title, options, expiration.toISOString(), description, category); document.getElementById('newPollModal').classList.add('hidden'); resetWizard();
+        }
+
+        function resetOptions() { const container = document.getElementById('optionsContainer'); container.innerHTML = ''; addOptionInput('', '🥇'); addOptionInput('', '🥈'); }
+        function resetWizard() { currentStep = 1; selectedTemplate = null; document.querySelectorAll('.poll-template').forEach(t => { t.classList.remove('border-blue-500', 'bg-blue-50'); t.classList.add('border-gray-200'); }); document.getElementById('pollTitle').value = ''; document.getElementById('pollDescription').value = ''; document.getElementById('pollCategory').selectedIndex = 0; document.getElementById('pollDuration').selectedIndex = 2; resetOptions(); updateWizardStep(); }
+
+        // Fechar modais
+         document.getElementById('closePollDetailBtn').addEventListener('click', () => { pollDetailModal.classList.add('hidden'); currentPollId = null; });
+         document.getElementById('closePollModal').addEventListener('click', () => { document.getElementById('newPollModal').classList.add('hidden'); resetWizard(); });
+
+        // ==========================================
+        // FUNÇÕES DE CONEXÃO MANUAL
+        // ==========================================
+
+        function manualConnect() { console.log('🔄 Reconexão manual solicitada...'); isConnected = false; isPubSubConnected = false; connectToMCP(); }
+
+        // ==========================================
+        // INICIALIZAÇÃO
+        // ==========================================
+
+        window.addEventListener('load', () => {
+            console.log('🚀 Iniciando aplicação de votação...'); connectToMCP();
+            setInterval(() => { let needsReconnect = false; if (!mcpSocket || mcpSocket.readyState === WebSocket.CLOSED) { isConnected = false; needsReconnect = true; } if (!pubSubSocket || pubSubSocket.readyState === WebSocket.CLOSED) { isPubSubConnected = false; needsReconnect = true; } if (needsReconnect && statusText.textContent !== 'Conectando...') { console.log('🔄 Verificação detectou conexão perdida, tentando reconectar...'); manualConnect(); } }, 10000);
+        });
+
+    </script>
+</body>
+</html>

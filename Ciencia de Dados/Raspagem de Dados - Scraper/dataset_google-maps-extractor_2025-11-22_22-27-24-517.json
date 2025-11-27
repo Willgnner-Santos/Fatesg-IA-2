@@ -1,0 +1,1813 @@
+[{
+  "title": "Supermercado 07",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "Av. Lindolfo Diniz, Qd 1 - Lt 13 - Residencial Maria Nadir, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": "Residencial Maria Nadir",
+  "street": "Av. Lindolfo Diniz, Qd 1 - Lt 13",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.supermercado07.com.br/",
+  "phone": "+55 62 99811-1474",
+  "phoneUnformatted": "+5562998111474",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.9659,
+    "lng": -48.9475948
+  },
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJx86Wr70kX5MRjgmYkm5LYNE",
+  "categories": [
+    "Supermercado",
+    "Padaria",
+    "Açougue",
+    "Fabricação de alimentos",
+    "Fabricante de alimentos congelados",
+    "Loja de alimentos congelados",
+    "Loja de bebidas",
+    "Loja de alimentos orgânicos",
+    "Atacadista de hortifrutigranjeiros"
+  ],
+  "fid": "0x935f24bdaf96cec7:0xd1604b6e9298098e",
+  "cid": "15087141689969084814",
+  "reviewsCount": 1690,
+  "imagesCount": 64,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.408Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "06:30 to 13:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:30 to 21:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      },
+      {
+        "Compras na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Reciclagem": [
+      {
+        "Garrafas de vidro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%2007&query_place_id=ChIJx86Wr70kX5MRjgmYkm5LYNE",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 2,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOzcoXOgrT6Zk5xm6x-ONDj2_f5ip4Y74TNY1QK=w408-h272-k-no",
+  "kgmid": "/g/11bxc798z2"
+},
+{
+  "title": "Supermercado Economia",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "Av. Sen. Pedro Ludovíco, n° 311 - Centro, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": "Centro",
+  "street": "Av. Sen. Pedro Ludovíco, n° 311",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "http://www.familiaeconomia.com/",
+  "phone": "+55 62 3551-1298",
+  "phoneUnformatted": "+556235511298",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.971936,
+    "lng": -48.951821
+  },
+  "totalScore": 4.3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJWWa136QkX5MRZ4P2b5BZKvU",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f24a4dfb56659:0xf52a59906ff68367",
+  "cid": "17666030965202781031",
+  "reviewsCount": 543,
+  "imagesCount": 23,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.408Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "07:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 20:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%20Economia&query_place_id=ChIJWWa136QkX5MRZ4P2b5BZKvU",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 3,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxoNXDG4oGReLhbsopIZqzxOuKBngsyVBHj3D2Obr8KQWfwyF99c8fk3PiDsPIIunJLyWiJEFA27R1srMoCgjy2ZknLSWJ63cu1Ct-gxuGvxRj4bBfA7nKyszdrEg0FvINKesuhYw=w408-h544-k-no",
+  "kgmid": "/g/1ydkj418c"
+},
+{
+  "title": "Supermercado do Povo",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "55G3+P9, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": null,
+  "street": "55G3+P9",
+  "city": "Bela Vista de Goiás",
+  "postalCode": null,
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99655-6529",
+  "phoneUnformatted": "+5562996556529",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.8231458,
+    "lng": -48.846502
+  },
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJRWvaa2spX5MRnzR5gKHfsxM",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f296b6bda6b45:0x13b3dfa18079349f",
+  "cid": "1419724192289993887",
+  "reviewsCount": 14,
+  "imagesCount": 8,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.409Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 13:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 20:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%20do%20Povo&query_place_id=ChIJRWvaa2spX5MRnzR5gKHfsxM",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 4,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwESiXKxS0L6uut6pBS0u4lj6z3C9l7IKkxiPlAX5-o0I2sbwc_A1_HWNZOSbqwHZVjgqb8Yk0XPbpDBYzRFAdPWh0cABBmbQiA_vKRy1Ye4rDg5rxRsrJkRRrQUSperGRAi-Y8=w426-h240-k-no",
+  "kgmid": "/g/11sq21qnhd"
+},
+{
+  "title": "Super União Supermercados Bela Vista Go",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "R. Antenor de Amorim, 339 - centro, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": "centro",
+  "street": "R. Antenor de Amorim, 339",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 3551-1185",
+  "phoneUnformatted": "+556235511185",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.9695223,
+    "lng": -48.9529946
+  },
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJqQM1gLjnXpMRMh0EIxIbxA0",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935ee7b8803503a9:0xdc41b1223041d32",
+  "cid": "991947582639185202",
+  "reviewsCount": 138,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.409Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "06:30 to 13:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:30 to 21:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:30 to 21:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      },
+      {
+        "Compras na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Reciclagem": [
+      {
+        "Eletrônicos": true
+      },
+      {
+        "Garrafas de vidro": true
+      },
+      {
+        "Garrafas plásticas": true
+      },
+      {
+        "Latas de metal": true
+      },
+      {
+        "Sacos plásticos": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Super%20Uni%C3%A3o%20Supermercados%20Bela%20Vista%20Go&query_place_id=ChIJqQM1gLjnXpMRMh0EIxIbxA0",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 5,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=xtE1U_FzKGOeHvJETFMcRQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=76.58526&pitch=0&thumbfov=100",
+  "kgmid": "/g/11pxwhqwnt"
+},
+{
+  "title": "Supermercado Economia",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "R. Quatro, 421-503, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": null,
+  "street": "R. Quatro, 421-503",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 3551-3215",
+  "phoneUnformatted": "+556235513215",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.980864,
+    "lng": -48.9465348
+  },
+  "totalScore": 4.3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJW4yQc7MkX5MRBWxOldNVd2E",
+  "categories": [
+    "Supermercado",
+    "Padaria",
+    "Açougue"
+  ],
+  "fid": "0x935f24b373908c5b:0x617755d3954e6c05",
+  "cid": "7023176511138982917",
+  "reviewsCount": 280,
+  "imagesCount": 7,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.409Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "07:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 20:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%20Economia&query_place_id=ChIJW4yQc7MkX5MRBWxOldNVd2E",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxxUYT9Pnb-iDlLX17zCnSSm86AY9q784E79cfuhF04ThDNWoItnu0TEitHLQKFgBeVG1ZOBieUSq9HMfOzpqNMy_xlz8gvrypc5LyZr2jOZprXBD3_T-LDmoIhh0yIxPF_BFbEbA=w408-h306-k-no",
+  "kgmid": "/g/11c74_cxh_"
+},
+{
+  "title": "Supermercado Oliveira",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "Av. Joaquim Bueno Teles - Lucia Alice, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": "Lucia Alice",
+  "street": "Av. Joaquim Bueno Teles",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "GO",
+  "countryCode": "BR",
+  "phone": "+55 62 3551-2337",
+  "phoneUnformatted": "+556235512337",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.9714279,
+    "lng": -48.9584383
+  },
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJN8gj-KAkX5MRNRn_MvP6qlM",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f24a0f823c837:0x53aafaf332ff1935",
+  "cid": "6028906973628406069",
+  "reviewsCount": 359,
+  "imagesCount": 20,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.409Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "07:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 20:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%20Oliveira&query_place_id=ChIJN8gj-KAkX5MRNRn_MvP6qlM",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 7,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxnzPnee5SySHiTRy8UnBnkHj8jE0l3soX9OlKUZaF2ZRgZ68ksYk4Iotn_S6ZW1vX08dbFDG6GDKb1Cd_Uoocyy8ikIEzHJJuMqwklLnyIzwvzFdk5AiOCbCsUPs-PfOGweE5Rhg=w426-h240-k-no",
+  "kgmid": "/g/1ydkd1z55"
+},
+{
+  "title": "Mercado Super Carvalho",
+  "price": null,
+  "categoryName": "Mercado",
+  "address": "Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": null,
+  "street": null,
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.8046875,
+    "lng": -48.9047852
+  },
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJI5zZ5GvYXpMRxMPk3INM8l0",
+  "categories": [
+    "Mercado"
+  ],
+  "fid": "0x935ed86be4d99c23:0x5df24c83dce4c3c4",
+  "cid": "6769557319121683396",
+  "reviewsCount": 92,
+  "imagesCount": 19,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.409Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Mercado%20Super%20Carvalho&query_place_id=ChIJI5zZ5GvYXpMRxMPk3INM8l0",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwYQzOGQwYRfSkbjIN0DZ_rmmA1pK_U25xyAJhpSu8pLJ7EIo6kbmjwdzU5FixBzOpGZaBaPjBOSzgEjAKdxNUkGl-pLd4qcQqXIiSe5o49TpecXDbnIHYChMTThYaptoJoA53qEA=w408-h426-k-no",
+  "kgmid": "/g/11g6jsz9dc"
+},
+{
+  "title": "Supermercado Bom Preço",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "Alameda Bambus, Qd. 01 - LT.1, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": null,
+  "street": "Alameda Bambus, Qd. 01 - LT.1",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 3551-2483",
+  "phoneUnformatted": "+556235512483",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.9785593,
+    "lng": -48.9515171
+  },
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJg1b_FdolX5MRtFHXPyTXPBE",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f25da15ff5683:0x113cd7243fd751b4",
+  "cid": "1242104147937284532",
+  "reviewsCount": 97,
+  "imagesCount": 6,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.409Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "07:00 to 19:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 20:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      },
+      {
+        "Compras na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%20Bom%20Pre%C3%A7o&query_place_id=ChIJg1b_FdolX5MRtFHXPyTXPBE",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 9,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPXPtOG-SqobN8OssKLfHp-bIeH1Pcto26LbQ-R=w413-h240-k-no",
+  "kgmid": "/g/11fw8gv0gv"
+},
+{
+  "title": "SUPERMERCADO BOM PREÇO",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "RUA 12 QD56 LT06, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": null,
+  "street": "RUA 12 QD56 LT06",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "GO",
+  "countryCode": "BR",
+  "phone": "+55 62 99832-4026",
+  "phoneUnformatted": "+5562998324026",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.9813954,
+    "lng": -48.9386649
+  },
+  "totalScore": 4.1,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJOUG31jw7X5MRGs4ksKgTTBM",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f3b3cd6b74139:0x134c13a8b024ce1a",
+  "cid": "1390508000181276186",
+  "reviewsCount": 12,
+  "imagesCount": 4,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.409Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 20:30"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 20:30"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 20:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 20:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 20:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 20:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 20:30"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=SUPERMERCADO%20BOM%20PRE%C3%87O&query_place_id=ChIJOUG31jw7X5MRGs4ksKgTTBM",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 10,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxUcKz5YfW4xDPlpNX4d57SN7P1jKX0Tk0gnmPZXuE3AtD6lKSKSHXD38XSeE_s-EEt-WHrUeoErksdTCMiBc2YI8hTPMSqR38LCAlYtE-mNcDcHiIMYR5ceKb0QMTsKmj5PLaq=w427-h240-k-no",
+  "kgmid": "/g/11fhvkcknx"
+},
+{
+  "title": "Supermercado 07",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "R. Pedro Viêira Januário, 64 - Centro, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": "Centro",
+  "street": "R. Pedro Viêira Januário, 64",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "http://www.supermercado07.com.br/",
+  "phone": "+55 62 99932-1151",
+  "phoneUnformatted": "+5562999321151",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.9685686,
+    "lng": -48.9515825
+  },
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJrZkp8HglX5MR3dngQFQm9kY",
+  "categories": [
+    "Supermercado",
+    "Padaria",
+    "Fornecedor de alimentos e bebidas para catering",
+    "Fornecedor",
+    "Supermercado de descontos",
+    "Fabricação de alimentos",
+    "Fabricante de alimentos congelados",
+    "Loja de alimentos congelados",
+    "Loja de alimentos orgânicos",
+    "Loja"
+  ],
+  "fid": "0x935f2578f02999ad:0x46f6265440e0d9dd",
+  "cid": "5113316570233362909",
+  "reviewsCount": 44,
+  "imagesCount": 21,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.409Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "06:30 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:30 to 20:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      },
+      {
+        "Compras na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%2007&query_place_id=ChIJrZkp8HglX5MR3dngQFQm9kY",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 12,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipP5fDL6qCF-Gzd47IihEMMXr_ty6EedTdUy4bn8=w408-h306-k-no",
+  "kgmid": "/g/11sqdb2tyj"
+},
+{
+  "title": "Supersil Supermercado",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "55G3+RJ, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": null,
+  "street": "55G3+RJ",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.8229818,
+    "lng": -48.8456993
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJOaNc0CspX5MR9SCtJBtUsnY",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f292bd05ca339:0x76b2541b24ad20f5",
+  "cid": "8552991117886169333",
+  "reviewsCount": 3,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.410Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supersil%20Supermercado&query_place_id=ChIJOaNc0CspX5MR9SCtJBtUsnY",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 13,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Vse9skkXPuqliMbar8y5Xw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=162.92415&pitch=0&thumbfov=100",
+  "kgmid": "/g/11t24_1x9n"
+},
+{
+  "title": "Supermercado Braz",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "Rua Vereador Antônio de Paula N⁰ 316a, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": null,
+  "street": "Rua Vereador Antônio de Paula N⁰ 316a",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "GO",
+  "countryCode": "BR",
+  "phone": "+55 62 99684-1339",
+  "phoneUnformatted": "+5562996841339",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.970926,
+    "lng": -48.9500097
+  },
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJx8XXt3IlX5MRElICLAgDWZk",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f2572b7d7c5c7:0x995903082c025212",
+  "cid": "11049866494363193874",
+  "reviewsCount": 17,
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.410Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:30 to 20:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "07:30 to 13:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:30 to 20:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:30 to 20:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:30 to 20:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:30 to 20:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:30 to 20:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%20Braz&query_place_id=ChIJx8XXt3IlX5MRElICLAgDWZk",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 15,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMVQeR_jOGQLPaYoFTQAZQz0AoQ9HwmBOzdBZdu=w519-h240-k-no",
+  "kgmid": "/g/11td4k4524"
+},
+{
+  "title": "supermercado divino",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "rua rs, 05 - quadra 14 lote 18, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": null,
+  "street": "rua rs, 05 - quadra 14 lote 18",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99643-6700",
+  "phoneUnformatted": "+5562996436700",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.9883673,
+    "lng": -48.9490486
+  },
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJrT1f3007X5MR7TFYPmxqAnc",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f3b4ddf5f3dad:0x77026a6c3e5831ed",
+  "cid": "8575533653601825261",
+  "reviewsCount": 78,
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.410Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "07:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 20:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 20:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=supermercado%20divino&query_place_id=ChIJrT1f3007X5MR7TFYPmxqAnc",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 16,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=j1IU5VziQ8NecS0XhPFMdw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=247.15933&pitch=0&thumbfov=100",
+  "kgmid": "/g/11g8kv8722"
+},
+{
+  "title": "Supermercado Cooperbelgo Smart",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "R. Cel. João Camilo, 496, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": null,
+  "street": "R. Cel. João Camilo, 496",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://cooperbelgo.com.br/",
+  "phone": "+55 62 3551-1214",
+  "phoneUnformatted": "+556235511214",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.9728965,
+    "lng": -48.9534835
+  },
+  "totalScore": 4.3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJf6vGraUkX5MRAdvQZKag9WU",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f24a5adc6ab7f:0x65f5a0a664d0db01",
+  "cid": "7346955003641256705",
+  "reviewsCount": 488,
+  "imagesCount": 53,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.410Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 22:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Reciclagem": [
+      {
+        "Sacos plásticos": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%20Cooperbelgo%20Smart&query_place_id=ChIJf6vGraUkX5MRAdvQZKag9WU",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 17,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxLj6SsKCPEZvwr2bNnk5P6LRqnyKaMUkUNXVY5h4Ju8-EMzQL0vEu1TxiS5gVcwCuoVcHZzLT-L2MD1SONAOVOv63_O98vQ4-4hABddASI-dXdHAWwg7EYVAtLdNZQTpxtbv0=w408-h725-k-no",
+  "kgmid": "/g/11b6td01l4"
+},
+{
+  "title": "Supermercado Lukão",
+  "price": null,
+  "categoryName": "Supermercado",
+  "address": "Rua 06 Qdr 15 Lote 14 - Res. Armando Antônio, Bela Vista de Goiás - GO, 75240-000, Brasil",
+  "neighborhood": "Residencial Armando Antônio",
+  "street": "Rua 06 Qdr 15 Lote 14",
+  "city": "Bela Vista de Goiás",
+  "postalCode": "75240-000",
+  "state": "GO",
+  "countryCode": "BR",
+  "phone": "+55 62 99947-9093",
+  "phoneUnformatted": "+5562999479093",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.9795254,
+    "lng": -48.966572
+  },
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJae7flJAjX5MRrGeU21k8x5I",
+  "categories": [
+    "Supermercado"
+  ],
+  "fid": "0x935f239094dfee69:0x92c73c59db9467ac",
+  "cid": "10576488606536591276",
+  "reviewsCount": 71,
+  "imagesCount": 119,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-22T22:27:24.410Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "06:30 to 13:30"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:30 to 20:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:30 to 20:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Supermercado%20Luk%C3%A3o&query_place_id=ChIJae7flJAjX5MRrGeU21k8x5I",
+  "searchPageUrl": "https://www.google.com/maps/search/Supermecados/@-16.907358022744734,-48.828869437429326,13z?hl=pt-BR",
+  "searchString": "Supermecados",
+  "language": "pt-BR",
+  "rank": 18,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_XaJiXUGDUv93BpVPEyRL9xjbRRt2PqQLZ0uP3j9rdEU1R16BSc2qP6-kD5JapN0r1ArW9tvMpSmasi72iZpcSWZB6CyAnibmS9ljTIyiM6bYEebUtsOhh-Si2NhqZbLLk7FbJaK9Vyo=w408-h544-k-no",
+  "kgmid": "/g/11t6v_88qg"
+}]

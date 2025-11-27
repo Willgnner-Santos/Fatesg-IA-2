@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste WebSocket</title>
+</head>
+<body>
+    <h1>Teste de Conexão WebSocket</h1>
+    <div id="status">Iniciando...</div>
+    <div id="logs"></div>
+    
+    <script>
+        const statusDiv = document.getElementById('status');
+        const logsDiv = document.getElementById('logs');
+        
+        function addLog(message) {
+            console.log(message);
+            logsDiv.innerHTML += '<div>' + new Date().toLocaleTimeString() + ': ' + message + '</div>';
+        }
+        
+        addLog('🚀 Iniciando teste de conexão...');
+        
+        try {
+            addLog('🔗 Criando WebSocket para ws://localhost:3000');
+            const socket = new WebSocket('ws://localhost:3000');
+            
+            socket.onopen = function(event) {
+                addLog('✅ Conexão estabelecida com sucesso!');
+                statusDiv.innerHTML = '<span style="color: green;">CONECTADO</span>';
+                
+                // Enviar mensagem de teste
+                const testMessage = {
+                    jsonrpc: '2.0',
+                    id: 'test-1',
+                    method: 'ping'
+                };
+                addLog('📤 Enviando mensagem de teste: ' + JSON.stringify(testMessage));
+                socket.send(JSON.stringify(testMessage));
+            };
+            
+            socket.onmessage = function(event) {
+                addLog('📥 Mensagem recebida: ' + event.data);
+            };
+            
+            socket.onerror = function(error) {
+                addLog('❌ Erro: ' + error.toString());
+                statusDiv.innerHTML = '<span style="color: red;">ERRO</span>';
+            };
+            
+            socket.onclose = function(event) {
+                addLog('🔌 Conexão fechada. Código: ' + event.code + ', Razão: ' + event.reason);
+                statusDiv.innerHTML = '<span style="color: orange;">DESCONECTADO</span>';
+            };
+            
+        } catch (error) {
+            addLog('💥 Exceção: ' + error.toString());
+            statusDiv.innerHTML = '<span style="color: red;">ERRO CRÍTICO</span>';
+        }
+    </script>
+</body>
+</html>

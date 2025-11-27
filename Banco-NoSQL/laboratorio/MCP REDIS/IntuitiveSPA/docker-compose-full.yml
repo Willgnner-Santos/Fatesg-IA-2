@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  # Redis para armazenar dados
+  voting-redis:
+    image: redis:7-alpine
+    container_name: voting-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  # API REST Node.js
+
+  # MCP WebSocket Server (já existente)
+  mcp-websocket-server-real:
+    build: ./mcp-server
+    container_name: mcp-websocket-server-real
+    ports:
+      - "3000:3000"
+    depends_on:
+      - voting-redis
+    environment:
+      - REDIS_HOST=voting-redis
+      - REDIS_PORT=6379
+    volumes:
+      - ./mcp-server:/app
+      - /app/node_modules
+
+  # Redis Commander para visualização
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: redis-commander
+    ports:
+      - "8081:8081"
+    environment:
+      - REDIS_HOSTS=local:voting-redis:6379
+    depends_on:
+      - voting-redis
+
+volumes:
+  redis_data:

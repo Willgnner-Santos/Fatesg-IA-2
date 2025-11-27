@@ -1,0 +1,216 @@
+================================================================================
+ANÁLISE EXPLORATÓRIA DO DATASET TITANIC
+================================================================================
+
+1. PRIMEIRAS 8 LINHAS DO DATASET:
+--------------------------------------------------------------------------------
+   PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
+0            1         0       3  ...   7.2500   NaN         S
+1            2         1       1  ...  71.2833   C85         C
+2            3         1       3  ...   7.9250   NaN         S
+3            4         1       1  ...  53.1000  C123         S
+4            5         0       3  ...   8.0500   NaN         S
+5            6         0       3  ...   8.4583   NaN         Q
+6            7         0       1  ...  51.8625   E46         S
+7            8         0       3  ...  21.0750   NaN         S
+
+[8 rows x 12 columns]
+
+2. ÚLTIMAS 8 LINHAS DO DATASET:
+--------------------------------------------------------------------------------
+     PassengerId  Survived  Pclass                                      Name  ...            Ticket    Fare  Cabin  Embarked
+883          884         0       2             Banfield, Mr. Frederick James  ...  C.A./SOTON 34068  10.500    NaN         S
+884          885         0       3                    Sutehall, Mr. Henry Jr  ...   SOTON/OQ 392076   7.050    NaN         S
+885          886         0       3      Rice, Mrs. William (Margaret Norton)  ...            382652  29.125    NaN         Q
+886          887         0       2                     Montvila, Rev. Juozas  ...            211536  13.000    NaN         S
+887          888         1       1              Graham, Miss. Margaret Edith  ...            112053  30.000    B42         S
+888          889         0       3  Johnston, Miss. Catherine Helen "Carrie"  ...        W./C. 6607  23.450    NaN         S
+889          890         1       1                     Behr, Mr. Karl Howell  ...            111369  30.000   C148         C
+890          891         0       3                       Dooley, Mr. Patrick  ...            370376   7.750    NaN         Q
+
+[8 rows x 12 columns]
+
+3. DIMENSÕES DO DATASET:
+--------------------------------------------------------------------------------
+Total de linhas: 891
+Total de colunas: 12
+
+4. TIPOS DE DADOS DE CADA COLUNA:
+--------------------------------------------------------------------------------
+PassengerId      int64
+Survived         int64
+Pclass           int64
+Name            object
+Sex             object
+Age            float64
+SibSp            int64
+Parch            int64
+Ticket          object
+Fare           float64
+Cabin           object
+Embarked        object
+dtype: object
+
+5. IMPRESSÕES GERAIS E ANÁLISE EXPLORATÓRIA:
+--------------------------------------------------------------------------------
+
+Nomes das colunas:
+['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp', 'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked']  
+
+Informações gerais do dataset (df.info()):
+--------------------------------------------------------------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   PassengerId  891 non-null    int64
+ 1   Survived     891 non-null    int64
+ 2   Pclass       891 non-null    int64
+ 3   Name         891 non-null    object
+ 4   Sex          891 non-null    object
+ 5   Age          714 non-null    float64
+ 6   SibSp        891 non-null    int64
+ 7   Parch        891 non-null    int64
+ 8   Ticket       891 non-null    object
+ 9   Fare         891 non-null    float64
+ 10  Cabin        204 non-null    object
+ 11  Embarked     889 non-null    object
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.7+ KB
+
+
+Estatísticas descritivas das colunas numéricas:
+--------------------------------------------------------------------------------
+       PassengerId    Survived      Pclass         Age       SibSp       Parch        Fare
+count   891.000000  891.000000  891.000000  714.000000  891.000000  891.000000  891.000000
+mean    446.000000    0.383838    2.308642   29.699118    0.523008    0.381594   32.204208
+std     257.353842    0.486592    0.836071   14.526497    1.102743    0.806057   49.693429
+min       1.000000    0.000000    1.000000    0.420000    0.000000    0.000000    0.000000
+25%     223.500000    0.000000    2.000000   20.125000    0.000000    0.000000    7.910400
+50%     446.000000    0.000000    3.000000   28.000000    0.000000    0.000000   14.454200
+75%     668.500000    1.000000    3.000000   38.000000    1.000000    0.000000   31.000000
+max     891.000000    1.000000    3.000000   80.000000    8.000000    6.000000  512.329200
+
+
+Valores faltantes (Missing values):
+--------------------------------------------------------------------------------
+     Coluna  Valores Faltantes  Percentual (%)
+PassengerId                  0        0.000000
+   Survived                  0        0.000000
+     Pclass                  0        0.000000
+       Name                  0        0.000000
+        Sex                  0        0.000000
+        Age                177       19.865320
+      SibSp                  0        0.000000
+      Parch                  0        0.000000
+     Ticket                  0        0.000000
+       Fare                  0        0.000000
+      Cabin                687       77.104377
+   Embarked                  2        0.224467
+
+
+Valores únicos por coluna:
+--------------------------------------------------------------------------------
+PassengerId: 891 valores únicos
+Survived: 2 valores únicos
+Pclass: 3 valores únicos
+Name: 891 valores únicos
+Sex: 2 valores únicos
+Age: 88 valores únicos
+SibSp: 7 valores únicos
+Parch: 7 valores únicos
+Ticket: 681 valores únicos
+Fare: 248 valores únicos
+Cabin: 147 valores únicos
+Embarked: 3 valores únicos
+
+
+AMOSTRA DE DADOS POR COLUNA:
+--------------------------------------------------------------------------------
+
+PassengerId:
+  Tipo: Numérico
+  Primeiros 5 valores: [1, 2, 3, 4, 5]
+  Min: 1, Max: 891
+
+Survived:
+  Tipo: Numérico
+  Primeiros 5 valores: [0, 1, 1, 1, 0]
+  Min: 0, Max: 1
+
+Pclass:
+  Tipo: Numérico
+  Primeiros 5 valores: [3, 1, 3, 1, 3]
+  Min: 1, Max: 3
+
+Name:
+  Tipo: Categórico (texto)
+  Primeiros 5 valores: ['Braund, Mr. Owen Harris', 'Cumings, Mrs. John Bradley (Florence Briggs Thayer)', 'Heikkinen, Miss. Laina', 'Futrelle, Mrs. Jacques Heath (Lily May Peel)', 'Allen, Mr. William Henry']
+
+Sex:
+  Tipo: Categórico (texto)
+  Primeiros 5 valores: ['male', 'female', 'female', 'female', 'male']
+
+Age:
+  Tipo: Numérico
+  Primeiros 5 valores: [22.0, 38.0, 26.0, 35.0, 35.0]
+  Min: 0.42, Max: 80.0
+
+SibSp:
+  Tipo: Numérico
+  Primeiros 5 valores: [1, 1, 0, 1, 0]
+  Min: 0, Max: 8
+
+Parch:
+  Tipo: Numérico
+  Primeiros 5 valores: [0, 0, 0, 0, 0]
+  Min: 0, Max: 6
+
+Ticket:
+  Tipo: Categórico (texto)
+  Primeiros 5 valores: ['A/5 21171', 'PC 17599', 'STON/O2. 3101282', '113803', '373450']
+
+Fare:
+  Tipo: Numérico
+  Primeiros 5 valores: [7.25, 71.2833, 7.925, 53.1, 8.05]
+  Min: 0.0, Max: 512.3292
+
+Cabin:
+  Tipo: Categórico (texto)
+  Primeiros 5 valores: [nan, 'C85', nan, 'C123', nan]
+Parch:
+  Tipo: Numérico
+  Primeiros 5 valores: [0, 0, 0, 0, 0]
+  Min: 0, Max: 6
+
+Ticket:
+  Tipo: Categórico (texto)
+  Primeiros 5 valores: ['A/5 21171', 'PC 17599', 'STON/O2. 3101282', '113803', '373450']
+
+Fare:
+  Tipo: Numérico
+  Primeiros 5 valores: [7.25, 71.2833, 7.925, 53.1, 8.05]
+  Min: 0.0, Max: 512.3292
+
+Cabin:
+  Tipo: Categórico (texto)
+  Primeiros 5 valores: [nan, 'C85', nan, 'C123', nan]
+  Primeiros 5 valores: ['A/5 21171', 'PC 17599', 'STON/O2. 3101282', '113803', '373450']
+
+Fare:
+  Tipo: Numérico
+  Primeiros 5 valores: [7.25, 71.2833, 7.925, 53.1, 8.05]
+  Min: 0.0, Max: 512.3292
+
+Cabin:
+  Tipo: Categórico (texto)
+  Primeiros 5 valores: [nan, 'C85', nan, 'C123', nan]
+
+Embarked:
+  Tipo: Categórico (texto)
+  Primeiros 5 valores: ['S', 'C', 'S', 'S', 'S']
+
+================================================================================
+FIM DA ANÁLISE EXPLORATÓRIA
+================================================================================

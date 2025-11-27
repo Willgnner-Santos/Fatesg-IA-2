@@ -1,0 +1,166 @@
+Connected as mcfwork07@gmail.com.
+Connected to cndb at cassandra.ingress:9042.
+[cqlsh 6.8.0 | Cassandra 4.0.11.0-1e2868c88670 | CQL spec 3.4.5 | Native protocol v4 | TLS]
+Use HELP for help.
+token@cqlsh> USE futebol;
+token@cqlsh:futebol> CREATE TABLE clubes (
+           ...  id_clube uuid PRIMARY KEY,
+           ...  nome text,
+           ... cidade text,
+           ... estadio text
+           ... );
+token@cqlsh:futebol> CREATE TABLE jogadores_por_clube (
+           ...     id_clube uuid,
+           ...     id_jogador uuid,
+           ...     nome text,
+           ...     posicao text,
+           ...     idade int,
+           ...     PRIMARY KEY (id_clube, id_jogador)
+           ... );
+token@cqlsh:futebol> CREATE TABLE partidas_por_data (
+           ...     data date,
+           ...     id_partida uuid,
+           ...     clube_casa text,
+           ...     clube_visitante text,
+           ...     gols_casa int,
+           ...     gols_visitante int,
+           ...     PRIMARY KEY (data, id_partida)
+           ... ) WITH CLUSTERING ORDER BY (id_partida ASC);
+token@cqlsh:futebol> CREATE TABLE estatisticas_por_jogador (
+           ...     id_jogador uuid,
+           ...     id_partida uuid,
+           ...     data_partida date,
+           ...     gols int,
+           ...     assistencias int,
+           ...     cartoes_amarelos int,
+           ...     cartoes_vermelhos int,
+           ...     PRIMARY KEY ((id_jogador), data_partida, id_partida)
+           ... ) WITH CLUSTERING ORDER BY (data_partida DESC, id_partida ASC);
+token@cqlsh:futebol> INSERT INTO clubes (id_clube, nome, cidade, estadio) VALUES (11111111-1111-1111-1111-111111111111, 'Flamengo', 'Rio de Janeiro', 'Maracanã');
+token@cqlsh:futebol> INSERT INTO clubes (id_clube, nome, cidade, estadio) VALUES (22222222-2222-2222-2222-222222222222, 'Palmeiras', 'São Paulo', 'Allianz Parque');
+token@cqlsh:futebol> INSERT INTO jogadores_por_clube (id_clube, id_jogador, nome, posicao, idade) 
+           ... VALUES (11111111-1111-1111-1111-111111111111, 33333333-3333-3333-3333-333333333333, 'Pedro', 'Atacante', 27);
+token@cqlsh:futebol> INSERT INTO jogadores_por_clube (id_clube, id_jogador, nome, posicao, idade)
+           ... VALUES (22222222-2222-2222-2222-222222222222, 44444444-4444-4444-4444-444444444444, 'Rafael Veiga', 'Meia', 28);
+token@cqlsh:futebol> INSERT INTO partidas_por_data (data, id_partida, clube_casa, clube_visitante, gols_casa, gols_visitante)
+           ... VALUES ('2025-04-10', 55555555-5555-5555-5555-555555555555, 'Flamengo', 'Palmeiras', 2, 1);
+token@cqlsh:futebol> INSERT INTO estatisticas_por_jogador (id_jogador, id_partida, data_partida, gols, assistencias, cartoes_amarelos, cartoes_vermelhos)
+           ... VALUES (33333333-3333-3333-3333-333333333333, 55555555-5555-5555-5555-555555555555, '2025-04-10', 1, 0, 0, 0);
+token@cqlsh:futebol> INSERT INTO estatisticas_por_jogador (id_jogador, id_partida, data_partida, gols, assistencias, cartoes_amarelos, cartoes_vermelhos)
+           ... VALUES (44444444-4444-4444-4444-444444444444, 55555555-5555-5555-5555-555555555555, '2025-04-10', 1, 1, 1, 0);
+token@cqlsh:futebol> 
+token@cqlsh:futebol> 
+token@cqlsh:futebol> 
+token@cqlsh:futebol> INSERT INTO estatisticas_por_jogador (id_jogador, id_partida, data_partida, gols, assistencias, cartoes_amarelos, cartoes_vermelhos)
+           ... VALUES (33333333-3333-3333-3333-333333333333, 55555555-5555-5555-5555-555555555555, '2025-04-10', 1, 0, 0, 0);
+token@cqlsh:futebol> INSERT INTO estatisticas_por_jogador (id_jogador, id_partida, data_partida, gols, assistencias, cartoes_amarelos, cartoes_vermelhos)
+           ... VALUES (44444444-4444-4444-4444-444444444444, 55555555-5555-5555-5555-555555555555, '2025-04-10', 1, 1, 1, 0);
+token@cqlsh:futebol> 
+token@cqlsh:futebol> 
+token@cqlsh:futebol> 
+token@cqlsh:futebol> SELECT * FROM clubes;
+
+ id_clube                             | cidade         | estadio        | nome
+--------------------------------------+----------------+----------------+-----------
+ 22222222-2222-2222-2222-222222222222 |      São Paulo | Allianz Parque | Palmeiras
+ 11111111-1111-1111-1111-111111111111 | Rio de Janeiro |       Maracanã |  Flamengo
+
+(2 rows)
+token@cqlsh:futebol> 
+token@cqlsh:futebol> SELECT * FROM jogadores_por_clube WHERE id_clube = 22222222-2222-2222-2222-222222222222;
+
+ id_clube                             | id_jogador                           | idade | nome         | posicao
+--------------------------------------+--------------------------------------+-------+--------------+---------
+ 22222222-2222-2222-2222-222222222222 | 44444444-4444-4444-4444-444444444444 |    28 | Rafael Veiga |    Meia
+
+(1 rows)
+token@cqlsh:futebol> SELECT * FROM partidas_por_data WHERE data = '2025-04-10';
+
+ data       | id_partida                           | clube_casa | clube_visitante | gols_casa | gols_visitante
+------------+--------------------------------------+------------+-----------------+-----------+----------------
+ 2025-04-10 | 55555555-5555-5555-5555-555555555555 |   Flamengo |       Palmeiras |         2 |              1
+
+(1 rows)
+token@cqlsh:futebol> SELECT * FROM estatisticas_por_jogador WHERE id_jogador = 33333333-3333-3333-3333-333333333333;
+
+ id_jogador                           | data_partida | id_partida                           | assistencias | cartoes_amarelos | cartoes_vermelhos | gols
+--------------------------------------+--------------+--------------------------------------+--------------+------------------+-------------------+------
+ 33333333-3333-3333-3333-333333333333 |   2025-04-10 | 55555555-5555-5555-5555-555555555555 |            0 |                0 |                 0 |    1
+
+(1 rows)
+token@cqlsh:futebol> SELECT * FROM partidas_por_data 
+           ... WHERE data = '2025-04-10' 
+           ... AND clube_casa = 'Flamengo' 
+           ... AND clube_visitante = 'Palmeiras' 
+           ... ALLOW FILTERING;
+
+ data       | id_partida                           | clube_casa | clube_visitante | gols_casa | gols_visitante
+------------+--------------------------------------+------------+-----------------+-----------+----------------
+ 2025-04-10 | 55555555-5555-5555-5555-555555555555 |   Flamengo |       Palmeiras |         2 |              1
+
+(1 rows)
+token@cqlsh:futebol> SELECT * FROM partidas_por_data 
+           ... WHERE data = '2025-04-10';
+
+ data       | id_partida                           | clube_casa | clube_visitante | gols_casa | gols_visitante
+------------+--------------------------------------+------------+-----------------+-----------+----------------
+ 2025-04-10 | 55555555-5555-5555-5555-555555555555 |   Flamengo |       Palmeiras |         2 |              1
+
+(1 rows)
+token@cqlsh:futebol> SELECT * FROM partidas_por_data
+           ... WHERE data = '2025-04-10'
+           ... AND clube_casa = 'Flamengo'
+           ... AND clube_visitante = 'Palmeiras'
+           ... ALLOW FILTERING;
+
+ data       | id_partida                           | clube_casa | clube_visitante | gols_casa | gols_visitante
+------------+--------------------------------------+------------+-----------------+-----------+----------------
+ 2025-04-10 | 55555555-5555-5555-5555-555555555555 |   Flamengo |       Palmeiras |         2 |              1
+
+(1 rows)
+token@cqlsh:futebol> SELECT * FROM estatisticas_por_jogador
+           ... WHERE id_jogador = 33333333-3333-3333-3333-333333333333;
+
+ id_jogador                           | data_partida | id_partida                           | assistencias | cartoes_amarelos | cartoes_vermelhos | gols
+--------------------------------------+--------------+--------------------------------------+--------------+------------------+-------------------+------
+ 33333333-3333-3333-3333-333333333333 |   2025-04-10 | 55555555-5555-5555-5555-555555555555 |            0 |                0 |                 0 |    1
+
+(1 rows)
+token@cqlsh:futebol> INSERT INTO partidas_por_data (
+           ...     data, id_partida, clube_casa, clube_visitante, gols_casa, gols_visitante
+           ... ) VALUES (
+           ...     '2025-06-20',
+           ...     99999999-9999-9999-9999-999999999999,
+           ...     'Flamengo',
+           ...     'Palmeiras',
+           ...     3,
+           ...     2
+           ... );
+token@cqlsh:futebol> INSERT INTO estatisticas_por_jogador (
+           ...     id_jogador, id_partida, data_partida,
+           ...     gols, assistencias, cartoes_amarelos, cartoes_vermelhos
+           ... ) VALUES (
+           ...     33333333-3333-3333-3333-333333333333,
+           ...     99999999-9999-9999-9999-999999999999,
+           ...     '2025-06-20',
+           ...     2, 1, 0, 0
+           ... );
+token@cqlsh:futebol> INSERT INTO partidas_por_data (
+           ...     data, id_partida, clube_casa, clube_visitante, gols_casa, gols_visitante
+           ... ) VALUES (
+           ...     '2025-04-10',
+           ...     55555555-5555-5555-5555-555555555555,
+           ...     'Flamengo',
+           ...     'Palmeiras',
+           ...     99,
+           ...     0
+           ... );
+token@cqlsh:futebol> SELECT * FROM partidas_por_data;
+
+ data       | id_partida                           | clube_casa | clube_visitante | gols_casa | gols_visitante
+------------+--------------------------------------+------------+-----------------+-----------+----------------
+ 2025-06-20 | 99999999-9999-9999-9999-999999999999 |   Flamengo |       Palmeiras |         3 |              2
+ 2025-04-10 | 55555555-5555-5555-5555-555555555555 |   Flamengo |       Palmeiras |        99 |              0
+
+(2 rows)
+token@cqlsh:futebol> 

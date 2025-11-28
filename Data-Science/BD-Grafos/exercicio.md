@@ -69,10 +69,10 @@ produtos: caixa de madeira, carimbo personalizado, barbante algodao, pilha grand
 nome: Silvia Saint
 produtos: catalogo comum, apagador quadro negro, ima quadro branco e pilha comum.
 
-#D) Ver produtos comprados e quem vendeu:
+# D) Ver produtos comprados e quem vendeu:
 este esta em um print que vai ser colocado o nome como 'alternativa_D'
 
-#E) Ver quem trabalha em qual loja:
+# E) Ver quem trabalha em qual loja:
 loja: Paulistinha
 vendedores: José Pilintra, João Flávio da Cunha, Luciana Andrade
 

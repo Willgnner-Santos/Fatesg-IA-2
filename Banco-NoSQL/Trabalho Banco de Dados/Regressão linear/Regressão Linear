@@ -1,0 +1,66 @@
+# Importação das bibliotecas necessárias
+import pymongo  # Biblioteca para conectar e interagir com o banco de dados MongoDB
+import pandas as pd  # Biblioteca para manipulação de dados em formato tabular (DataFrame)
+from sklearn.model_selection import train_test_split  # Função para dividir os dados em treino e teste
+from sklearn.linear_model import LinearRegression  # Modelo de regressão linear para aprendizado de máquina
+
+# libs para gráfico e utilidades
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Conectar ao MongoDB
+client = pymongo.MongoClient("mongodb://localhost:27017/")  
+
+db = client["empresa"]  
+collection = db["funcionarios"]  
+
+# Buscar os dados do MongoDB (somente idade e salario)
+data = list(collection.find({}, {"_id": 0, "idade": 1, "salario": 1}))  
+
+# Converter os dados para um DataFrame do Pandas
+df = pd.DataFrame(data)
+
+#  garantir tipos numéricos para o gráfico/modelo (sem alterar o banco)
+df["idade"] = pd.to_numeric(df["idade"], errors="coerce")
+df["salario"] = pd.to_numeric(df["salario"], errors="coerce")
+df = df.dropna(subset=["idade", "salario"]).copy()
+
+# Preparação dos dados para o modelo de regressão linear
+X = df[["idade"]]              # variável independente
+y = df["salario"]              # variável dependente
+
+# Divisão treino/teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Modelo de regressão linear
+model = LinearRegression()
+
+# Treinar
+model.fit(X_train, y_train)
+
+# Predição de exemplo
+idade_nova = np.array([[30]])  # garantir shape (1,1)
+salario_predito = model.predict(idade_nova)
+print(f"Salário estimado para 30 anos: R$ {salario_predito[0]:.2f}")
+
+# ================== GRÁFICO (salva imagem) ==================
+# Curva/linha de tendência: pontos de idade igualmente espaçados
+idade_grid = np.linspace(df["idade"].min(), df["idade"].max(), 100).reshape(-1, 1)
+salario_grid = model.predict(idade_grid)
+
+plt.figure(figsize=(8, 5))
+plt.scatter(df["idade"], df["salario"], alpha=0.7, label="Observações")
+plt.plot(idade_grid, salario_grid, linewidth=2, label="Linha de tendência")
+plt.title("Idade vs Salário — Dispersão e Regressão Linear")
+plt.xlabel("Idade (anos)")
+plt.ylabel("Salário (R$)")
+plt.legend()
+plt.tight_layout()
+
+# Caminho do arquivo de imagem (ajuste se quiser salvar em outro lugar/nome)
+saida_img = "idade_salario_regressao.png"
+plt.savefig(saida_img, dpi=150)
+plt.close()  # fecha a figura para liberar memória
+
+print(f"Gráfico salvo em: {saida_img}")
+# =============================================================

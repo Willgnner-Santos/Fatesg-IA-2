@@ -1,0 +1,243 @@
+import os
+import csv
+import requests
+import random
+import pymongo
+
+# ========= Configurações =========
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
+DB_NAME = "empresa"
+COLLECTION_NAME = "funcionarios"
+
+# Caminho do CSV baixado do Kaggle (AJUSTE AQUI!)
+KAGGLE_CSV_PATH = r"C:\Users\thiag\Downloads\trabalho_maria\wregresãolinear.py\Salary_Data.csv"
+
+# Quantos usuários BR gerar via API
+API_QTD = 20
+
+# ========= Conexão Mongo =========
+client = pymongo.MongoClient(MONGO_URI)
+db = client[DB_NAME]
+collection = db[COLLECTION_NAME]
+
+try:
+    collection.create_index("email", unique=True, sparse=True)
+except:
+    pass
+
+# ========= Funções utilitárias =========
+
+def to_int(x, default=None):
+    try:
+        return int(float(str(x).replace(",", ".").strip()))
+    except:
+        return default
+
+def to_float(x, default=None):
+    try:
+        return float(str(x).replace(",", ".").strip())
+    except:
+        return default
+
+
+# ========= GERADOR DE SALÁRIO REALISTA =========
+def gerar_salario_realista(idade, cargo=None):
+
+    # Caso venha None → atribui idade média
+    if idade is None:
+        idade = 35
+
+    idade = int(idade)
+
+    # Faixas salariais por idade
+    if idade <= 25:
+        base_min, base_max = 2500, 5500
+    elif idade <= 35:
+        base_min, base_max = 4000, 9000
+    elif idade <= 45:
+        base_min, base_max = 7000, 14000
+    elif idade <= 60:
+        base_min, base_max = 9000, 16000
+    else:
+        base_min, base_max = 8000, 14000
+
+    salario = random.uniform(base_min, base_max)
+
+    # Ajuste por cargo
+    if cargo:
+        c = cargo.lower()
+        if "estagi" in c:
+            salario *= 0.6
+        elif "junior" in c or "júnior" in c:
+            salario *= 0.8
+        elif "pleno" in c:
+            salario *= 1.0
+        elif "senior" in c or "sênior" in c:
+            salario *= 1.3
+        elif "coorden" in c:
+            salario *= 1.5
+        elif "gerente" in c:
+            salario *= 1.8
+        elif "diretor" in c:
+            salario *= 2.4
+
+    # Ruído natural (5%)
+    salario *= (1 + random.uniform(-0.05, 0.05))
+
+    return round(max(1500, min(30000, salario)), 2)
+
+
+# NORMALIZAÇÃO DA ESTRUTURA DO REGISTRO
+def normalize_record(
+    nome=None, idade=None, email=None, telefone=None,
+    cargo=None, salario=None, setor=None, fonte=None
+):
+
+    idade = to_int(idade, None)
+    if idade is None:
+        idade = 35
+
+    # caso cargo venha vazio → lógica padrão
+    if not cargo:
+        cargo = "Desenvolvedor" if idade < 30 else "Gerente"
+
+    # gera salário realista sempre que não existir
+    if salario is None:
+        salario = gerar_salario_realista(idade, cargo)
+    else:
+        salario = gerar_salario_realista(idade, cargo)
+
+    if not setor:
+        setor = "TI"
+
+    doc = {
+        "nome": (nome or "").strip(),
+        "idade": idade,
+        "email": (email or "").strip().lower() or None,
+        "telefone": (telefone or "").strip() or None,
+        "cargo": cargo.strip(),
+        "salario": salario,
+        "setor": setor.strip(),
+        "fonte": fonte,
+    }
+
+    return doc
+
+
+def upsert_many_by_email(docs):
+    from pymongo import UpdateOne
+
+    ops = []
+    inserts_sem_email = []
+
+    for d in docs:
+        if d.get("email"):
+            ops.append(
+                UpdateOne(
+                    {"email": d["email"]},
+                    {"$setOnInsert": d},
+                    upsert=True
+                )
+            )
+        else:
+            inserts_sem_email.append(d)
+
+    result_upsert = None
+    if ops:
+        result_upsert = collection.bulk_write(ops, ordered=False)
+
+    inserted_count = 0
+    if inserts_sem_email:
+        try:
+            res = collection.insert_many(inserts_sem_email, ordered=False)
+            inserted_count = len(res.inserted_ids)
+        except pymongo.errors.BulkWriteError as bwe:
+            inserted_count = bwe.details.get("nInserted", 0)
+
+    upserts = result_upsert.upserted_count if result_upsert else 0
+
+    return upserts, inserted_count
+
+
+# ========= 1) Carregar API RandomUser =========
+url = f"https://randomuser.me/api/?results={API_QTD}&nat=br"
+api_response = requests.get(url, timeout=30).json()
+
+docs_api = []
+for user in api_response.get("results", []):
+    nome = f"{user['name']['first']} {user['name']['last']}"
+    idade = user["dob"]["age"]
+    email = user.get("email")
+    telefone = user.get("phone")
+    
+    cargo = "Desenvolvedor" if idade < 30 else "Gerente"
+
+    docs_api.append(
+        normalize_record(
+            nome=nome,
+            idade=idade,
+            email=email,
+            telefone=telefone,
+            cargo=cargo,
+            setor="TI",
+            fonte="randomuser"
+        )
+    )
+
+upserts_api, inserts_sem_email_api = upsert_many_by_email(docs_api)
+print(f"[API] upserts: {upserts_api} | inserts sem email: {inserts_sem_email_api}")
+
+
+# ========= 2) Carregar CSV Kaggle =========
+docs_csv = []
+
+if os.path.exists(KAGGLE_CSV_PATH):
+
+    with open(KAGGLE_CSV_PATH, "r", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+
+        # mapeamento inteligente
+        colmap_opts = {
+            "nome": ["nome", "name"],
+            "idade": ["idade", "age"],
+            "email": ["email", "e-mail"],
+            "telefone": ["telefone", "phone"],
+            "cargo": ["cargo", "role", "position"],
+            "salario": ["salario", "salary"],
+            "setor": ["setor", "departamento", "department"],
+        }
+
+        def pick(row, keys):
+            for k in keys:
+                if k in row and row[k].strip() != "":
+                    return row[k]
+            return None
+
+        for row in reader:
+            nome = pick(row, colmap_opts["nome"])
+            idade = pick(row, colmap_opts["idade"])
+            email = pick(row, colmap_opts["email"])
+            telefone = pick(row, colmap_opts["telefone"])
+            cargo = pick(row, colmap_opts["cargo"])
+            salario = pick(row, colmap_opts["salario"])
+            setor = pick(row, colmap_opts["setor"])
+
+            docs_csv.append(
+                normalize_record(
+                    nome=nome,
+                    idade=idade,
+                    email=email,
+                    telefone=telefone,
+                    cargo=cargo,
+                    salario=salario,
+                    setor=setor,
+                    fonte="kaggle"
+                )
+            )
+else:
+    print(f"[KAGGLE] Arquivo não encontrado: {KAGGLE_CSV_PATH}")
+
+upserts_csv, inserts_sem_email_csv = upsert_many_by_email(docs_csv)
+print(f"[KAGGLE] upserts: {upserts_csv} | inserts sem email: {inserts_sem_email_csv}")
+
+print("\n✔ Concluído com sucesso!")

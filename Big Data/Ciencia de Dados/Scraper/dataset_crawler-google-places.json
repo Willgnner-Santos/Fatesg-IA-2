@@ -1,0 +1,3775 @@
+[{
+  "title": "Academia Nação Fitness",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. Montreal - Res. Canadá, Goiânia - GO, 74370-610, Brasil",
+  "neighborhood": "Residencial Canadá",
+  "street": "Av. Montreal",
+  "city": "Goiânia",
+  "postalCode": "74370-610",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.instagram.com/academianacao.fitness/",
+  "phone": "+55 62 98238-4432",
+  "phoneUnformatted": "+5562982384432",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.72125,
+    "lng": -49.3493919
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ7Tq_rKH3XpMRI0UEiKaHul4",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef7a1acbf3aed:0x5eba87a688044523",
+  "cid": "6825917334549710115",
+  "reviewsCount": 80,
+  "imagesCount": 20,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.681Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:00 to 23:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Academia%20Na%C3%A7%C3%A3o%20Fitness&query_place_id=ChIJ7Tq_rKH3XpMRI0UEiKaHul4",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 1,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxmzOmS-92O1PbC-rtZVu0dv7SlyHFnNWI6MewSZwbroVN74yq2AaUILYm0_ic31bGUY8XT0cDcdvvrMlrBY5CBG53OTSyhN0vodiddQZDfsjM8OTUdxfVG1NcqLd6fh9ssrf5RGvxSGQM=w408-h544-k-no",
+  "kgmid": "/g/11g2s6m60t"
+},
+{
+  "title": "DRIP FITNESS",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. Seringueiras, qd 06 - lt 20 - Res. Forteville, Goiânia - GO, 74370-703, Brasil",
+  "neighborhood": "Residencial Forteville",
+  "street": "Av. Seringueiras, qd 06 - lt 20",
+  "city": "Goiânia",
+  "postalCode": "74370-703",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://linktr.ee/dripfitnessgyn",
+  "phone": "+55 62 99358-6636",
+  "phoneUnformatted": "+5562993586636",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7395859,
+    "lng": -49.370004
+  },
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJzQC9YHdZXpMR3b7FiobhKwE",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935e597760bd00cd:0x12be1868ac5bedd",
+  "cid": "84408986006568669",
+  "reviewsCount": 99,
+  "imagesCount": 481,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.682Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 14:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 23:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Serviços ao ar livre": true
+      },
+      {
+        "Serviços no local": true
+      },
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Aro de indução magnética": false
+      },
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": false
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=DRIP%20FITNESS&query_place_id=ChIJzQC9YHdZXpMR3b7FiobhKwE",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 2,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwH85kXbS_Oogdd4a6Sjqehoq8ATejYFMLMK1OvWQTx9nlzLFJGQ8wj6ju8k68iSMtR_V1rms2gyJHZCZrNreHZfJZnScpuQnXYs5akc8e1yLJLMrOVi1x4eEpZq-RvbkS8K4FD=w408-h510-k-no",
+  "kgmid": "/g/11t2f388ml"
+},
+{
+  "title": "Equilibrium Academia",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. São Luiz, Qd 01 - Lt 17/06 - Moinho dos Ventos, Goiânia - GO, 74371-440, Brasil",
+  "neighborhood": "Moinho dos Ventos",
+  "street": "Av. São Luiz, Qd 01 - Lt 17/06",
+  "city": "Goiânia",
+  "postalCode": "74371-440",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 3588-1635",
+  "phoneUnformatted": "+556235881635",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7306621,
+    "lng": -49.3410803
+  },
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJkfWM5QL3XpMRYNGer1Zbyjc",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef702e58cf591:0x37ca5b56af9ed160",
+  "cid": "4020126045253325152",
+  "reviewsCount": 209,
+  "imagesCount": 67,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.683Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 16:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 00:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 00:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 00:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 00:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 00:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Equilibrium%20Academia&query_place_id=ChIJkfWM5QL3XpMRYNGer1Zbyjc",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 3,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxEg5zQ6okG7obiyW6kBA-q0G9_-xK5tN24k48dx0JqVHpsWyxMwKkKtRQKVuqml6T3M0UvW387xjK2U-bDQ8KL4hlsT1kZvAEz8_fHx7gLJY_fdyN1XTBVRE9Lis9B5Q_ZKQda=w408-h544-k-no",
+  "kgmid": "/g/11s1t74c0d"
+},
+{
+  "title": "R1 Fitness - Unidade Katia",
+  "price": null,
+  "categoryName": "Sala de fitness",
+  "address": "Avenida Americano do Brasil, Quadra 02, Lote 16/17 - Parque Santa Rita, Goiânia - GO, Brasil",
+  "neighborhood": "Parque Santa Rita",
+  "street": "Avenida Americano do Brasil, Quadra 02, Lote 16/17",
+  "city": "Goiânia",
+  "postalCode": null,
+  "state": "GO",
+  "countryCode": "BR",
+  "website": "http://www.instagram.com/r1fitnesskatia",
+  "phone": "+55 62 98200-7734",
+  "phoneUnformatted": "+5562982007734",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.733733,
+    "lng": -49.361762
+  },
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ-cTAwCv2XpMR-a8ivjDlqq0",
+  "categories": [
+    "Sala de fitness"
+  ],
+  "fid": "0x935ef62bc0c0c4f9:0xadaae530be22aff9",
+  "cid": "12514066512113479673",
+  "reviewsCount": 382,
+  "imagesCount": 140,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.683Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 17:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 23:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "É necessário ser associado": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=R1%20Fitness%20-%20Unidade%20Katia&query_place_id=ChIJ-cTAwCv2XpMR-a8ivjDlqq0",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 4,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxjVZ6lVo673KW7ntnCee5JMZIODlOBCyPVkKGIC5Z3u7BJIc45_sIZtw4IFoAB7_xvjY6ia_LMGD9H-GjOfrPA78A7GK5GK_vg24N5N8Fx0irjT8Ti9DcZT2wfiKgY6OLHdDB7FQ=w408-h544-k-no",
+  "kgmid": "/g/11b6hyq1rc"
+},
+{
+  "title": "Step form academia",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "R. MDV 6, 456 - Res. Canadá, Goiânia - GO, 74371-390, Brasil",
+  "neighborhood": "Residencial Canadá",
+  "street": "R. MDV 6, 456",
+  "city": "Goiânia",
+  "postalCode": "74371-390",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98591-2867",
+  "phoneUnformatted": "+5562985912867",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.730153,
+    "lng": -49.3459789
+  },
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJMePdCQP3XpMRu2FdrkJANps",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef70309dde331:0x9b364042ae5d61bb",
+  "cid": "11184197379758580155",
+  "reviewsCount": 20,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.683Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:00 to 22:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:00 to 22:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:00 to 22:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:00 to 22:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:00 to 22:30"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Step%20form%20academia&query_place_id=ChIJMePdCQP3XpMRu2FdrkJANps",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 5,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=K00dNJddkssYsDr2LSkE2Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=212.17584&pitch=0&thumbfov=100",
+  "kgmid": "/g/11sc2pq_8w"
+},
+{
+  "title": "Black Fit Academia",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "462 Q.1 L.10 a18, R. CV 37 - Res. Sevilha, Goiânia - GO, 74369-225, Brasil",
+  "neighborhood": "Residencial Sevilha",
+  "street": "462 Q.1 L.10 a18, R. CV 37",
+  "city": "Goiânia",
+  "postalCode": "74369-225",
+  "state": "GO",
+  "countryCode": "BR",
+  "phone": "+55 62 98620-6453",
+  "phoneUnformatted": "+5562986206453",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7428776,
+    "lng": -49.3431751
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJQ64SMF33XpMRTsG_7n2-gc0",
+  "categories": [
+    "Academia",
+    "Escola de jiu-jitsu",
+    "Academia de artes marciais"
+  ],
+  "fid": "0x935ef75d3012ae43:0xcd81be7deebfc14e",
+  "cid": "14808326497856635214",
+  "reviewsCount": 109,
+  "imagesCount": 55,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.683Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "06:00 to 18:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 13:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 00:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 00:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 00:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 00:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 00:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": true
+      },
+      {
+        "Serviços no local": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Black%20Fit%20Academia&query_place_id=ChIJQ64SMF33XpMRTsG_7n2-gc0",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPdxKEVMWlgVnliNFNZiPolqn8Z_-hTKJUQRznT=w408-h725-k-no",
+  "kgmid": "/g/11hnqmcjny"
+},
+{
+  "title": "Be Fit Academia",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. Montreal, 53 - Res. Canadá, Goiânia - GO, 74370-610, Brasil",
+  "neighborhood": "Residencial Canadá",
+  "street": "Av. Montreal, 53",
+  "city": "Goiânia",
+  "postalCode": "74370-610",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.befitgoiania.com.br/",
+  "phone": "+55 62 99240-3769",
+  "phoneUnformatted": "+5562992403769",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7272499,
+    "lng": -49.340148
+  },
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJMRqccrX3XpMRpgvD938CkPE",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef7b5729c1a31:0xf190027ff7c30ba6",
+  "cid": "17406415308427824038",
+  "reviewsCount": 42,
+  "imagesCount": 17,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.683Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 14:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 23:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Serviços ao ar livre": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Be%20Fit%20Academia&query_place_id=ChIJMRqccrX3XpMRpgvD938CkPE",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 7,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMh7tzN73smUPdIg1uhRI3tVHJs3SesoDFFU6iC=w408-h306-k-no",
+  "kgmid": "/g/11ld9bk9mn"
+},
+{
+  "title": "Hummer Academia Goiânia",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. Eli Alves Forte, 1526 - quadra 05, lote 14/15 - Residencial Katia, Goiânia - GO, 74395-360, Brasil",
+  "neighborhood": "Residencial Katia",
+  "street": "Av. Eli Alves Forte, 1526 - quadra 05, lote 14/15",
+  "city": "Goiânia",
+  "postalCode": "74395-360",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "http://hummeracademia.com.br/",
+  "phone": "+55 62 3100-0836",
+  "phoneUnformatted": "+556231000836",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7348022,
+    "lng": -49.3609379
+  },
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ6edPgBb3XpMRXb9q3cZCNRU",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef716804fe7e9:0x153542c6dd6abf5d",
+  "cid": "1528201070447869789",
+  "reviewsCount": 23,
+  "imagesCount": 9,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.683Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 15:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 23:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Serviços no local": true
+      },
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Chuveiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Hummer%20Academia%20Goi%C3%A2nia&query_place_id=ChIJ6edPgBb3XpMRXb9q3cZCNRU",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMFpPYyUiYDrhYKC2CfP2vKRPF5EcNU4f5TnaoG=w408-h510-k-no",
+  "kgmid": "/g/11x5jwlx55"
+},
+{
+  "title": "Viver Mais Academia",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "462 Q.1 L.10 a18, R. CV 37 - Res. Sevilha, Goiânia - GO, 74369-225, Brasil",
+  "neighborhood": "Residencial Sevilha",
+  "street": "462 Q.1 L.10 a18, R. CV 37",
+  "city": "Goiânia",
+  "postalCode": "74369-225",
+  "state": "GO",
+  "countryCode": "BR",
+  "phone": "+55 62 3288-1645",
+  "phoneUnformatted": "+556232881645",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.742876,
+    "lng": -49.3431865
+  },
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJp8KYJ7j3XpMRsGi1uThFOvQ",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef7b82798c2a7:0xf43a4538b9b568b0",
+  "cid": "17598454603839793328",
+  "reviewsCount": 114,
+  "imagesCount": 21,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.683Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "09:00 to 13:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:00 to 23:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Viver%20Mais%20Academia&query_place_id=ChIJp8KYJ7j3XpMRsGi1uThFOvQ",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 9,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipN44ereydYHHo8wo9W0k9LmQl9mFUVfWPzp4KPS=w408-h335-k-no",
+  "kgmid": "/g/11b6txtgcc"
+},
+{
+  "title": "SkyFit - Moinho dos Ventos",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. São Luiz - Moinho dos Ventos, Goiânia - GO, 74371-440, Brasil",
+  "neighborhood": "Moinho dos Ventos",
+  "street": "Av. São Luiz",
+  "city": "Goiânia",
+  "postalCode": "74371-440",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://skyfitacademia.com/unidade/moinho-dos-ventos-go/",
+  "phone": "+55 62 2020-8300",
+  "phoneUnformatted": "+556220208300",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7345187,
+    "lng": -49.3429165
+  },
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJj1J7UgD3XpMRJwyGB3o5lFI",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef700527b528f:0x5294397a07860c27",
+  "cid": "5950444203938286631",
+  "reviewsCount": 156,
+  "imagesCount": 25,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 17:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "09:00 to 14:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 22:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=SkyFit%20-%20Moinho%20dos%20Ventos&query_place_id=ChIJj1J7UgD3XpMRJwyGB3o5lFI",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 10,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxosYpY9NorJSyXO7dH88edKun93heK8xuWPfd2s9IJ5rPOW_UIriuy1DhR8-Jj-z2V9ICoOJyCQMXj2z_5L-T0aT06_CdB_FAekqN4bghjETdmdaIMav4HmVaHOk5PJY8VykFl=w408-h306-k-no",
+  "kgmid": "/g/11ld5f67h9"
+},
+{
+  "title": "CT Rodrigues Ferreira",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "R. Tarancon - Jardim Pres., Goiânia - GO, 74369-535, Brasil",
+  "neighborhood": "Jardim Presidente",
+  "street": "R. Tarancon",
+  "city": "Goiânia",
+  "postalCode": "74369-535",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7370765,
+    "lng": -49.3383805
+  },
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJWaLqVGH3XpMRleQgDecKO-I",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef76154eaa259:0xe23b0ae70d20e495",
+  "cid": "16301635263671624853",
+  "reviewsCount": 3,
+  "imagesCount": 4,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "17:00 to 22:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "17:00 to 22:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "17:00 to 22:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "17:00 to 22:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "17:00 to 22:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de débito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=CT%20Rodrigues%20Ferreira&query_place_id=ChIJWaLqVGH3XpMRleQgDecKO-I",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 11,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNQO4ASkC96kp3sYdadW4ZYcjjZ4o38ZgijlRnA=w408-h725-k-no",
+  "kgmid": "/g/11snq0yky_"
+},
+{
+  "title": "Fighters Team",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Residencial - Av. Moinho dos Ventos, 347 - Moinho dos Ventos, Goiânia - GO, 74371-395, Brasil",
+  "neighborhood": "Moinho dos Ventos",
+  "street": "Residencial - Av. Moinho dos Ventos, 347",
+  "city": "Goiânia",
+  "postalCode": "74371-395",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.instagram.com/academia_fightersteam/",
+  "phone": "+55 62 98456-4301",
+  "phoneUnformatted": "+5562984564301",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.729503,
+    "lng": -49.3470072
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJpYzl0DX2XpMR9eaVJByPzYQ",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef635d0e58ca5:0x84cd8f1c2495e6f5",
+  "cid": "9569462134267832053",
+  "reviewsCount": 21,
+  "imagesCount": 22,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 10:00, 17:00 to 21:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 10:00, 17:00 to 21:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 10:00, 17:00 to 21:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 10:00, 17:00 to 21:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 10:00, 17:00 to 21:30"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Serviços ao ar livre": true
+      },
+      {
+        "Serviços no local": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Fighters%20Team&query_place_id=ChIJpYzl0DX2XpMR9eaVJByPzYQ",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 12,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipN_w_YV_zjW5cJtQbcVhoqeEMLhTjyLTXcObTlE=w426-h240-k-no",
+  "kgmid": "/g/11s2m0rnt7"
+},
+{
+  "title": "Academia Arte vida",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. Americano do Brasil - Vila Rizzo, Goiânia - GO, 74393-485, Brasil",
+  "neighborhood": "Vila Rizzo",
+  "street": "Av. Americano do Brasil",
+  "city": "Goiânia",
+  "postalCode": null,
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98149-6017",
+  "phoneUnformatted": "+5562981496017",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.7265194,
+    "lng": -49.3710672
+  },
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ9QhUBQBZXpMRHp4pgWqT718",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935e5900055408f5:0x5fef936a81299e1e",
+  "cid": "6912906038679805470",
+  "reviewsCount": 16,
+  "imagesCount": null,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 14:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "00:00 to 14:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 23:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Academia%20Arte%20vida&query_place_id=ChIJ9QhUBQBZXpMRHp4pgWqT718",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 13,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyJEbQYoxzvOvpq4zckwuB2rbHCSraDKNSyBrWT4RkwaQgQ8HsEUlm6XKo0KOQdd6dYz3q95hVadQHOnZsJr9HcaPZtxiTFMRk4gZxUXcJpJg2SgW_3yRPloLnXNcZ20-NROKE3cQ=w426-h240-k-no",
+  "kgmid": "/g/11y49bcck3"
+},
+{
+  "title": "Academia Mundial Fit",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. Moinho dos Ventos, Qd21 Lt31 - Moinho dos Ventos, Goiânia - GO, 74371-395, Brasil",
+  "neighborhood": "Moinho dos Ventos",
+  "street": "Av. Moinho dos Ventos, Qd21 Lt31",
+  "city": "Goiânia",
+  "postalCode": "74371-395",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.instagram.com/academia.mundialfit/",
+  "phone": "+55 62 3213-2758",
+  "phoneUnformatted": "+556232132758",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7302577,
+    "lng": -49.3460301
+  },
+  "totalScore": 4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ_3FJ7zf3XpMRjvYYkWMI4kU",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef737ef4971ff:0x45e208639118f68e",
+  "cid": "5035596557082752654",
+  "reviewsCount": 1,
+  "imagesCount": 6,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 14:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:15 to 22:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:15 to 22:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:15 to 22:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:15 to 22:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:15 to 22:30"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Academia%20Mundial%20Fit&query_place_id=ChIJ_3FJ7zf3XpMRjvYYkWMI4kU",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 14,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipO3EqNa6LLZD3bzDDj6YELLQkQVZJWYzopcsiha=w426-h240-k-no",
+  "kgmid": "/g/11y44mgmr8"
+},
+{
+  "title": "Fight Sports Club Goiânia | Academia de Jiu-jitsu e Muay thai",
+  "price": null,
+  "categoryName": "Escola de jiu-jitsu",
+  "address": "Av. São Luiz, Qd 01 - Lt 17 - Moinho dos Ventos, Goiânia - GO, 74371-440, Brasil",
+  "neighborhood": "Moinho dos Ventos",
+  "street": "Av. São Luiz, Qd 01 - Lt 17",
+  "city": "Goiânia",
+  "postalCode": "74371-440",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98159-3223",
+  "phoneUnformatted": "+5562981593223",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7306827,
+    "lng": -49.341085
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJGy5WZML3XpMRdGgEldb0m5o",
+  "categories": [
+    "Escola de jiu-jitsu",
+    "Academia de artes marciais",
+    "Academia de Muay Thai"
+  ],
+  "fid": "0x935ef7c264562e1b:0x9a9bf4d695046874",
+  "cid": "11140767305691326580",
+  "reviewsCount": 34,
+  "imagesCount": 25,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "09:00 to 10:30"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "20:00 to 22:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "19:00 to 22:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "20:00 to 22:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "19:00 to 22:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Serviços no local": true
+      },
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Aro de indução magnética": false
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": false
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": false
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Chuveiro": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      },
+      {
+        "Estacionamento no local": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Fight%20Sports%20Club%20Goi%C3%A2nia%20%7C%20Academia%20de%20Jiu-jitsu%20e%20Muay%20thai&query_place_id=ChIJGy5WZML3XpMRdGgEldb0m5o",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 15,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMJb-_ernNt4HGcmFx9W4wf44xSccPeP_m9NNIl=w408-h544-k-no",
+  "kgmid": "/g/11x7b3jxf8"
+},
+{
+  "title": "Fire Brazilian Jiu-jitsu",
+  "price": null,
+  "categoryName": "Academia de artes marciais",
+  "address": "Av. Valência, Qd 33 - Lt 24 - St. Tres Marias, Goiânia - GO, 74369-620, Brasil",
+  "neighborhood": "Setor Tres Marias",
+  "street": "Av. Valência, Qd 33 - Lt 24",
+  "city": "Goiânia",
+  "postalCode": "74369-620",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98226-2465",
+  "phoneUnformatted": "+5562982262465",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7442095,
+    "lng": -49.3358915
+  },
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJTZfEq5j3XpMRUXs2-PyLNNo",
+  "categories": [
+    "Academia de artes marciais"
+  ],
+  "fid": "0x935ef798abc4974d:0xda348bfcf8367b51",
+  "cid": "15723346117669583697",
+  "reviewsCount": 37,
+  "imagesCount": 43,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "18:00 to 22:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "18:00 to 22:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "18:00 to 22:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "18:00 to 22:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "18:00 to 22:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Serviços no local": true
+      },
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Fire%20Brazilian%20Jiu-jitsu&query_place_id=ChIJTZfEq5j3XpMRUXs2-PyLNNo",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 16,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipN7tNNgp9TPE1eB9kIfd_LdXsdNsm2e2WjPMxks=w408-h241-k-no",
+  "kgmid": "/g/11h5kly6r9"
+},
+{
+  "title": "GOYA FIT ACADEMIA",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "R. Dona Florinda - Jardim das Rosas, Goiânia - GO, 74484-706, Brasil",
+  "neighborhood": "Jardim das Rosas",
+  "street": "R. Dona Florinda",
+  "city": "Goiânia",
+  "postalCode": "74484-706",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7038061,
+    "lng": -49.3718547
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJt4YUlxxZXpMR9fCvWIEurZE",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935e591c971486b7:0x91ad2e8158aff0f5",
+  "cid": "10497097439544078581",
+  "reviewsCount": 10,
+  "imagesCount": 3,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 12:00, 15:00 to 22:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 12:00, 14:00 to 22:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 12:00, 15:00 to 22:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 12:00, 15:00 to 22:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 12:00, 15:00 to 22:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=GOYA%20FIT%20ACADEMIA&query_place_id=ChIJt4YUlxxZXpMR9fCvWIEurZE",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 17,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=uFOBsphsathOBEz9K3rEFA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=332.7743&pitch=0&thumbfov=100",
+  "kgmid": "/g/11t5km00t_"
+},
+{
+  "title": "CT MOIICANO THAI",
+  "price": null,
+  "categoryName": "Academia de Muay Thai",
+  "address": "R. 2 - Chácaras anhanguera, Goiânia - GO, 74392-125, Brasil",
+  "neighborhood": "Chácaras anhanguera",
+  "street": "R. 2",
+  "city": "Goiânia",
+  "postalCode": "74392-125",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98124-1028",
+  "phoneUnformatted": "+5562981241028",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7095426,
+    "lng": -49.3617221
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJiV397aj3XpMRcwZuJmb-jXQ",
+  "categories": [
+    "Academia de Muay Thai"
+  ],
+  "fid": "0x935ef7a8edfd5d89:0x748dfe66266e0673",
+  "cid": "8398648594800707187",
+  "reviewsCount": 4,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 22:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 22:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de débito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=CT%20MOIICANO%20THAI&query_place_id=ChIJiV397aj3XpMRcwZuJmb-jXQ",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 18,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=IQ5g7St98uyue9y43VsLDw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=94.49738&pitch=0&thumbfov=100",
+  "kgmid": "/g/11js3pp185"
+},
+{
+  "title": "Top fitness",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. Antônio Crispim, Q 16 - lt 21 N 1459, 0 - Residencial Santa Fé I, Goiânia - GO, 74356-320, Brasil",
+  "neighborhood": "Residencial Santa Fé I",
+  "street": "Av. Antônio Crispim, Q 16 - lt 21 N 1459, 0",
+  "city": "Goiânia",
+  "postalCode": "74356-320",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99568-9939",
+  "phoneUnformatted": "+5562995689939",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.7499574,
+    "lng": -49.3741461
+  },
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJrxDAAjRZXpMRzAqSRZ1U2LI",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935e593402c010af:0xb2d8549d45920acc",
+  "cid": "12887143368174471884",
+  "reviewsCount": 32,
+  "imagesCount": 4,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Top%20fitness&query_place_id=ChIJrxDAAjRZXpMRzAqSRZ1U2LI",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 19,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy3U6Qne8LyVQiCY_0-z7rxmHTRxgJhzrAQoiHNf9-Imtjl-PzbPHuK8RGwwzi3-4OZAqqqDjqeaaobrbEHxbQo5JXeGdwR5nHJQo2B2mKkCDwL34TVJtn4QTwI6Roy8k-r-KE=w408-h725-k-no",
+  "kgmid": "/g/11q_j9c1b2"
+},
+{
+  "title": "CORPLIFFE ACADEMIA",
+  "price": null,
+  "categoryName": "Sala de fitness",
+  "address": "R. Pres. Juscelino Kubitscheck, 1813 - QD.47 LT.25 - Jardim Pres., Goiânia - GO, 74353-250, Brasil",
+  "neighborhood": "Jardim Presidente",
+  "street": "R. Pres. Juscelino Kubitscheck, 1813 - QD.47 LT.25",
+  "city": "Goiânia",
+  "postalCode": "74353-250",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7445775,
+    "lng": -49.3295642
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ0QEYoJ_3XpMRgQX_Y_ET9Z8",
+  "categories": [
+    "Sala de fitness"
+  ],
+  "fid": "0x935ef79fa01801d1:0x9ff513f163ff0581",
+  "cid": "11526140748810356097",
+  "reviewsCount": 36,
+  "imagesCount": 14,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:18.684Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 22:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 22:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 22:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 22:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 22:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=CORPLIFFE%20ACADEMIA&query_place_id=ChIJ0QEYoJ_3XpMRgQX_Y_ET9Z8",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 20,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyE1Xks5kbq1gahqCOSUDiKLPrTE5ABSlgfTFHva_YD2cK3n6fJx2VVmNQ5miwvj_zGKg1MGdJZ2K56bj-VgXuAZL3JBcnZupWos2QzKNwIJsv6VgDR5L6SPtLPkmEtbMryCeWhvc8stDyB=w408-h544-k-no",
+  "kgmid": "/g/11rzjjbkcg"
+},
+{
+  "title": "Centro De Treinamento Lg Fight",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Rua Rita Caetano - Res. Forteville, Goiânia - GO, 74370-704, Brasil",
+  "neighborhood": "Residencial Forteville",
+  "street": "Rua Rita Caetano",
+  "city": "Goiânia",
+  "postalCode": "74370-704",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.instagram.com/ct.lg_fight/",
+  "phone": "+55 62 99383-8444",
+  "phoneUnformatted": "+5562993838444",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7413671,
+    "lng": -49.3692979
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJYdsw4H1YXpMRIBqgEnTKiQ0",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935e587de030db61:0xd89ca7412a01a20",
+  "cid": "975533394179922464",
+  "reviewsCount": 54,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 0,
+    "fiveStar": 53
+  },
+  "imagesCount": 16,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:19.604Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:00 to 08:00, 18:30 to 19:30, 20:30 to 21:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:00 to 08:00, 18:30 to 19:30, 20:30 to 21:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:00 to 08:00, 18:30 to 19:30, 20:30 to 21:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:00 to 08:00, 18:30 to 19:30, 20:30 to 21:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:00 to 08:00, 18:30 to 19:30, 20:30 to 21:30"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Centro%20De%20Treinamento%20Lg%20Fight&query_place_id=ChIJYdsw4H1YXpMRIBqgEnTKiQ0",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 27,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwMglMkuEtWAuWh4gmB7s80o8X8Y6KPGv6DWPafUUPPGIXrDkzlDcsqBaYqnewFSyLLdjRh6ktA9ohdGVdqpAhShdjl5tyH2pNCAzMF-E3UOp_hkEUbByIaWAXvdJ4R94GpWvibmw=w408-h270-k-no",
+  "kgmid": "/g/11vxjnyj43"
+},
+{
+  "title": "Galpão Cross",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. Eli Alves Forte - Residential Eli Forte, Goiânia - GO, 74395-360, Brasil",
+  "neighborhood": "Residential Eli Forte",
+  "street": "Av. Eli Alves Forte",
+  "city": "Goiânia",
+  "postalCode": null,
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98117-6407",
+  "phoneUnformatted": "+5562981176407",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.7360826,
+    "lng": -49.3623495
+  },
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJh6b8BCv2XpMRz-T2CKpfdj0",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef62b04fca687:0x3d765faa08f6e4cf",
+  "cid": "4428832467464938703",
+  "reviewsCount": 35,
+  "reviewsDistribution": {
+    "oneStar": 2,
+    "twoStar": 1,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 31
+  },
+  "imagesCount": 12,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:19.605Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:00 to 08:00, 17:00 to 21:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:00 to 08:00, 17:00 to 21:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:00 to 08:00, 17:00 to 21:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:00 to 08:00, 17:00 to 21:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:00 to 08:00, 17:00 to 21:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Galp%C3%A3o%20Cross&query_place_id=ChIJh6b8BCv2XpMRz-T2CKpfdj0",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 34,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSypzAfT5D0sRpjb4XaFIKraoPyu0HdY524Z14m1DcKYREVw7yqAuh6M4d5D0H8iG3nrPpdQ-FZhLykwN1aYrpaKNtcr5c8XZW2p13AfR4xjPEzSXIPP3lpyqZ6xaXovZJLv2Sj-R0mI2SmV=w408-h272-k-no",
+  "kgmid": "/g/11fmdl2gxs"
+},
+{
+  "title": "CENTRO DE TREINAMENTO PERSONALIZADO STUDIO RITMOS MIX",
+  "price": null,
+  "categoryName": "Sala de fitness",
+  "address": "R. Pres. Juscelino Kubitscheck - St. Tres Marias, Goiânia - GO, 74353-250, Brasil",
+  "neighborhood": "Setor Tres Marias",
+  "street": "R. Pres. Juscelino Kubitscheck",
+  "city": "Goiânia",
+  "postalCode": "74353-250",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98140-1826",
+  "phoneUnformatted": "+5562981401826",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.7390749,
+    "lng": -49.3281489
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJkcJ1U-j3XpMRO_GUfNbMpsY",
+  "categories": [
+    "Sala de fitness"
+  ],
+  "fid": "0x935ef7e85375c291:0xc6a6ccd67c94f13b",
+  "cid": "14314353687228903739",
+  "reviewsCount": 3,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 3
+  },
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:19.605Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "06:00 to 12:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:00 to 12:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:00 to 12:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:00 to 12:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:00 to 12:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:00 to 12:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=CENTRO%20DE%20TREINAMENTO%20PERSONALIZADO%20STUDIO%20RITMOS%20MIX&query_place_id=ChIJkcJ1U-j3XpMRO_GUfNbMpsY",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 36,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=zUYNfEetxEPC_Rlmg1u08A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=294.89178&pitch=0&thumbfov=100",
+  "kgmid": "/g/11qm0cwm6y"
+},
+{
+  "title": "CT Roosevelt Junior",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "R. Pres. Juscelino Kubitscheck, 1204 - Jardim Pres., Goiânia - GO, 74353-250, Brasil",
+  "neighborhood": "Jardim Presidente",
+  "street": "R. Pres. Juscelino Kubitscheck, 1204",
+  "city": "Goiânia",
+  "postalCode": "74353-250",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98140-1826",
+  "phoneUnformatted": "+5562981401826",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7390649,
+    "lng": -49.3281759
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJrexpJ6b3XpMR17qDgLPTeHc",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef7a62769ecad:0x7778d3b38083bad7",
+  "cid": "8608863455627426519",
+  "reviewsCount": 7,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 7
+  },
+  "imagesCount": 3,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:19.605Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "07:00 to 11:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:00 to 21:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 21:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:00 to 21:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 19:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:00 to 21:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=CT%20Roosevelt%20Junior&query_place_id=ChIJrexpJ6b3XpMR17qDgLPTeHc",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 37,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipM1B8O-m48QcOfHORoGMKep83wsZ5IoXpBjY5Fm=w408-h741-k-no",
+  "kgmid": "/g/11pdnmz3cw"
+},
+{
+  "title": "BELLAFIT MODA FITNESS",
+  "price": null,
+  "categoryName": "Sala de fitness",
+  "address": "R. Turim - Goiânia, GO, 74373-275, Brasil",
+  "neighborhood": "Goiânia",
+  "street": "R. Turim",
+  "city": "Goiânia",
+  "postalCode": "74373-275",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99129-0957",
+  "phoneUnformatted": "+5562991290957",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7108678,
+    "lng": -49.3262108
+  },
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ58A1SDb3XpMRZDtpVu5v8LU",
+  "categories": [
+    "Sala de fitness"
+  ],
+  "fid": "0x935ef7364835c0e7:0xb5f06fee56693b64",
+  "cid": "13110101584718150500",
+  "reviewsCount": 0,
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:19.605Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 00:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de débito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=BELLAFIT%20MODA%20FITNESS&query_place_id=ChIJ58A1SDb3XpMRZDtpVu5v8LU",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 38,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=FNM8wcLNREtDzZID88lf-A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=72.786736&pitch=0&thumbfov=100",
+  "kgmid": "/g/11w36qhh71"
+},
+{
+  "title": "Apache Cross",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "R. MDV 01 - Moinho dos Ventos, Goiânia - GO, 74371-445, Brasil",
+  "neighborhood": "Moinho dos Ventos",
+  "street": "R. MDV 01",
+  "city": "Goiânia",
+  "postalCode": "74371-445",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99336-8747",
+  "phoneUnformatted": "+5562993368747",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7333539,
+    "lng": -49.3428558
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJYydOZHL3XpMR28nVqe01MRY",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef772644e2763:0x163135eda9d5c9db",
+  "cid": "1599118637566118363",
+  "reviewsCount": 28,
+  "reviewsDistribution": {
+    "oneStar": 2,
+    "twoStar": 1,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 25
+  },
+  "imagesCount": 17,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:19.605Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 21:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 21:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 21:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 21:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 21:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Apache%20Cross&query_place_id=ChIJYydOZHL3XpMR28nVqe01MRY",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 39,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxQJyuCr2Bff5aGcDP34qUIxAocCyUdOSZlR3E91Utg4yppUr-I9glHtI6D_MGRJgyjMsIVhlZ-AQgOG2ILkJmhHfc-RVo-rZKdEz3AzIHPydononKpmazBWpAILXxYPVhpH2wagA=w408-h306-k-no",
+  "kgmid": "/g/11s7wh8s7_"
+},
+{
+  "title": "Split Ginástica Artística - Eldorado",
+  "price": null,
+  "categoryName": "Academia de ginástica olímpica",
+  "address": "Av. Lorenzo, 348 - Quadra 06 Lote 08 - Res. Porto Seguro, Goiânia - GO, 74366-115, Brasil",
+  "neighborhood": "Residencial Porto Seguro",
+  "street": "Av. Lorenzo, 348 - Quadra 06 Lote 08",
+  "city": "Goiânia",
+  "postalCode": "74366-115",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98283-0036",
+  "phoneUnformatted": "+5562982830036",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7133605,
+    "lng": -49.3335172
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJcSLGcZ73XpMRqiqipLUpXmg",
+  "categories": [
+    "Academia de ginástica olímpica",
+    "Academia",
+    "Clube de ginástica"
+  ],
+  "fid": "0x935ef79e71c62271:0x685e29b5a4a22aaa",
+  "cid": "7520494287883217578",
+  "reviewsCount": 10,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 9
+  },
+  "imagesCount": 53,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:19.605Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "09:00 to 11:00, 14:00 to 20:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "09:00 to 11:00, 14:00 to 20:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "09:00 to 11:00, 14:00 to 20:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "09:00 to 11:00, 14:00 to 20:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "09:00 to 11:00, 14:00 to 20:30"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Split%20Gin%C3%A1stica%20Art%C3%ADstica%20-%20Eldorado&query_place_id=ChIJcSLGcZ73XpMRqiqipLUpXmg",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 40,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipN0_MYpCYTgQnw0zkE1_D1Mj-WGCx_VdeuySM4p=w408-h272-k-no",
+  "kgmid": "/g/11svwfrzmy"
+},
+{
+  "title": "Clado Corpo",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Res. Canadá, Goiânia - GO, 74370-882, Brasil",
+  "neighborhood": "Residencial Canadá",
+  "street": null,
+  "city": "Goiânia",
+  "postalCode": null,
+  "state": "Goiás",
+  "countryCode": "BR",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.7271586,
+    "lng": -49.3400072
+  },
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJcfacUkn2XpMRY68MM7uR_Sk",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef649529cf671:0x29fd91bb330caf63",
+  "cid": "3025734757864222563",
+  "reviewsCount": 0,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:20.444Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Pagamentos": [
+      {
+        "Cartão de débito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Clado%20Corpo&query_place_id=ChIJcfacUkn2XpMRY68MM7uR_Sk",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 41,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=NedXY80hmwHiGuuSI8NVvw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=187.40765&pitch=0&thumbfov=100",
+  "kgmid": "/g/11h_slms9v"
+},
+{
+  "title": "Potência Gyn",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. Ville - St. Garavelo, Goiânia - GO, 74369-003, Brasil",
+  "neighborhood": "Setor Garavelo",
+  "street": "Av. Ville",
+  "city": "Goiânia",
+  "postalCode": "74369-003",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.7369399,
+    "lng": -49.3467022
+  },
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJk8bcRMr3XpMRJZJwVyx-p7o",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef7ca44dcc693:0xbaa77e2c57709225",
+  "cid": "13449857541075931685",
+  "reviewsCount": 0,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:20.444Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de débito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Pot%C3%AAncia%20Gyn&query_place_id=ChIJk8bcRMr3XpMRJZJwVyx-p7o",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 42,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=B6el8RzfEgjYVBr7l7TVqg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=74.08319&pitch=0&thumbfov=100",
+  "kgmid": "/g/11whp98fm7"
+},
+{
+  "title": "CT BRANCO QUEIROZ MMA",
+  "price": null,
+  "categoryName": "Academia de artes marciais",
+  "address": "R. Miguel do Carmo, 1.431 - Qd. 35, LT. 15 - St. Rio Formoso, Goiânia - GO, 74370-025, Brasil",
+  "neighborhood": "Setor Rio Formoso",
+  "street": "R. Miguel do Carmo, 1.431 - Qd. 35, LT. 15",
+  "city": "Goiânia",
+  "postalCode": "74370-025",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98189-1416",
+  "phoneUnformatted": "+5562981891416",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7216788,
+    "lng": -49.3362405
+  },
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJq3_PKwD3XpMRsynBrG3Hsuk",
+  "categories": [
+    "Academia de artes marciais"
+  ],
+  "fid": "0x935ef7002bcf7fab:0xe9b2c76dacc129b3",
+  "cid": "16839741230555408819",
+  "reviewsCount": 30,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 29
+  },
+  "imagesCount": 55,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:20.444Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "06:00 to 21:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "06:00 to 21:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "06:00 to 21:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "06:00 to 21:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "06:00 to 21:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Serviços no local": true
+      },
+      {
+        "Aulas on-line": false
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Desconto para famílias": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=CT%20BRANCO%20QUEIROZ%20MMA&query_place_id=ChIJq3_PKwD3XpMRsynBrG3Hsuk",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 43,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipN2gzkQnOl_R8q8UIO7gVKv5p2Q0WmD5A-MWJcl=w424-h240-k-no",
+  "kgmid": "/g/11wg44wxtl"
+},
+{
+  "title": "(Pilates/Fisioterapia) MaisAtto Saúde - Moinho dos Ventos",
+  "price": null,
+  "categoryName": "Estúdio de pilates",
+  "address": "Rua Ciro Manoel, N: s-4, SALA 4/6• Estapa Residencial Santa Rita Q1 L28 Goiânia cep: - Residencial Santa Rita, Goiânia - GO, 74370-474, Brasil",
+  "neighborhood": "Residencial Santa Rita",
+  "street": "Rua Ciro Manoel, N: s-4, SALA 4/6• Estapa Residencial Santa Rita Q1 L28 Goiânia cep:",
+  "city": "Goiânia",
+  "postalCode": "74370-474",
+  "state": "GO",
+  "countryCode": "BR",
+  "website": "https://api.whatsapp.com/send?phone=5562985656120",
+  "phone": "+55 62 98565-6120",
+  "phoneUnformatted": "+5562985656120",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7327631,
+    "lng": -49.3416033
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ5xeLvy73XpMRYbkANryz2fI",
+  "categories": [
+    "Estúdio de pilates"
+  ],
+  "fid": "0x935ef72ebf8b17e7:0xf2d9b3bc3600b961",
+  "cid": "17499215448066013537",
+  "reviewsCount": 27,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 26
+  },
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:20.445Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 18:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Serviços no local": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Necessário fazer agendamento": true
+      },
+      {
+        "É recomendado marcar hora": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=(Pilates%2FFisioterapia)%20MaisAtto%20Sa%C3%BAde%20-%20Moinho%20dos%20Ventos&query_place_id=ChIJ5xeLvy73XpMRYbkANryz2fI",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 44,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNs_JMCH1djWyuZU67XH2VZ6DURh4X01uZjbqbf=w416-h240-k-no",
+  "kgmid": "/g/11w2_m34v3"
+},
+{
+  "title": "MarKa Studio de Pilates Integrado",
+  "price": null,
+  "categoryName": "Estúdio de pilates",
+  "address": "Av. Monte Carlo, Quadra 11 - Lote 28 - Res. Monte Carlo, Goiânia - GO, 74370-405, Brasil",
+  "neighborhood": "Residencial Monte Carlo",
+  "street": "Av. Monte Carlo, Quadra 11 - Lote 28",
+  "city": "Goiânia",
+  "postalCode": "74370-405",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98141-1962",
+  "phoneUnformatted": "+5562981411962",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7272749,
+    "lng": -49.3386166
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ3xhtYQD3XpMRUW6CUeCI614",
+  "categories": [
+    "Estúdio de pilates"
+  ],
+  "fid": "0x935ef700616d18df:0x5eeb88e051826e51",
+  "cid": "6839710956113784401",
+  "reviewsCount": 1,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 1
+  },
+  "imagesCount": 8,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:20.445Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 21:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 21:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 21:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 21:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "É recomendado marcar hora": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=MarKa%20Studio%20de%20Pilates%20Integrado&query_place_id=ChIJ3xhtYQD3XpMRUW6CUeCI614",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 45,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNkmBoGxtBzj-UJ8pk99mgn0imsitIfm0ONx3Hz=w408-h544-k-no",
+  "kgmid": "/g/11wfs8r_z8"
+},
+{
+  "title": "La P Moda Fitness",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. São Luiz - Bairro Santa Rita, Goiânia - GO, 74370-582, Brasil",
+  "neighborhood": "Bairro Santa Rita",
+  "street": "Av. São Luiz",
+  "city": "Goiânia",
+  "postalCode": "74370-582",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99449-9896",
+  "phoneUnformatted": "+5562994499896",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7310397,
+    "lng": -49.3408592
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ6T61-t_3XpMR4NNnhKUB7pM",
+  "categories": [
+    "Academia",
+    "Loja de roupas de praia",
+    "Loja de Roupa",
+    "Loja de roupas esportivas",
+    "Loja de moda feminina",
+    "Organização feminista"
+  ],
+  "fid": "0x935ef7dffab53ee9:0x93ee01a58467d3e0",
+  "cid": "10659459178435171296",
+  "reviewsCount": 2,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 2
+  },
+  "imagesCount": 5,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:20.445Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "09:00 to 13:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "09:00 to 18:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "09:00 to 18:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "09:00 to 18:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "09:00 to 18:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "09:00 to 18:30"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Roupas femininas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=La%20P%20Moda%20Fitness&query_place_id=ChIJ6T61-t_3XpMR4NNnhKUB7pM",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 46,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipM41BHLVXYBglI542XwHiMp1-rKNZ9O2Py-dMaA=w408-h544-k-no",
+  "kgmid": "/g/11trrwkdd1"
+},
+{
+  "title": "C.T THIAGO FERREIRA Projeto social Abba sons",
+  "price": null,
+  "categoryName": "Escola de jiu-jitsu",
+  "address": "VIA ABEL VITORETTI Nr. S-2 SALA-2 CONJUNTO, Q 1 L, 15 - CONJUNTO - Res. Monte Carlo, Goiânia - GO, 74370-010, Brasil",
+  "neighborhood": "Residencial Monte Carlo",
+  "street": "VIA ABEL VITORETTI Nr. S-2 SALA-2 CONJUNTO, Q 1 L, 15 - CONJUNTO",
+  "city": "Goiânia",
+  "postalCode": "74370-010",
+  "state": "GO",
+  "countryCode": "BR",
+  "website": "https://www.instagram.com/ct_thiagoferreira/",
+  "phone": "+55 62 98483-2458",
+  "phoneUnformatted": "+5562984832458",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7249655,
+    "lng": -49.335977
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJB-Lu1wf3XpMRSQCFGVF561c",
+  "categories": [
+    "Escola de jiu-jitsu"
+  ],
+  "fid": "0x935ef707d7eee207:0x57eb795119850049",
+  "cid": "6335290690054193225",
+  "reviewsCount": 17,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 17
+  },
+  "imagesCount": 68,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:20.445Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "Fechado"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "19:00 to 22:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "Fechado"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "19:00 to 22:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "19:00 to 22:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Desconto para famílias": true
+      },
+      {
+        "Descontos para crianças": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=C.T%20THIAGO%20FERREIRA%20Projeto%20social%20Abba%20sons&query_place_id=ChIJB-Lu1wf3XpMRSQCFGVF561c",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 47,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPGazV2KFdsiUXaZf9TrvO8bgRfXRJEg00OofGx=w426-h240-k-no",
+  "kgmid": "/g/11mdv4gvll"
+},
+{
+  "title": "XANDÃO Alexandre Vendramini Personal Trainer",
+  "price": null,
+  "categoryName": "Academia",
+  "address": "Av. São Luiz, qd 1 - lt 17/06 - Moinho dos Ventos, Goiânia - GO, 74371-440, Brasil",
+  "neighborhood": "Moinho dos Ventos",
+  "street": "Av. São Luiz, qd 1 - lt 17/06",
+  "city": "Goiânia",
+  "postalCode": "74371-440",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://instagram.com/professorvendramini?igshid=YmMyMTA2M2Y=",
+  "phone": "+55 62 98118-0544",
+  "phoneUnformatted": "+5562981180544",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7306416,
+    "lng": -49.3410682
+  },
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJfxZBpLn3XpMRf-xJaqw6Q2E",
+  "categories": [
+    "Academia"
+  ],
+  "fid": "0x935ef7b9a441167f:0x61433aac6a49ec7f",
+  "cid": "7008509957310639231",
+  "reviewsCount": 0,
+  "imagesCount": 7,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-29T23:26:20.445Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "sábado",
+      "hours": "08:00 to 13:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    },
+    {
+      "day": "segunda-feira",
+      "hours": "05:00 to 19:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "05:00 to 19:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "05:00 to 19:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "05:00 to 19:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "05:00 to 19:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Aulas on-line": true
+      },
+      {
+        "Serviços ao ar livre": true
+      },
+      {
+        "Serviços no local": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Necessário fazer agendamento": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=XAND%C3%83O%20Alexandre%20Vendramini%20Personal%20Trainer&query_place_id=ChIJfxZBpLn3XpMRf-xJaqw6Q2E",
+  "searchPageUrl": "https://www.google.com/maps/search/academia/@-16.7262534,-49.355206,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D&hl=pt-BR",
+  "searchString": "academia",
+  "language": "pt-BR",
+  "rank": 48,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPn52SBS3FzAniVYdO6M5V0-083aKI_wciejGXS=w408-h544-k-no",
+  "kgmid": "/g/11t_k89p82"
+}]

@@ -1,0 +1,43 @@
+#  ---------------------------------------------------------
+# Fatesg - Banco de Dados noSQL - Chatbot com MongoDB e Modelos Pré-treinados
+# Aluno: Letícia Alves Peixoto de Barros
+# ---------------------------------------------------------
+
+# etapa1_chatbot.py
+import pymongo
+from transformers import pipeline
+
+print("--- Iniciando Chatbot ---")
+
+# 1. Conectar ao MongoDB
+try:
+    client = pymongo.MongoClient("mongodb://localhost:27017/")
+    db = client["chatbot"]
+    collection = db["conversas"]
+    print("Conexão com MongoDB estabelecida.")
+except Exception as e:
+    print(f"Erro ao conectar no MongoDB: {e}")
+
+# 2. Carregar o modelo (Isso pode demorar um pouco na primeira vez)
+print("Carregando modelo facebook/opt-1.3b...")
+modelo = pipeline("text-generation", model="facebook/opt-1.3b")
+
+# 3. Definir pergunta
+pergunta = input(f"Digite a pergunta: ")
+#pergunta = "O que é MongoDB?" 
+
+# 4. Resposta
+#resposta = input(f"{pergunta} ")
+resposta = modelo(pergunta, max_length=100, do_sample=True)[0]["generated_text"]  
+
+# 5. Armazenar no Banco
+doc = {"pergunta": pergunta, "resposta": resposta}
+collection.insert_one(doc)
+
+# 6. Exibir resultados
+print("\n" + "="*30)
+print("="*30)
+print(f"Pergunta: {pergunta}")
+print(f"Resposta Gerada: {resposta}")
+print("="*30)
+print("Dados salvos no MongoDB com sucesso!")

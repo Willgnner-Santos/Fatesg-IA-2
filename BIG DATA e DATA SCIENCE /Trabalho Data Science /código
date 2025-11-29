@@ -1,0 +1,253 @@
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
+from sklearn.metrics import mean_absolute_error, accuracy_score, classification_report
+import streamlit as st
+from datetime import datetime
+import plotly.express as px
+
+
+
+def classify_risk(ph: float) -> str:
+    if 6.5 <= ph <= 8.5:
+        return "bom"
+    elif 6.0 <= ph < 6.5 or 8.5 < ph <= 9.0:
+        return "alerta"
+    else:
+        return "critico"
+
+
+
+@st.cache_data
+def load_data(json_path: str = "dados_aqua.json") -> pd.DataFrame:
+    df = pd.read_json(json_path)
+
+    df["timestamp"] = pd.to_datetime(df["timestamp"])
+    df = df.sort_values(["tanque_id", "timestamp"])
+
+    df["hour"] = df["timestamp"].dt.hour
+    df["dayofweek"] = df["timestamp"].dt.dayofweek
+
+    df["ph_future"] = df.groupby("tanque_id")["ph"].shift(-1)
+    df = df.dropna(subset=["ph_future"]).reset_index(drop=True)
+
+    df["risk_future"] = df["ph_future"].apply(classify_risk)
+
+    return df
+
+
+
+@st.cache_resource
+def treinar_modelos(df: pd.DataFrame):
+
+    feature_cols = ["water_temp_c", "feed_amount_g", "feed_quality", "hour", "dayofweek"]
+    X = df[feature_cols]
+    y_ph = df["ph_future"]
+    y_risk = df["risk_future"]
+
+    numeric_features = ["water_temp_c", "feed_amount_g", "hour", "dayofweek"]
+    categorical_features = ["feed_quality"]
+
+    preprocessor = ColumnTransformer(
+        transformers=[
+            ("num", "passthrough", numeric_features),
+            ("cat", OneHotEncoder(handle_unknown="ignore"), categorical_features),
+        ]
+    )
+
+    # REGRESSÃO
+    regressor = RandomForestRegressor(n_estimators=200, random_state=42)
+    pipe_reg = Pipeline([("preprocess", preprocessor), ("model", regressor)])
+
+    X_train_reg, X_test_reg, y_train_reg, y_test_reg = train_test_split(
+        X, y_ph, test_size=0.2, random_state=42
+    )
+
+    pipe_reg.fit(X_train_reg, y_train_reg)
+    y_pred_ph = pipe_reg.predict(X_test_reg)
+    mae = mean_absolute_error(y_test_reg, y_pred_ph)
+
+    # CLASSIFICAÇÃO
+    classifier = RandomForestClassifier(n_estimators=200, random_state=42)
+    pipe_clf = Pipeline([("preprocess", preprocessor), ("model", classifier)])
+
+    # lida com classes raras
+    contagem = y_risk.value_counts()
+    if (contagem < 2).any():
+        X_train_clf, X_test_clf, y_train_clf, y_test_clf = train_test_split(
+            X, y_risk, test_size=0.2, random_state=42
+        )
+    else:
+        X_train_clf, X_test_clf, y_train_clf, y_test_clf = train_test_split(
+            X, y_risk, test_size=0.2, random_state=42, stratify=y_risk
+        )
+
+    pipe_clf.fit(X_train_clf, y_train_clf)
+    y_pred_risk = pipe_clf.predict(X_test_clf)
+
+    acc = accuracy_score(y_test_clf, y_pred_risk)
+    relatorio = classification_report(y_test_clf, y_pred_risk)
+
+    metrics = {
+        "mae_regressao": mae,
+        "acc_classificacao": acc,
+        "relatorio_classificacao": relatorio,
+    }
+
+    return pipe_reg, pipe_clf, metrics
+
+
+
+def prever_cenario(pipe_reg, pipe_clf, temp_c, feed_amount_g, feed_quality, dt: datetime):
+
+    dados_novos = pd.DataFrame([{
+        "water_temp_c": temp_c,
+        "feed_amount_g": feed_amount_g,
+        "feed_quality": feed_quality,
+        "hour": dt.hour,
+        "dayofweek": dt.weekday()
+    }])
+
+    ph_prev = pipe_reg.predict(dados_novos)[0]
+    risco_prev = pipe_clf.predict(dados_novos)[0]
+
+    return ph_prev, risco_prev
+
+
+
+def main():
+
+    st.title("Piscisafe 🐟💧")
+
+    # ----------------------------- LOAD BASE ----------------------------
+    df = load_data("dados_aqua.json")
+
+    # ----------------------------- SIDEBAR -----------------------------
+    st.sidebar.title("🔍 Filtros")
+
+    min_date = df["timestamp"].min().date()
+    max_date = df["timestamp"].max().date()
+
+    data_inicio, data_fim = st.sidebar.date_input(
+        "📅 Intervalo de datas",
+        value=[min_date, max_date],
+        min_value=min_date,
+        max_value=max_date
+    )
+
+    hora_inicio = st.sidebar.time_input("⏰ Hora inicial", value=datetime.strptime("00:00", "%H:%M").time())
+    hora_fim = st.sidebar.time_input("⏰ Hora final", value=datetime.strptime("23:59", "%H:%M").time())
+
+    tanque_sel = st.sidebar.selectbox("🐟 Tanque", options=df["tanque_id"].unique())
+
+    # ----------------------------- APLICAR FILTROS -----------------------------
+    df_filtrado = df[
+        (df["tanque_id"] == tanque_sel) &
+        (df["timestamp"].dt.date >= data_inicio) &
+        (df["timestamp"].dt.date <= data_fim) &
+        (df["timestamp"].dt.time >= hora_inicio) &
+        (df["timestamp"].dt.time <= hora_fim)
+    ]
+
+    if df_filtrado.empty:
+        st.warning("⚠️ Nenhum dado encontrado para os filtros aplicados.")
+        return
+
+    
+    st.subheader("Distribuição dos níveis de risco futuro (filtrado)")
+
+    contagem = df_filtrado["risk_future"].value_counts().reset_index()
+    contagem.columns = ["categoria", "quantidade"]
+
+    fig_risco = px.bar(
+        contagem,
+        x="categoria",
+        y="quantidade",
+        title="Distribuição de Risco — Bom / Alerta / Crítico",
+        color="categoria",
+    )
+
+    st.plotly_chart(fig_risco, use_container_width=True)
+
+    # ----------------------------- TREINAR MODELOS -----------------------------
+    st.subheader("Treinando modelos...")
+    pipe_reg, pipe_clf, metrics = treinar_modelos(df_filtrado)
+
+    col1, col2 = st.columns(2)
+    col1.metric("MAE (pH futuro)", f"{metrics['mae_regressao']:.3f}")
+    col2.metric("Acurácia (risco futuro)", f"{metrics['acc_classificacao']:.3f}")
+
+    with st.expander("Ver relatório completo"):
+        st.text(metrics["relatorio_classificacao"])
+
+    # ----------------------------- PREPARAR VARIÁVEIS -----------------------------
+    df_filtrado["ph_min_ideal"] = 6.5
+    df_filtrado["ph_max_ideal"] = 8.5
+
+    df_filtrado["ph_prev_model"] = pipe_reg.predict(
+        df_filtrado[["water_temp_c", "feed_amount_g", "feed_quality", "hour", "dayofweek"]]
+    )
+
+    
+    st.markdown("## 📊 Evolução anual média do pH")
+
+    df_filtrado["ano"] = df_filtrado["timestamp"].dt.year
+
+    df_ano = df_filtrado.groupby("ano").agg({
+        "ph": "mean",
+        "ph_prev_model": "mean",
+        "ph_min_ideal": "mean",
+        "ph_max_ideal": "mean"
+    }).reset_index()
+
+    df_ano = df_ano.rename(columns={
+        "ph": "pH_real_medio",
+        "ph_prev_model": "pH_previsto_medio",
+        "ph_min_ideal": "pH_min_ideal_medio",
+        "ph_max_ideal": "pH_max_ideal_medio"
+    })
+
+    fig2 = px.line(
+        df_ano,
+        x="ano",
+        y=[
+            "pH_real_medio",
+            "pH_previsto_medio",
+            "pH_min_ideal_medio",
+            "pH_max_ideal_medio"
+        ],
+        markers=True,
+        title="Médias anuais — pH Real vs Previsto vs Ideal"
+    )
+
+    st.plotly_chart(fig2, use_container_width=True)
+
+   
+    st.subheader("Simular cenário futuro")
+
+    colA, colB = st.columns(2)
+    with colA:
+        temp_c = st.slider("Temperatura (°C)", 20.0, 35.0, 28.0, 0.1)
+        feed_amount_g = st.slider("Ração (g)", 0, 300, 150, 10)
+
+    with colB:
+        feed_quality = st.selectbox("Qualidade da ração", ["boa", "media", "ruim"])
+        data_input = st.date_input("Data")
+        hora_input = st.time_input("Hora")
+
+    dt_cenario = datetime.combine(data_input, hora_input)
+
+    if st.button("Prever"):
+        ph_prev, risco_prev = prever_cenario(
+            pipe_reg, pipe_clf, temp_c, feed_amount_g, feed_quality, dt_cenario
+        )
+
+        st.success(f"pH previsto: **{ph_prev:.2f}** — Risco: **{risco_prev.upper()}**")
+
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,120 @@
+============================================================
+CONSULTAS SIMPLES (RESUMIDAS)
+============================================================
+
+1️⃣ Filmes do gênero Drama (primeiros 5):
+  • 1. The Shawshank Redemption (1994) - 9.3 ⭐
+  • 10. Fight Club (1999) - 8.8 ⭐
+  • 19. One Flew Over the Cuckoo's Nest (1975) - 8.7 ⭐
+  • 40. American History X (1998) - 8.5 ⭐
+  • 45. Cinema Paradiso (1988) - 8.5 ⭐
+
+2️⃣ Filmes com nota IMDB maior que 8.5 (primeiros 5):
+  • 20. Parasite (2019) - 8.6 ⭐
+  • 21. Interstellar (2014) - 8.6 ⭐
+  • 22. City of God (2002) - 8.6 ⭐
+  • 23. Spirited Away (2001) - 8.6 ⭐
+  • 24. Saving Private Ryan (1998) - 8.6 ⭐
+
+3️⃣ Top 5 filmes com maior nota:
+  1. 1. The Shawshank Redemption (1994) - 9.3 ⭐
+  2. 1. The Shawshank Redemption (1994) - 9.3 ⭐
+  3. 1. The Shawshank Redemption (1994) - 9.3 ⭐
+  4. 1. The Shawshank Redemption (1994) - 9.3 ⭐
+  5. 1. The Shawshank Redemption (1994) - 9.3 ⭐
+
+4️⃣ Filmes de Drama com Metascore maior que 75 (primeiros 5):
+  • {'Title': '1. The Shawshank Redemption (1994)', 'Rate': 9.3, 'Metascore': 80.0}
+  • {'Title': '1. The Shawshank Redemption (1994)', 'Rate': 9.3, 'Metascore': 80.0}
+  • {'Title': '1. The Shawshank Redemption (1994)', 'Rate': 9.3, 'Metascore': 80.0}
+  • {'Title': '1. The Shawshank Redemption (1994)', 'Rate': 9.3, 'Metascore': 80.0}
+  • {'Title': '1. The Shawshank Redemption (1994)', 'Rate': 9.3, 'Metascore': 80.0}
+
+5️⃣ Total de filmes por certificado:
+  • nan: 135 filmes
+  • Approved: 225 filmes
+  • G: 205 filmes
+  • GP: 10 filmes
+  • Not Rated: 1000 filmes
+
+6️⃣ Filmes com 'prison' na descrição:
+  • 1. The Shawshank Redemption (1994)
+  • 68. Oldboy (2003)
+  • 91. 7 Kogustaki Mucize (2019)
+
+============================================================
+OPERAÇÕES DE AGREGAÇÃO
+============================================================
+
+1️⃣ Média de notas IMDB por gênero (top 5):
+  • Drama, Family, Fantasy: 8.60 ⭐
+  • Action, Sci-Fi: 8.60 ⭐
+  • Crime, Drama, Fantasy: 8.60 ⭐
+  • Western: 8.53 ⭐
+  • Drama, Romance, War: 8.50 ⭐
+
+2️⃣ Quantidade de filmes por certificado:
+  • R: 1725 filmes
+  • Not Rated: 1000 filmes
+  • PG-13: 825 filmes
+  • PG: 525 filmes
+  • Passed: 275 filmes
+  • Approved: 225 filmes
+  • G: 205 filmes
+  • nan: 135 filmes
+  • TV-MA: 35 filmes
+  • TV-PG: 35 filmes
+  • GP: 10 filmes
+  • TV-14: 5 filmes
+
+3️⃣ Filme com maior Metascore por gênero (top 3):
+  • Comedy, Musical, Romance: 121. Singin' in the Rain (1952) (Metascore: 99)
+  • Crime, Thriller: 184. Dial M for Murder (1954) (Metascore: 75)
+  • Drama, Fantasy, War: 150. Pan's Labyrinth (2006) (Metascore: 98)
+
+4️⃣ Distribuição de faixas de notas IMDB:
+  • Notas 8-9: 4735 filmes
+  • Notas 8.5-9.5: 245 filmes
+  • Notas 9-10: 20 filmes
+
+============================================================
+CRIAÇÃO E ANÁLISE DE ÍNDICES
+============================================================
+
+📑 Criando índices...
+  ✓ Índice criado em 'Rate'
+  ✓ Índice criado em 'Genre'
+  ✓ Índice criado em 'Certificate'
+  ✓ Índice composto criado em 'Genre' + 'Rate'
+  ✓ Índice de texto criado em 'Description'
+
+📊 Índices existentes na coleção:
+  • _id_: SON([('_id', 1)])
+  • Rate_1: SON([('Rate', 1)])
+  • Genre_1: SON([('Genre', 1)])
+  • Certificate_1: SON([('Certificate', 1)])
+  • Genre_1_Rate_-1: SON([('Genre', 1), ('Rate', -1)])
+  • Description_text: SON([('_fts', 'text'), ('_ftsx', 1)])
+
+============================================================
+ANÁLISE DE PERFORMANCE DE QUERIES
+============================================================
+
+🚀 Query com índice (Rate > 8.5):
+  Documentos examinados: 160
+  Documentos retornados: 160
+
+🚀 Query com índice composto (Genre + Rate):
+  Documentos examinados: 175
+  Documentos retornados: 175
+
+============================================================
+📈 RESUMO DA ANÁLISE
+============================================================
+Total de documentos: 5000
+Nota média IMDB: 8.10 ⭐
+Filme com maior nota: 1. The Shawshank Redemption (1994) (9.3 ⭐)
+Filme com maior Metascore: 2. The Godfather (1972) (100)
+
+✅ Análise completa finalizada!
+Timestamp: 2025-11-29 16:58:06

@@ -1,0 +1,3305 @@
+[{
+  "title": "Restaurante Gratidão - Restaurante comida por Kg",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante",
+  "address": "Av. Paranaíba, 715 - Qd. 90, Lt. 86 - St. Central, Goiânia - GO, 74015-125, Brasil",
+  "neighborhood": "Setor Central",
+  "street": "Av. Paranaíba, 715 - Qd. 90, Lt. 86",
+  "city": "Goiânia",
+  "postalCode": "74015-125",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99910-5714",
+  "phoneUnformatted": "+5562999105714",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6705572,
+    "lng": -49.2567181
+  },
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ-achE4fzXpMR2RW1HwsIdiY",
+  "categories": [
+    "Restaurante",
+    "Empório gourmet",
+    "Restaurante por quilo"
+  ],
+  "fid": "0x935ef3871321a7f9:0x2676080b1fb515d9",
+  "cid": "2771411464562742745",
+  "reviewsCount": 788,
+  "imagesCount": 100,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.030Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sábado",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Ótimo café": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Bebidas destiladas": true
+      },
+      {
+        "Café": true
+      },
+      {
+        "Cerveja": true
+      },
+      {
+        "Porções pequenas": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Aconchegante": true
+      },
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      },
+      {
+        "Grupos": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Alelo": true
+      },
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Vale refeição": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Há muitas vagas disponíveis": true
+      },
+      {
+        "Estacionamento descoberto gratuito": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Gratid%C3%A3o%20-%20Restaurante%20comida%20por%20Kg&query_place_id=ChIJ-achE4fzXpMR2RW1HwsIdiY",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 1,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw_kRqbvht8qK6Rp-eBzrnO-PxsTgOR7wVZfqVycTtYtpj1DNX0XAsqqXir6OzW_dlbxdNhWmGbZZ18L-Jrs3jy7Z4BhQqCPIQSDtQ1Ct578czbics-zjeW5m4NP4EnU1Xm4Bs=w408-h408-k-no",
+  "kgmid": "/g/11tf1t2s05"
+},
+{
+  "title": "Restaurante Árabe",
+  "description": "Comida árabe em casa ampla e elegante, com vitrais e temas da cultura, e menu clássico com opções expressas.",
+  "price": "$$$",
+  "categoryName": "Empório gourmet",
+  "address": "Avenida 83, 205 - St. Sul, Goiânia - GO, 74083-020, Brasil",
+  "neighborhood": "Setor Sul",
+  "street": "Avenida 83, 205",
+  "city": "Goiânia",
+  "postalCode": "74083-020",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "http://www.restaurantearabe.com.br/",
+  "phone": "+55 62 3218-6296",
+  "phoneUnformatted": "+556232186296",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6824149,
+    "lng": -49.2527071
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJVVVVVWXxXpMRsyqF3EfNtqw",
+  "categories": [
+    "Empório gourmet",
+    "Restaurante árabe",
+    "Restaurante do Oriente Médio",
+    "Adega"
+  ],
+  "fid": "0x935ef16555555555:0xacb6cd47dc852ab3",
+  "cid": "12445360328811031219",
+  "reviewsCount": 2187,
+  "imagesCount": 965,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.032Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 23:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "08:00 to 23:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "08:00 to 18:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Retirada na loja": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Bons produtos": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Buffet de saladas": true
+      },
+      {
+        "Comida": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Visita rápida": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento coberto gratuito": true
+      },
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20%C3%81rabe&query_place_id=ChIJVVVVVWXxXpMRsyqF3EfNtqw",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 2,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxBZr0mGNgu1IMgjiV8ctz4zfG0EMzB6-BbwCwPH68p8fmWTF3s9IsWlMtSrVVHsgA_OxWvATxc9K4qnfQ2VlctXED91-RPUAGtGEnNEiaZ_080qFkRn_Tf3uEMp6ctZtpAI4iQPw=w408-h306-k-no",
+  "kgmid": "/g/1tczf_9c"
+},
+{
+  "title": "Galpão Restaurante",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante brasileiro",
+  "address": "R. 83, s/n - Sala 2 - St. Sul, Goiânia - GO, 74083-195, Brasil",
+  "neighborhood": "Setor Sul",
+  "street": "R. 83, s/n - Sala 2",
+  "city": "Goiânia",
+  "postalCode": "74083-195",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98621-5231",
+  "phoneUnformatted": "+5562986215231",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.683007,
+    "lng": -49.2522887
+  },
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ2S6tdnDxXpMRU6A2cYf_81I",
+  "categories": [
+    "Restaurante brasileiro"
+  ],
+  "fid": "0x935ef17076ad2ed9:0x52f3ff877136a053",
+  "cid": "5977402087635853395",
+  "reviewsCount": 498,
+  "imagesCount": 108,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.032Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sábado",
+      "hours": "12:00 to 15:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Bebidas destiladas": true
+      },
+      {
+        "Café": true
+      },
+      {
+        "Cerveja": true
+      },
+      {
+        "Espaço privativo para eventos": true
+      },
+      {
+        "Opções veganas": true
+      },
+      {
+        "Opções vegetarianas": true
+      },
+      {
+        "Porções pequenas": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Aconchegante": true
+      },
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      },
+      {
+        "Universitários": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": false
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Alelo": true
+      },
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Ticket Restaurante": true
+      },
+      {
+        "Vale refeição": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Cardápio infantil": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "É difícil encontrar uma vaga": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Galp%C3%A3o%20Restaurante&query_place_id=ChIJ2S6tdnDxXpMRU6A2cYf_81I",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 3,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOyRLhas-2uzJo-BL8pWt1Qb9JFsOVCpCBbj3dt=w408-h611-k-no",
+  "kgmid": "/g/11cjpd7_p3"
+},
+{
+  "title": "Restaurante Sabor D Casa",
+  "description": "A cozinha do caseiro apurado com opções árabes semanalmente em ambiente despojado e enxuto de rotatividade.",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante self-service",
+  "address": "R. 24, 418 - St. Central, Goiânia - GO, 74030-060, Brasil",
+  "neighborhood": "Setor Central",
+  "street": "R. 24, 418",
+  "city": "Goiânia",
+  "postalCode": "74030-060",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.instagram.com/restsabordcasa",
+  "phone": "+55 62 3093-5462",
+  "phoneUnformatted": "+556230935462",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6752024,
+    "lng": -49.2515944
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ71nTA33xXpMRE3_mzAwVjQs",
+  "categories": [
+    "Restaurante self-service",
+    "Restaurante brasileiro",
+    "Restaurante do Oriente Médio",
+    "Restaurante"
+  ],
+  "fid": "0x935ef17d03d359ef:0xb8d150ccce67f13",
+  "cid": "832344650854858515",
+  "reviewsCount": 883,
+  "imagesCount": 105,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.032Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sábado",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Ótimo café": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Café": true
+      },
+      {
+        "Opções veganas": true
+      },
+      {
+        "Opções vegetarianas": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Aconchegante": true
+      },
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      },
+      {
+        "Universitários": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": false
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Alelo": true
+      },
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Ticket Restaurante": true
+      },
+      {
+        "Vale refeição": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "É um pouco difícil encontrar uma vaga": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Sabor%20D%20Casa&query_place_id=ChIJ71nTA33xXpMRE3_mzAwVjQs",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 4,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyRdhgHPQAFrqa5tWAdogdtdsH_E8z8GjuQpb7UBCbT0fcE66ybvabRYk8qrdSC83JzG8Bi8DmeoIBcFizItKHbaMRbOF3W7PLq3ibGA1k-ZZDKs135MSbNC9OQ4GM_THte8jWJ=w426-h240-k-no",
+  "kgmid": "/g/1hc2jykxp"
+},
+{
+  "title": "Esquina Restaurante - Almoco, Comida Caseira, Marmitex, Jantinha, Espetinho",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante",
+  "address": "R. 20, quadra 51 - lote 73E - St. Central, Goiânia - GO, 74020-170, Brasil",
+  "neighborhood": "Setor Central",
+  "street": "R. 20, quadra 51 - lote 73E",
+  "city": "Goiânia",
+  "postalCode": "74020-170",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.instagram.com/esquina.restaurante.centro",
+  "phone": "+55 62 99577-4257",
+  "phoneUnformatted": "+5562995774257",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6745051,
+    "lng": -49.253245
+  },
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJr5suSH3xXpMRVwS4T9ur_1U",
+  "categories": [
+    "Restaurante"
+  ],
+  "fid": "0x935ef17d482e9baf:0x55ffabdb4fb80457",
+  "cid": "6196860570708739159",
+  "reviewsCount": 189,
+  "imagesCount": 33,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.032Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "11:00 to 15:00, 16:00 to 23:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "11:00 to 15:00, 16:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "11:00 to 15:00, 16:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "11:00 to 15:00, 16:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "11:00 to 15:00, 16:00 to 23:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "11:00 to 15:00, 16:00 to 23:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "11:00 to 14:30"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega": true
+      },
+      {
+        "Drive-through": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Buffet à vontade": true
+      },
+      {
+        "Café": true
+      },
+      {
+        "Cerveja": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Alelo": true
+      },
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Vale refeição": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Esquina%20Restaurante%20-%20Almoco%2C%20Comida%20Caseira%2C%20Marmitex%2C%20Jantinha%2C%20Espetinho&query_place_id=ChIJr5suSH3xXpMRVwS4T9ur_1U",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 5,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwTGEE8sNQtLvXkqEacHNXJemNWnA9llizWP6I-TcfV_CmaJY-mDds2PodkvN2qCs_mIoCe1E_lqvG5MYCxntUisbep3UcmYqOga2vVlgVSEbsLofGhn9pFzYVT8c_wWGhO-zKz=w408-h306-k-no",
+  "kgmid": "/g/11hbqm31lr"
+},
+{
+  "title": "K'Te Espero Restaurante",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante brasileiro",
+  "address": "R. 15, 427 - St. Central, Goiânia - GO, 74465-539, Brasil",
+  "neighborhood": "Setor Central",
+  "street": "R. 15, 427",
+  "city": "Goiânia",
+  "postalCode": "74465-539",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 3092-8118",
+  "phoneUnformatted": "+556230928118",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.677762,
+    "lng": -49.251174
+  },
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJm40lgHvxXpMRX1rtmcAXV24",
+  "categories": [
+    "Restaurante brasileiro",
+    "Restaurante"
+  ],
+  "fid": "0x935ef17b80258d9b:0x6e5717c099ed5a5f",
+  "cid": "7950849783129528927",
+  "reviewsCount": 224,
+  "imagesCount": 17,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.032Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "10:00 to 15:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "10:00 to 15:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "10:00 to 15:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "10:00 to 15:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "10:00 to 15:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "10:00 to 15:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Café": true
+      },
+      {
+        "Opções vegetarianas": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Casual": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Ambiente familiar": true
+      },
+      {
+        "Grupos": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": false
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=K'Te%20Espero%20Restaurante&query_place_id=ChIJm40lgHvxXpMRX1rtmcAXV24",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzA6mU6FV1OQbO5uFJDPoBRKGys1Zptin4woq5Lt05EpCv57-AJNYQiZoXG0dT66jWqIsk1wBsK1rCJO8PoVVVP-P4EKEfMSfm9LRl1nXPxROFo0mYinn1jrOSLwjZ4BwBOEu-Ebg=w408-h544-k-no",
+  "kgmid": "/g/1yfjsmg9b"
+},
+{
+  "title": "Balaio's Restaurante",
+  "description": "A gastronomia do cotidiano em buffet caseiro com opções vegetarianas, em ambiente informal e descontraído.",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante self-service",
+  "address": "R. 83, 93 - St. Sul, Goiânia - GO, 74083-195, Brasil",
+  "neighborhood": "Setor Sul",
+  "street": "R. 83, 93",
+  "city": "Goiânia",
+  "postalCode": "74083-195",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 3093-5979",
+  "phoneUnformatted": "+556230935979",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6817732,
+    "lng": -49.253634
+  },
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ_UuwSmXxXpMRU7CuJM7P-sM",
+  "categories": [
+    "Restaurante self-service"
+  ],
+  "fid": "0x935ef1654ab04bfd:0xc3facfce24aeb053",
+  "cid": "14121828065859252307",
+  "reviewsCount": 1416,
+  "imagesCount": 215,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.033Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "10:30 to 14:20"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "10:30 to 14:20"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "10:30 to 14:20"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "10:30 to 14:20"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "10:30 to 14:20"
+    },
+    {
+      "day": "sábado",
+      "hours": "10:30 to 14:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Ótima sobremesa": true
+      },
+      {
+        "Ótimo café": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Buffet de saladas": true
+      },
+      {
+        "Café": true
+      },
+      {
+        "Cerveja": true
+      },
+      {
+        "Opções veganas": true
+      },
+      {
+        "Opções vegetarianas": true
+      },
+      {
+        "Porções pequenas": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Atendimento no balcão": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      },
+      {
+        "Universitários": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Alelo": true
+      },
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Ticket Restaurante": true
+      },
+      {
+        "Vale refeição": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      },
+      {
+        "Cardápio infantil": true
+      },
+      {
+        "Tem fraldários": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento coberto gratuito": true
+      },
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ],
+    "Animais de estimação": [
+      {
+        "A presença de cães é permitida": true
+      },
+      {
+        "Cães podem ficar na área externa": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Balaio's%20Restaurante&query_place_id=ChIJ_UuwSmXxXpMRU7CuJM7P-sM",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 7,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOSZyEHEjUBU_AQF-T1Q6m6ScoLk5lStSmRsYMw=w408-h544-k-no",
+  "kgmid": "/g/1pxwrlcq_"
+},
+{
+  "title": "Fogão Caipira",
+  "description": "Pratos clássicos da cozinha caipira como arroz com pequi e frango, café e brigadeiro, em atmosfera familiar.",
+  "price": "$$",
+  "categoryName": "Restaurante",
+  "address": "Alameda Henrique Silva, 570 - St. Sul, Goiânia - GO, 74083-020, Brasil",
+  "neighborhood": "Setor Sul",
+  "street": "Alameda Henrique Silva, 570",
+  "city": "Goiânia",
+  "postalCode": "74083-020",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 3218-2104",
+  "phoneUnformatted": "+556232182104",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6842758,
+    "lng": -49.2498932
+  },
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJFRKqHbrzXpMR1nKJA5scDco",
+  "categories": [
+    "Restaurante",
+    "Restaurante brasileiro",
+    "Restaurante de frango"
+  ],
+  "fid": "0x935ef3ba1daa1215:0xca0d1c9b038972d6",
+  "cid": "14559324622463529686",
+  "reviewsCount": 1906,
+  "imagesCount": 542,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.033Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "11:00 to 15:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "11:00 to 15:00, 18:00 to 23:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "11:00 to 15:00, 18:00 to 23:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "11:00 to 15:00, 18:00 to 23:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "11:00 to 15:00, 18:00 to 23:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "11:00 to 23:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "11:00 to 23:00"
+    }
+  ],
+  "additionalOpeningHours": {
+    "Almoço": [
+      {
+        "day": "segunda-feira",
+        "hours": "11:00–15:00"
+      },
+      {
+        "day": "terça-feira",
+        "hours": "11:00–15:00"
+      },
+      {
+        "day": "quarta-feira",
+        "hours": "11:00–15:00"
+      },
+      {
+        "day": "quinta-feira",
+        "hours": "11:00–15:00"
+      },
+      {
+        "day": "sexta-feira",
+        "hours": "11:00–15:00"
+      },
+      {
+        "day": "sábado",
+        "hours": "11:00–23:00"
+      },
+      {
+        "day": "domingo",
+        "hours": "11:00–23:00"
+      }
+    ]
+  },
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Ótima seleção de cervejas": true
+      },
+      {
+        "Ótimo café": true
+      },
+      {
+        "Ótimos coquetéis": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Jantar": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Bebidas destiladas": true
+      },
+      {
+        "Café": true
+      },
+      {
+        "Cerveja": true
+      },
+      {
+        "Comida tarde da noite": true
+      },
+      {
+        "Coquetéis": true
+      },
+      {
+        "Porções pequenas": true
+      },
+      {
+        "Vinho": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Jantar": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Bar no local": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Aconchegante": true
+      },
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      },
+      {
+        "Turistas": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Recomendação de reserva para jantar": true
+      },
+      {
+        "Aceita reservas": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      },
+      {
+        "Cardápio infantil": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "É um pouco difícil encontrar uma vaga": true
+      },
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Fog%C3%A3o%20Caipira&query_place_id=ChIJFRKqHbrzXpMR1nKJA5scDco",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw8uLdrQMxlnvshnhXRAZR4KoECYDTKTn8ottCb6hwJ3OVHyNGXuLT9ag21D7U7Qo7I6-3gA15ViO9L-JMeSoA0cMLKxLY42efHJ8MAE4eP0aUgfFoGz7wOp_UTa5WzQ6SFMDI=w408-h306-k-no",
+  "kgmid": "/g/1tf5fvc2"
+},
+{
+  "title": "Restaurante Paladar",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante",
+  "address": "R. 235, 766 - Setor Leste Universitário, Goiânia - GO, 74605-050, Brasil",
+  "neighborhood": "Setor Leste Universitário",
+  "street": "R. 235, 766",
+  "city": "Goiânia",
+  "postalCode": "74605-050",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99281-7862",
+  "phoneUnformatted": "+5562992817862",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.673587,
+    "lng": -49.2404731
+  },
+  "totalScore": 4.3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJkTgFDoHxXpMRfzPULlJfloE",
+  "categories": [
+    "Restaurante"
+  ],
+  "fid": "0x935ef1810e053891:0x81965f522ed4337f",
+  "cid": "9337755683976917887",
+  "reviewsCount": 740,
+  "imagesCount": 32,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.033Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sábado",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Café": true
+      },
+      {
+        "Opções vegetarianas": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      },
+      {
+        "Universitários": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": false
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Alelo": true
+      },
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Vale refeição": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Paladar&query_place_id=ChIJkTgFDoHxXpMRfzPULlJfloE",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 9,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyQUBnCOAHCbHOBxEdL9FLwduGu2EBYtY9txiujvp9hgVrxmZsy7dWHTwQSkvBOzZ-vMJ4aoLODRa-Jng4ewQeEY-jEuHMTve1o89J4nHfPBWZJYnjtsgLf83_if9xiIkgh_lIR=w408-h306-k-no",
+  "kgmid": "/g/11c37n_wcd"
+},
+{
+  "title": "Cantinho Frio",
+  "description": "Carnes nobres, petiscos, panelinhas, pratos à la carte e destaque para os caldos, clima intimista e cordial.",
+  "price": "$$",
+  "categoryName": "Restaurante self-service",
+  "address": "R. 228, 53 - Setor Leste Universitário, Goiânia - GO, 74610-140, Brasil",
+  "neighborhood": "Setor Leste Universitário",
+  "street": "R. 228, 53",
+  "city": "Goiânia",
+  "postalCode": "74610-140",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://linktr.ee/oficial.cantinhofrio",
+  "phone": "+55 62 3636-3815",
+  "phoneUnformatted": "+556236363815",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6803607,
+    "lng": -49.2379666
+  },
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ31MO2TPxXpMRA1_uYW7WV0Q",
+  "categories": [
+    "Restaurante self-service",
+    "Bar"
+  ],
+  "fid": "0x935ef133d90e53df:0x4457d66e61ee5f03",
+  "cid": "4924640487130685187",
+  "reviewsCount": 8316,
+  "imagesCount": 2708,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.033Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "11:00 to 00:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "11:00 to 00:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "11:00 to 00:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "11:00 to 00:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "11:00 to 00:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "11:00 to 00:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "11:00 to 00:00"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Mesas externas": true
+      },
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Serviços no local": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      },
+      {
+        "Entrega": false
+      }
+    ],
+    "Destaques": [
+      {
+        "Esportes": true
+      },
+      {
+        "Ótima carta de vinhos": true
+      },
+      {
+        "Ótima seleção de cervejas": true
+      },
+      {
+        "Ótimos coquetéis": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Jantar": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": false
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Bebidas destiladas": true
+      },
+      {
+        "Bebidas para happy hour": true
+      },
+      {
+        "Buffet de saladas": true
+      },
+      {
+        "Cerveja": true
+      },
+      {
+        "Coquetéis": true
+      },
+      {
+        "Espaço privativo para eventos": true
+      },
+      {
+        "Porções pequenas": true
+      },
+      {
+        "Pratos halal": true
+      },
+      {
+        "Pratos para happy hour": true
+      },
+      {
+        "Refeição rápida": true
+      },
+      {
+        "Vinho": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Jantar": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Atendimento no balcão": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Aconchegante": true
+      },
+      {
+        "Casual": true
+      },
+      {
+        "Sofisticado": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Ambiente familiar": true
+      },
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      },
+      {
+        "Grupos": true
+      },
+      {
+        "Turistas": true
+      },
+      {
+        "Universitários": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Recomendação de reserva para jantar": true
+      },
+      {
+        "Aceita reservas": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Alelo": true
+      },
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Ticket Restaurante": true
+      },
+      {
+        "Vale refeição": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      },
+      {
+        "Cardápio infantil": true
+      },
+      {
+        "É adequado para aniversários de crianças": true
+      },
+      {
+        "Tem fraldários": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Há muitas vagas disponíveis": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ],
+    "Animais de estimação": [
+      {
+        "Cães podem ficar na área externa": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Cantinho%20Frio&query_place_id=ChIJ31MO2TPxXpMRA1_uYW7WV0Q",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 10,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwLviPT8DhyNr5TXDeL4mIbB28ldkQFoYKOCRXowTmSlz8eIkOEegUYcogx3MIQo2B5RDgH5GxawiCZvUzsROPNerO3b8At9LsaL0EmvxiB9M8lYLt1lbG62qHlGOsThOQqdNgS5g=w408-h306-k-no",
+  "kgmid": "/g/1tdcbx0y"
+},
+{
+  "title": "Restaurante Center Grill",
+  "description": "A cozinha caseira do dia a dia no buffet com churrasco de carnes diversas em espaço simples de rotatividade.",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante self-service",
+  "address": "Restaurante, Delivery, Marmitex, Restaurante do sesc, Espaço para evento - Rua 4 n 310 Qd 55 Lt 09 - St. Central, Goiânia - GO, 74020-060, Brasil",
+  "neighborhood": "Setor Central",
+  "street": "Restaurante, Delivery, Marmitex, Restaurante do sesc, Espaço para evento - Rua 4 n 310 Qd 55 Lt 09",
+  "city": "Goiânia",
+  "postalCode": "74020-060",
+  "state": "GO",
+  "countryCode": "BR",
+  "website": "http://centergrill.com.br/",
+  "phone": "+55 62 3213-0183",
+  "phoneUnformatted": "+556232130183",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.672697,
+    "lng": -49.2554939
+  },
+  "totalScore": 4.3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJG02oa9jzXpMRmEvl9LCA5WI",
+  "categories": [
+    "Restaurante self-service"
+  ],
+  "fid": "0x935ef3d86ba84d1b:0x62e580b0f4e54b98",
+  "cid": "7126243482894945176",
+  "reviewsCount": 1312,
+  "imagesCount": 158,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.033Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sábado",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Ótimo café": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": false
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Buffet à vontade": true
+      },
+      {
+        "Buffet de saladas": true
+      },
+      {
+        "Café": true
+      },
+      {
+        "Cerveja": true
+      },
+      {
+        "Opções vegetarianas": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Bar no local": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Ambiente familiar": true
+      },
+      {
+        "Grupos": true
+      },
+      {
+        "Universitários": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": false
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Alelo": true
+      },
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Vale refeição": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Center%20Grill&query_place_id=ChIJG02oa9jzXpMRmEvl9LCA5WI",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 11,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz-RzIR0cJ6l8v27U7yZlBVGb_KAMACLaaYcsFNVUEZ4wPp7wR8Vlry_ELZ98w3rJnN2qDzpB2dQdjrrKbxAMXN39uJ6hbA6xJrTIvmhQ39X4lZHiOZGzIVFq611dP8i1SA9tHC=w408-h544-k-no",
+  "kgmid": "/g/11b7xq63zd"
+},
+{
+  "title": "Sabores Restaurante",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante",
+  "address": "Rua 3 Nr. 399 Q 40 L 92 - St. Central, Goiânia - GO, 74030-065, Brasil",
+  "neighborhood": "Setor Central",
+  "street": "Rua 3 Nr. 399 Q 40 L 92",
+  "city": "Goiânia",
+  "postalCode": "74030-065",
+  "state": "GO",
+  "countryCode": "BR",
+  "website": "https://instagram.com/restaurantes.sabores?igshid=uho0pykghxvy",
+  "phone": "+55 62 99692-5964",
+  "phoneUnformatted": "+5562996925964",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6751283,
+    "lng": -49.2544385
+  },
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJJ5T4GmPxXpMRrhSZpdWY5-Y",
+  "categories": [
+    "Restaurante",
+    "Restaurante self-service"
+  ],
+  "fid": "0x935ef1631af89427:0xe6e798d5a59914ae",
+  "cid": "16638435391717315758",
+  "reviewsCount": 155,
+  "imagesCount": 32,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.034Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "sábado",
+      "hours": "11:00 to 14:30"
+    },
+    {
+      "day": "domingo",
+      "hours": "11:00 to 14:30"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Buffet de saladas": true
+      },
+      {
+        "Café": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Casual": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Ticket Restaurante": true
+      },
+      {
+        "Vale refeição": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Sabores%20Restaurante&query_place_id=ChIJJ5T4GmPxXpMRrhSZpdWY5-Y",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 12,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMyUdozgqdlK2AfaegalmDya2s7sFE4dLEsRONC=w408-h306-k-no",
+  "kgmid": "/g/12m9f7rjw"
+},
+{
+  "title": "Empório & Restaurante Serra Dourada",
+  "price": null,
+  "categoryName": "Restaurante",
+  "address": "R. 84, 509 - St. Sul, Goiânia - GO, 74080-400, Brasil",
+  "neighborhood": "Setor Sul",
+  "street": "R. 84, 509",
+  "city": "Goiânia",
+  "postalCode": "74080-400",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 3645-4998",
+  "phoneUnformatted": "+556236454998",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6867633,
+    "lng": -49.2541486
+  },
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJubR-K5DxXpMR4MgmFYa5A90",
+  "categories": [
+    "Restaurante",
+    "Loja de Conveniência",
+    "Hamburgueria",
+    "Sorveteria",
+    "Loja de bebidas",
+    "Mercado",
+    "Pizzaria",
+    "Sanduicheria"
+  ],
+  "fid": "0x935ef1902b7eb4b9:0xdd03b9861526c8e0",
+  "cid": "15925776692843825376",
+  "reviewsCount": 100,
+  "imagesCount": 65,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.035Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "Atendimento 24 horas"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "Atendimento 24 horas"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "Atendimento 24 horas"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "Atendimento 24 horas"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "Atendimento 24 horas"
+    },
+    {
+      "day": "sábado",
+      "hours": "Atendimento 24 horas"
+    },
+    {
+      "day": "domingo",
+      "hours": "Atendimento 24 horas"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Destaques": [
+      {
+        "Ótimo café": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Café da manhã": true
+      },
+      {
+        "Almoço": true
+      },
+      {
+        "Jantar": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Bebidas destiladas": true
+      },
+      {
+        "Café": true
+      },
+      {
+        "Cerveja": true
+      },
+      {
+        "Comida tarde da noite": true
+      },
+      {
+        "Porções pequenas": true
+      },
+      {
+        "Refeição rápida": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Café da manhã": true
+      },
+      {
+        "Brunch": true
+      },
+      {
+        "Almoço": true
+      },
+      {
+        "Jantar": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Atendimento no balcão": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Bar no local": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Pluxee": true
+      },
+      {
+        "Vale refeição": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Emp%C3%B3rio%20%26%20Restaurante%20Serra%20Dourada&query_place_id=ChIJubR-K5DxXpMR4MgmFYa5A90",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 13,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPLKG1dX-UQAXaznMOnOdqtxOCgOMB1_qOATQUG=w408-h271-k-no",
+  "kgmid": "/g/1pxw5j2yc"
+},
+{
+  "title": "Sabor Caseiro Restaurante",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante self-service",
+  "address": "R. 4, 246 - St. Central, Goiânia - GO, 74020-060, Brasil",
+  "neighborhood": "Setor Central",
+  "street": "R. 4, 246",
+  "city": "Goiânia",
+  "postalCode": "74020-060",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 3996-3124",
+  "phoneUnformatted": "+556239963124",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": -16.6726195,
+    "lng": -49.2550594
+  },
+  "totalScore": 4.3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJpcFesGLxXpMRfSlhxYHwMJs",
+  "categories": [
+    "Restaurante self-service"
+  ],
+  "fid": "0x935ef162b05ec1a5:0x9b30f081c561297d",
+  "cid": "11182702314913868157",
+  "reviewsCount": 567,
+  "imagesCount": 32,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.035Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "10:30 to 15:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "10:30 to 15:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "10:30 to 15:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "10:30 to 15:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "10:30 to 15:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "10:30 to 15:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Café": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Almoço": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Casual": true
+      },
+      {
+        "Tendência": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      },
+      {
+        "Universitários": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": false
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Alelo": true
+      },
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Vale refeição": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cadeirinhas altas": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Sabor%20Caseiro%20Restaurante&query_place_id=ChIJpcFesGLxXpMRfSlhxYHwMJs",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 14,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxLaGpVxtTJNXDMorf2Dn5mO3UmisGsAG8BaDsEKSM2xzednlimVhSta-rl9WjPeJerYMGIDaiqNp3MrF8ED65ije4JcO0WoAzkR51d6mg5qKvU3NnvXwHRscCYLqAUolZlesI5Vw=w408-h544-k-no",
+  "kgmid": "/g/1pxyxxyjc"
+},
+{
+  "title": "Restaurante Dedo de Moça",
+  "price": "R$ 20–40",
+  "categoryName": "Restaurante",
+  "address": "R. 7, 584 - St. Central, Goiânia - GO, 74023-020, Brasil",
+  "neighborhood": "Setor Central",
+  "street": "R. 7, 584",
+  "city": "Goiânia",
+  "postalCode": "74023-020",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6729627,
+    "lng": -49.2576386
+  },
+  "totalScore": 3.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJiYbtcIL2XpMRzOBg0PGcli0",
+  "categories": [
+    "Restaurante",
+    "Churrascaria",
+    "Bar",
+    "Restaurante brasileiro",
+    "Cervejaria",
+    "Restaurante familiar",
+    "Restaurante de comida para viagem",
+    "Bares",
+    "Petiscaria"
+  ],
+  "fid": "0x935ef68270ed8689:0x2d969cf1d060e0cc",
+  "cid": "3284985540610416844",
+  "reviewsCount": 71,
+  "imagesCount": 19,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T22:46:50.035Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "07:30 to 00:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:30 to 00:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:30 to 00:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:30 to 00:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:30 to 00:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "07:30 to 00:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Mesas externas": true
+      },
+      {
+        "Entrega sem contato": true
+      },
+      {
+        "Entrega": true
+      },
+      {
+        "Para viagem": true
+      },
+      {
+        "Refeição no local": true
+      }
+    ],
+    "Bom para": [
+      {
+        "Almoço": true
+      },
+      {
+        "Jantar": true
+      },
+      {
+        "Comer a sós": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Opções no menu": [
+      {
+        "Bebidas alcoólicas": true
+      },
+      {
+        "Bebidas destiladas": true
+      },
+      {
+        "Café": true
+      },
+      {
+        "Cerveja": true
+      },
+      {
+        "Porções pequenas": true
+      }
+    ],
+    "Opções de refeição": [
+      {
+        "Café da manhã": true
+      },
+      {
+        "Almoço": true
+      },
+      {
+        "Jantar": true
+      },
+      {
+        "Serviço de buffet": true
+      },
+      {
+        "Sobremesa": true
+      },
+      {
+        "Lugar para sentar": true
+      },
+      {
+        "Garçons": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro": true
+      },
+      {
+        "Bar no local": true
+      },
+      {
+        "Wi-Fi": true
+      },
+      {
+        "Wi-Fi gratuito": true
+      }
+    ],
+    "Ambiente": [
+      {
+        "Casual": true
+      },
+      {
+        "Tranquilo": true
+      }
+    ],
+    "Público": [
+      {
+        "Grupos": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Aceita reservas": true
+      }
+    ],
+    "Pagamentos": [
+      {
+        "Cartão de crédito": true
+      },
+      {
+        "Cartão de débito": true
+      },
+      {
+        "Pagamentos por dispositivo móvel via NFC": true
+      },
+      {
+        "Cartões de crédito": true
+      }
+    ],
+    "Crianças": [
+      {
+        "Bom para ir com crianças": true
+      },
+      {
+        "Cardápio infantil": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Dedo%20de%20Mo%C3%A7a&query_place_id=ChIJiYbtcIL2XpMRzOBg0PGcli0",
+  "searchPageUrl": "https://www.google.com/maps/search/restaurantes/@-16.6793687,-49.2489467,16z?hl=pt-BR",
+  "searchString": "restaurantes",
+  "language": "pt-BR",
+  "rank": 15,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy_W7qjtr4SGnwPe17LwEKEel6miaQpnH9t8naeri9Q2WlgDoNvYaqJXNg6iouW3-pDJuIu1GMt8jEx5LuPaRPGR3FUwr4vZCKpYbI9-DT_y_kRcITa3FM8czGwP2Zrm-KXjN6c=w408-h306-k-no",
+  "kgmid": "/g/11gc985_jw"
+}]

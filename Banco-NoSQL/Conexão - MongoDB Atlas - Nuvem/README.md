@@ -46,29 +46,24 @@ MongoDB-IMDB-Project
 
 # Como Executar o Projeto
 
-## Clone o repositório
+## 1. Clone o repositório
 ```bash
-git 
-cd 
+git https://github.com/Willgnner-Santos/Fatesg-IA-2/tree/homework/Luca-Atanazio-Evangelista/Banco-NoSQL/Conex%C3%A3o%20-%20MongoDB%20Atlas%20-%20Nuvem
 ```
 
-## 2️⃣ Instale as dependências
+## 2. Instale as dependências
 ```bash
 pip install -r requirements.txt
 ```
 
-## 3️⃣ Configure o arquivo `.env`
-Crie o arquivo na raiz do projeto:
-
+## 3️. Use a configuração do arquivo `.env`
 ```
 MONGO_USER=Aluno_Luca
-MONGO_PASS=sua_senha_aqui
+MONGO_PASS=cod@96
 CLUSTER_URI=cluster0.6b5gbtc.mongodb.net/?appName=Cluster0
 ```
 
-⚠️ Atenção: **nunca suba o .env para o GitHub**.
-
-## 4️⃣ Execute o pipeline completo
+## 4. Execute o pipeline completo
 ```bash
 python main.py
 ```
@@ -84,9 +79,9 @@ Esse script executa:
 
 ---
 
-# 📸 Evidências da Execução
+# Evidências da Execução
 
-As evidências solicitadas pelo professor estão disponíveis na pasta `/prints`.
+As evidências solicitadas pelo professor estão disponíveis na pasta `/entregas_em_png`.
 
 Elas incluem:
 
@@ -99,31 +94,31 @@ Elas incluem:
 
 ---
 
-# 🔍 Consultas Realizadas (Queries)
+# Consultas Realizadas (Queries)
 
-### ✔ 1. Contar filmes com IMDB_Rating maior que 9
+### 1. Contar filmes com IMDB_Rating maior que 9
 ```python
 collection.count_documents({"IMDB_Rating": {"$gt": 9}})
 ```
 
-### ✔ 2. Filmes lançados antes de 1980
+### 2. Filmes lançados antes de 1980
 ```python
 {"Released_Year": {"$lt": 1980}}
 ```
 
-### ✔ 3. Filmes do gênero “Action”
+### 3. Filmes do gênero “Action”
 ```python
 {"Genre": {"$regex": "Action"}}
 ```
 
-### ✔ 4. Filmes com mais de 500.000 votos
+### 4. Filmes com mais de 500.000 votos
 ```python
 {"No_of_Votes": {"$gt": 500000}}
 ```
 
 ---
 
-# 📊 Pipelines de Agregação (Aggregation Framework)
+# Pipelines de Agregação (Aggregation Framework)
 
 ## 🔹 1. Média de Metascore por Categoria de Duração  
 Categorias:  
@@ -196,21 +191,21 @@ Categorias:
 
 ---
 
-# ⚡ Índices Criados
+# Índices Criados
 
 Para otimizar consultas e melhorar a performance, os seguintes índices foram criados:
 
-### ✔ Índice em `Genre`
+### Índice em `Genre`
 ```python
 collection.create_index([("Genre", 1)])
 ```
 
-### ✔ Índice em `IMDB_Rating`
+### Índice em `IMDB_Rating`
 ```python
 collection.create_index([("IMDB_Rating", -1)])
 ```
 
-### ✔ Índice em `Duration`
+### Índice em `Duration`
 ```python
 collection.create_index([("Duration", 1)])
 ```
@@ -219,13 +214,13 @@ Esses índices reduzem o custo de operações de busca e ordenação.
 A evidência visual está disponível em:
 
 ```
-prints/indexes_1.png
-prints/indexes_2.png
+entregas_em_png/indexes_1.png
+entregas_em_png/indexes_2.png
 ```
 
 ---
 
-# 📂 Logs
+# Logs
 
 Todos os logs gerados pelo pipeline estão na pasta:
 
@@ -243,17 +238,7 @@ Eles incluem:
 
 ---
 
-# 👨‍💻 Autor
-
-**Luca Atanazio Evangelista**  
-Estudante de Inteligência Artificial — FATESG
-
-# 👨‍🏫 Professor  
-**Willgner**
-
----
-
-# ✔ Conclusão
+# Conclusão
 
 Este projeto demonstra a construção de um pipeline completo de análise NoSQL utilizando MongoDB Atlas e Python, com:
 
@@ -263,8 +248,6 @@ Este projeto demonstra a construção de um pipeline completo de análise NoSQL 
 - Agregações
 - Índices
 - Documentação e evidências
-
-Está pronto para avaliação acadêmica e para ser usado como portfólio profissional.
 
 ```
 

@@ -7,37 +7,87 @@ def run_aggregations(client):
 
     logging.info("Executando agregações...")
 
+    # ============================================================
+    # 🔹 PIPELINE 1 — Top gêneros por quantidade de filmes
+    # ============================================================
 
     pipeline_genres = [
-        {"$group": {"_id": "$genre", "media_rate": {"$avg": "$rate"}, "total": {"$sum": 1}}},
-        {"$sort": {"total": -1}}
+        {
+            "$project": {
+                "Genre": {
+                    "$split": ["$Genre", ", "]  # separa múltiplos gêneros
+                },
+                "IMDB_Rating": 1
+            }
+        },
+        { "$unwind": "$Genre" },
+        {
+            "$group": {
+                "_id": "$Genre",
+                "media_rating": { "$avg": "$IMDB_Rating" },
+                "quantidade": { "$sum": 1 }
+            }
+        },
+        { "$sort": { "quantidade": -1 } }
     ]
 
-    logging.info("Top gêneros:")
+    logging.info("📌 Top gêneros por quantidade:")
     for doc in collection.aggregate(pipeline_genres):
         logging.info(doc)
 
+    # ============================================================
+    # 🔹 PIPELINE 2 — Média IMDB por categoria de duração
+    # curto (<= 90), médio (91-120), longo (> 120)
+    # ============================================================
+
     pipeline_runtime = [
-        {"$addFields": {
-            "categoria_runtime": {
-                "$switch": {
-                    "branches": [
-                        {"case": {"$lt": ["$runtime", 90]}, "then": "curto"},
-                        {"case": {"$and": [{"$gte": ["$runtime", 90]}, {"$lte": ["$runtime", 120]}]}, "then": "medio"},
-                        {"case": {"$gt": ["$runtime", 120]}, "then": "longo"}
-                    ],
-                    "default": "indefinido"
+        {
+            "$addFields": {
+                "DurationInt": {
+                    "$toInt": {
+                        "$replaceAll": {
+                            "input": "$Duration",
+                            "find": " min",
+                            "replacement": ""
+                        }
+                    }
                 }
             }
-        }},
-        {"$group": {
-            "_id": "$categoria_runtime",
-            "media_rate": {"$avg": "$rate"},
-            "quantidade": {"$sum": 1}
-        }},
-        {"$sort": {"quantidade": -1}}
+        },
+        {
+            "$addFields": {
+                "categoria_runtime": {
+                    "$switch": {
+                        "branches": [
+                            {
+                                "case": { "$lte": ["$DurationInt", 90] },
+                                "then": "curto"
+                            },
+                            {
+                                "case": { 
+                                    "$and": [
+                                        { "$gt": ["$DurationInt", 90] },
+                                        { "$lte": ["$DurationInt", 120] }
+                                    ]
+                                },
+                                "then": "medio"
+                            }
+                        ],
+                        "default": "longo"
+                    }
+                }
+            }
+        },
+        {
+            "$group": {
+                "_id": "$categoria_runtime",
+                "media_rating": { "$avg": "$IMDB_Rating" },
+                "quantidade": { "$sum": 1 }
+            }
+        },
+        { "$sort": { "quantidade": -1 } }
     ]
 
-    logging.info("Categorias de duração:")
+    logging.info("📌 Média IMDB por categoria de duração:")
     for doc in collection.aggregate(pipeline_runtime):
         logging.info(doc)

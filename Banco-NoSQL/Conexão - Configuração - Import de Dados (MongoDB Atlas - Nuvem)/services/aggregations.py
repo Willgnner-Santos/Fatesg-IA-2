@@ -7,7 +7,7 @@ def run_aggregations(client):
 
     logging.info("Executando agregações...")
 
-    # Agregação 1 — Média por gênero
+
     pipeline_genres = [
         {"$group": {"_id": "$genre", "media_rate": {"$avg": "$rate"}, "total": {"$sum": 1}}},
         {"$sort": {"total": -1}}
@@ -17,7 +17,6 @@ def run_aggregations(client):
     for doc in collection.aggregate(pipeline_genres):
         logging.info(doc)
 
-    # Agregação 2 — Categorias de duração
     pipeline_runtime = [
         {"$addFields": {
             "categoria_runtime": {

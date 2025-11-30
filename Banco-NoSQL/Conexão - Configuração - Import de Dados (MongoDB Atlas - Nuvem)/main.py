@@ -11,8 +11,6 @@ setup_logging()
 client = connect_to_mongodb()
 
 if client:
-    # Se ainda não importou CSV:
-    # import_csv_to_mongodb(client)
 
     run_basic_queries(client)
     run_aggregations(client)

@@ -6,17 +6,13 @@ import logging
 from dotenv import load_dotenv
 load_dotenv()
 
-# CREDENCIAIS via VARIÁVEIS DE AMBIENTE
+
 username = os.getenv("MONGO_USER", "Aluno_Luca")
 password = os.getenv("MONGO_PASS", "cod@96")
 CLUSTER_URI_PART = os.getenv("CLUSTER_URI", "cluster0.6b5gbtc.mongodb.net/?appName=Cluster0")
 
-# ======================================
-# 🔹 IMPORTANTE: ESTES DOIS DEVEM EXISTIR!
-# ======================================
 DATABASE_NAME = "IMDB_Analytics_Willgner"
 COLLECTION_NAME = "Top_1000_Movies"
-# ======================================
 
 def connect_to_mongodb():
     try:

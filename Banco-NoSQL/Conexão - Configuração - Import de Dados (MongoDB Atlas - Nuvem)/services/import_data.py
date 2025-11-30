@@ -5,7 +5,6 @@ import logging
 from services.clean_dataframe import clean_dataframe
 from conexao import DATABASE_NAME, COLLECTION_NAME
 
-# CAMINHO DO CSV
 csv_path = r"C:\Users\Luca\Documents\Fatesg-IA-2\Banco-NoSQL\Conexão - Configuração - Import de Dados (MongoDB Atlas - Nuvem)\data\IMDBtop1000.csv"
 
 def import_csv_to_mongodb(client):

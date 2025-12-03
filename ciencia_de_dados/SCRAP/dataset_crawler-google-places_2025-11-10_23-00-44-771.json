@@ -1,0 +1,1571 @@
+[{
+  "title": "Imobiliária - Prime Imóveis Goiânia",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "R. S-1, 380 - St. Bueno, Goiânia - GO, 74230-220, Brasil",
+  "neighborhood": "Setor Bueno",
+  "street": "R. S-1, 380",
+  "city": "Goiânia",
+  "postalCode": "74230-220",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "http://www.primeimoveisgo.com.br/",
+  "phone": "+55 62 3091-4110",
+  "phoneUnformatted": "+556230914110",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7159115,
+    "lng": -49.2639062
+  },
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ_XokKxzxXpMRnN9TS_9zBbQ",
+  "categories": [
+    "Imobiliária",
+    "Imobiliária de aluguel de residências",
+    "Agência de imóveis comerciais",
+    "Imobiliária de aluguel de condomínios",
+    "Avaliadora de imóveis",
+    "Consultora de imóveis",
+    "Corretora de aluguel de imóveis"
+  ],
+  "fid": "0x935ef11c2b247afd:0xb40573ff4b53df9c",
+  "cid": "12971901842028224412",
+  "reviewsCount": 153,
+  "imagesCount": 34,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.514Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:15 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:15 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:15 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:15 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:15 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Serviços no local": true
+      },
+      {
+        "Agendamento on-line": false
+      },
+      {
+        "Espanhol": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro de gênero neutro": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento coberto gratuito": true
+      },
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento no local": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Imobili%C3%A1ria%20-%20Prime%20Im%C3%B3veis%20Goi%C3%A2nia&query_place_id=ChIJ_XokKxzxXpMRnN9TS_9zBbQ",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 1,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMmXUNpWB9A1L3GSDrIxkomVq7GTkYz1GHDUYON=w408-h725-k-no",
+  "kgmid": "/g/11cs3n7b0c"
+},
+{
+  "title": "Nítida Imóveis (Imobiliária em Goiânia)",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "Centro Empresarial Sebba - Av. C-255, 270 - Qd. 588 lt. 4/8 sala 01, Ed - Nova Suíça, Goiânia - GO, 74280-010, Brasil",
+  "neighborhood": "Nova Suíça",
+  "street": "Centro Empresarial Sebba - Av. C-255, 270 - Qd. 588 lt. 4/8 sala 01, Ed",
+  "city": "Goiânia",
+  "postalCode": "74280-010",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.nitidaimoveis.com.br/",
+  "phone": "+55 62 98152-3358",
+  "phoneUnformatted": "+5562981523358",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7156992,
+    "lng": -49.2745349
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJG64ECbLxXpMRd9sXYlM7qR8",
+  "categories": [
+    "Imobiliária",
+    "Agente imobiliário"
+  ],
+  "fid": "0x935ef1b20904ae1b:0x1fa93b536217db77",
+  "cid": "2281419915553921911",
+  "reviewsCount": 31,
+  "imagesCount": 13,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.516Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Agendamento on-line": true
+      },
+      {
+        "Serviços no local": true
+      },
+      {
+        "Português": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Aro de indução magnética": false
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro de gênero neutro": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Necessário fazer agendamento": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento coberto pago": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=N%C3%ADtida%20Im%C3%B3veis%20(Imobili%C3%A1ria%20em%20Goi%C3%A2nia)&query_place_id=ChIJG64ECbLxXpMRd9sXYlM7qR8",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipM4RqdN95fbPY6LU5pfRcQSadOxtJ5FmPwoG1Pk=w408-h306-k-no",
+  "kgmid": "/g/11q386xwsz"
+},
+{
+  "title": "Imobiliária RE/MAX Reserva",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "Praça Wilson Sales, 125 - Qd. 586, Lt. 1E, Loja 02 - Nova Suíça, Goiânia - GO, 74280-370, Brasil",
+  "neighborhood": "Nova Suíça",
+  "street": "Praça Wilson Sales, 125 - Qd. 586, Lt. 1E, Loja 02",
+  "city": "Goiânia",
+  "postalCode": "74280-370",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://recrutamento.sejaremax.com.br/reserva",
+  "phone": "+55 62 98565-3289",
+  "phoneUnformatted": "+5562985653289",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7150233,
+    "lng": -49.2735226
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJhSaa1hfxXpMRjHHA7Qs2nog",
+  "categories": [
+    "Imobiliária"
+  ],
+  "fid": "0x935ef117d69a2685:0x889e360bedc0718c",
+  "cid": "9844365260339835276",
+  "reviewsCount": 265,
+  "imagesCount": 55,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.516Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Agendamento on-line": true
+      },
+      {
+        "Serviços no local": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Imobili%C3%A1ria%20RE%2FMAX%20Reserva&query_place_id=ChIJhSaa1hfxXpMRjHHA7Qs2nog",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 7,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwkbo4SanjmiH1D2RvyURgs8FyI8FjgGZFZYG2uapCifaDDUBG16oiKk1Exn6GA5nGze52sIw83nsK6syB2y6k2EDqsPp6_o7wKDd3ndzaxCy43LFyb7HD5eRpx6F_T9nBIY_O-=w426-h240-k-no",
+  "kgmid": "/g/11rq10j7mk"
+},
+{
+  "title": "Mavi Imobiliária - Administração e Aluguel de Imóveis Residenciais e Comerciais",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "Av. T-14, Quadra - 01 - Lote 02 - St. Bueno, Goiânia - GO, 74835-085, Brasil",
+  "neighborhood": "Setor Bueno",
+  "street": "Av. T-14, Quadra - 01 - Lote 02",
+  "city": "Goiânia",
+  "postalCode": "74835-085",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://imobiliariamavi.com.br/",
+  "phone": "+55 62 3637-3455",
+  "phoneUnformatted": "+556236373455",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7205499,
+    "lng": -49.2685318
+  },
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJedHr_YzxXpMR7dF4Hv4ybAk",
+  "categories": [
+    "Imobiliária",
+    "Imobiliária de aluguel de residências"
+  ],
+  "fid": "0x935ef18cfdebd179:0x96c32fe1e78d1ed",
+  "cid": "678973710840418797",
+  "reviewsCount": 102,
+  "imagesCount": 7,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.516Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Mavi%20Imobili%C3%A1ria%20-%20Administra%C3%A7%C3%A3o%20e%20Aluguel%20de%20Im%C3%B3veis%20Residenciais%20e%20Comerciais&query_place_id=ChIJedHr_YzxXpMR7dF4Hv4ybAk",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOh95cDnLe8aRGloMoQgVOAOxQsP2aax7ALLD54=w408-h306-k-no",
+  "kgmid": "/g/11szbbjrlh"
+},
+{
+  "title": "Frade Ramos Soluções Imobiliárias",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "R. C-183, 260 - Quadra 450, lote 02 - Jardim América, Goiânia - GO, 74275-210, Brasil",
+  "neighborhood": "Jardim América",
+  "street": "R. C-183, 260 - Quadra 450, lote 02",
+  "city": "Goiânia",
+  "postalCode": "74275-210",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.fraderamos.com.br/",
+  "phone": "+55 62 3298-6222",
+  "phoneUnformatted": "+556232986222",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7216415,
+    "lng": -49.2777481
+  },
+  "totalScore": 4.1,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJKY28KBX0XpMRlUQxU8ARISY",
+  "categories": [
+    "Imobiliária",
+    "Imobiliária de aluguel de residências",
+    "Agente imobiliário",
+    "Corretora de aluguel de imóveis"
+  ],
+  "fid": "0x935ef41528bc8d29:0x262111c053314495",
+  "cid": "2747496765399843989",
+  "reviewsCount": 111,
+  "imagesCount": null,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.517Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 17:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Frade%20Ramos%20Solu%C3%A7%C3%B5es%20Imobili%C3%A1rias&query_place_id=ChIJKY28KBX0XpMRlUQxU8ARISY",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 12,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipP3vFn43S_8nKAxxJPpeRW8Arlg1Iy8tayLj6zI=w426-h240-k-no",
+  "kgmid": "/g/11b7lngbzd"
+},
+{
+  "title": "Exclusive Soluções Imobiliárias",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "Av. C-255, n° 400 - Sala 913 - Nova Suiça, Goiânia - GO, 74280-010, Brasil",
+  "neighborhood": "Nova Suiça",
+  "street": "Av. C-255, n° 400 - Sala 913",
+  "city": "Goiânia",
+  "postalCode": "74280-010",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "http://www.imobiliariaexclusive.com/",
+  "phone": "+55 62 3432-5515",
+  "phoneUnformatted": "+556234325515",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7165952,
+    "lng": -49.2745949
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJQaAYvWnxXpMR3uawix4rwec",
+  "categories": [
+    "Imobiliária"
+  ],
+  "fid": "0x935ef169bd18a041:0xe7c12b1e8bb0e6de",
+  "cid": "16699676303459149534",
+  "reviewsCount": 16,
+  "imagesCount": 6,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.517Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Agendamento on-line": true
+      },
+      {
+        "Serviços no local": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro de gênero neutro": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Necessário fazer agendamento": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Exclusive%20Solu%C3%A7%C3%B5es%20Imobili%C3%A1rias&query_place_id=ChIJQaAYvWnxXpMR3uawix4rwec",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 13,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipM36VtY9Zlv88G-KU5ovFnc3rSSLKiMstDuX3M3=w408-h725-k-no",
+  "kgmid": "/g/11n83d8zv8"
+},
+{
+  "title": "Tavares & Medina Imóveis - Imobiliária em Goiânia",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "Esquina com, Galeria Maya Center - Rua da Raia, 531, Quadra 18, Lote 01, Av. Haile Pinheiro, Sala 06 - Jardim Atlantico, Goiânia - GO, 74343-490, Brasil",
+  "neighborhood": "Jardim Atlantico",
+  "street": "Esquina com, Galeria Maya Center - Rua da Raia, 531, Quadra 18, Lote 01, Av. Haile Pinheiro, Sala 06",
+  "city": "Goiânia",
+  "postalCode": "74343-490",
+  "state": "GO",
+  "countryCode": "BR",
+  "website": "https://linktr.ee/contato_tavaresmedina",
+  "phone": "+55 62 98553-1414",
+  "phoneUnformatted": "+5562985531414",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7326571,
+    "lng": -49.2994426
+  },
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJGYXgVzv3XpMRZGpQTEpjOlU",
+  "categories": [
+    "Imobiliária"
+  ],
+  "fid": "0x935ef73b57e08519:0x553a634a4c506a64",
+  "cid": "6141330212632160868",
+  "reviewsCount": 57,
+  "imagesCount": 13,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.517Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "08:00 to 13:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro de gênero neutro": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Tavares%20%26%20Medina%20Im%C3%B3veis%20-%20Imobili%C3%A1ria%20em%20Goi%C3%A2nia&query_place_id=ChIJGYXgVzv3XpMRZGpQTEpjOlU",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 14,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNN2IrCDjFPsVbCwZL-P8jNJEAAqnDI_A6CadYa=w408-h306-k-no",
+  "kgmid": "/g/11dxlbpzw9"
+},
+{
+  "title": "Imobiliária Lau Bessa Imóveis",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "Rua VV 5 - Village Veneza, Goiânia - GO, 74366-098, Brasil",
+  "neighborhood": "Village Veneza",
+  "street": "Rua VV 5",
+  "city": "Goiânia",
+  "postalCode": "74366-098",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 98403-1212",
+  "phoneUnformatted": "+5562984031212",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7129129,
+    "lng": -49.321993
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJD8NcNAz3XpMRHzYIdKix_vA",
+  "categories": [
+    "Imobiliária",
+    "Corretora",
+    "Consultora de imóveis",
+    "Corretora de aluguel de imóveis"
+  ],
+  "fid": "0x935ef70c345cc30f:0xf0feb1a87408361f",
+  "cid": "17365512550246528543",
+  "reviewsCount": 18,
+  "imagesCount": 10,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.517Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Agendamento on-line": true
+      },
+      {
+        "Serviços no local": true
+      },
+      {
+        "Português": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Aro de indução magnética": false
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro de gênero neutro": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Planejamento": [
+      {
+        "Necessário fazer agendamento": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento gratuito na rua": true
+      },
+      {
+        "Estacionamento no local": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Imobili%C3%A1ria%20Lau%20Bessa%20Im%C3%B3veis&query_place_id=ChIJD8NcNAz3XpMRHzYIdKix_vA",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 16,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMWp0CsskMjou1PxElPb9GxxLWin6iG-MMhUDzT=w408-h408-k-no",
+  "kgmid": "/g/11y8flblb5"
+},
+{
+  "title": "Vésper Agência de Imóveis",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "Av. José Leandro da Cruz, 1.771 - Qd. 115, Lt. 07 - Parque Amazonia, Goiânia - GO, 74840-390, Brasil",
+  "neighborhood": "Parque Amazonia",
+  "street": "Av. José Leandro da Cruz, 1.771 - Qd. 115, Lt. 07",
+  "city": "Goiânia",
+  "postalCode": "74840-390",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://vesperimoveis.com.br/",
+  "phone": "+55 62 3250-5500",
+  "phoneUnformatted": "+556232505500",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.7348552,
+    "lng": -49.2786715
+  },
+  "totalScore": 4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJaTteoEr3XpMRuJSAfTKPLrs",
+  "categories": [
+    "Imobiliária"
+  ],
+  "fid": "0x935ef74aa05e3b69:0xbb2e8f327d8094b8",
+  "cid": "13487875381037929656",
+  "reviewsCount": 397,
+  "imagesCount": 14,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.517Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:30"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:30"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:30"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:30"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:30"
+    },
+    {
+      "day": "sábado",
+      "hours": "08:00 to 12:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Agendamento on-line": true
+      },
+      {
+        "Serviços no local": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=V%C3%A9sper%20Ag%C3%AAncia%20de%20Im%C3%B3veis&query_place_id=ChIJaTteoEr3XpMRuJSAfTKPLrs",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 17,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNgAhe2WoSwt1VedD5h1OtnVxzDV-ezS_jJWvqs=w408-h270-k-no",
+  "kgmid": "/g/1q64f0jyz"
+},
+{
+  "title": "Imóveis Claudia Coelho - Apartamento em Goiânia - imobiliária",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "R. C-17, 194 - salas 1 e 2 - Novo Horizonte, Goiânia - GO, 74363-690, Brasil",
+  "neighborhood": "Novo Horizonte",
+  "street": "R. C-17, 194 - salas 1 e 2",
+  "city": "Goiânia",
+  "postalCode": "74363-690",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "https://www.imoveisclaudiacoelho.com.br/",
+  "phone": "+55 62 98552-5469",
+  "phoneUnformatted": "+5562985525469",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.718795,
+    "lng": -49.31993
+  },
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJkVZx-rwtMEkRwZ6ZpU0QsRU",
+  "categories": [
+    "Imobiliária",
+    "Apartamentos",
+    "Complexo de apartamentos",
+    "Imobiliária de aluguel de residências",
+    "Imobiliária de aluguel de condomínios",
+    "Hotel",
+    "Agente imobiliário",
+    "Corretora de aluguel de imóveis",
+    "Agência de aluguel de apartamentos de curta duração"
+  ],
+  "fid": "0x49302dbcfa715691:0x15b1104da5999ec1",
+  "cid": "1563048471351107265",
+  "reviewsCount": 33,
+  "imagesCount": 233,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.518Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Im%C3%B3veis%20Claudia%20Coelho%20-%20Apartamento%20em%20Goi%C3%A2nia%20-%20imobili%C3%A1ria&query_place_id=ChIJkVZx-rwtMEkRwZ6ZpU0QsRU",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.774683468609133,-49.2624762,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 20,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPdLVoXrWiF-JYYGiXXD0YdwwFiIwYxg9g7cnKI=w408-h408-k-no",
+  "kgmid": "/g/11y4lwfj7r"
+},
+{
+  "title": "AJ Imobiliária",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "R. BG 11, Qd.07 - Lt.26 - Goiânia, GO, 74684-630, Brasil",
+  "neighborhood": "Goiânia",
+  "street": "R. BG 11, Qd.07 - Lt.26",
+  "city": "Goiânia",
+  "postalCode": "74684-630",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99282-7664",
+  "phoneUnformatted": "+5562992827664",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.5869994,
+    "lng": -49.2146222
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJRQkr1zaNXpMR9VFahtu0quQ",
+  "categories": [
+    "Imobiliária"
+  ],
+  "fid": "0x935e8d36d72b0945:0xe4aab4db865a51f5",
+  "cid": "16477181041633284597",
+  "reviewsCount": 2,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.713Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=AJ%20Imobili%C3%A1ria&query_place_id=ChIJRQkr1zaNXpMR9VFahtu0quQ",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.510979031390868,-49.12472282695022,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 1,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipO6rmCRbo5CUx3puiSIiQ7Edy2Yf7-8Y45clSgv=w408-h306-k-no",
+  "kgmid": "/g/11vwxt6yzq"
+},
+{
+  "title": "Power Imobiliária",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "R. América do Sul, 40 - Santa Genoveva, Goiânia - GO, 74672-340, Brasil",
+  "neighborhood": "Santa Genoveva",
+  "street": "R. América do Sul, 40",
+  "city": "Goiânia",
+  "postalCode": "74672-340",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "phone": "+55 62 99640-3737",
+  "phoneUnformatted": "+5562996403737",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.630112,
+    "lng": -49.2337451
+  },
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJwT-tIR3zXpMRIzjd1URjRHg",
+  "categories": [
+    "Imobiliária"
+  ],
+  "fid": "0x935ef31d21ad3fc1:0x78446344d5dd3823",
+  "cid": "8666160730264647715",
+  "reviewsCount": 197,
+  "imagesCount": 19,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.713Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "07:00 to 17:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "07:00 to 17:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "07:00 to 17:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "07:00 to 17:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "07:00 to 17:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Agendamento on-line": true
+      },
+      {
+        "Serviços no local": true
+      },
+      {
+        "Árabe": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro de gênero neutro": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      },
+      {
+        "Estacionamento no local": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Power%20Imobili%C3%A1ria&query_place_id=ChIJwT-tIR3zXpMRIzjd1URjRHg",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.510979031390868,-49.12472282695022,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 2,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPGzxL7HYHM4r0B9z_nujHtTNySTn-5EhbXz2JF=w426-h240-k-no",
+  "kgmid": "/g/11vlv0mpys"
+},
+{
+  "title": "Rizzo Imobiliária",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "R. 94, 831 - St. Sul, Goiânia - GO, 74080-100, Brasil",
+  "neighborhood": "Setor Sul",
+  "street": "R. 94, 831",
+  "city": "Goiânia",
+  "postalCode": "74080-100",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "http://rizzoimobiliaria.com.br/",
+  "phone": "+55 62 3095-9000",
+  "phoneUnformatted": "+556230959000",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6852145,
+    "lng": -49.2561182
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJSd_qoG_xXpMRzyWNG1rpVSA",
+  "categories": [
+    "Imobiliária"
+  ],
+  "fid": "0x935ef16fa0eadf49:0x2055e95a1b8d25cf",
+  "cid": "2330024955452663247",
+  "reviewsCount": 1703,
+  "imagesCount": 75,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.713Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Acessibilidade": [
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Rizzo%20Imobili%C3%A1ria&query_place_id=ChIJSd_qoG_xXpMRzyWNG1rpVSA",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.510979031390868,-49.12472282695022,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 3,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyIMO95RV9B37OO8OkVj-JWdrnqamwH2Fa-hGAAzuiDU0NJYa9jKxhrxKOqXzkWMvMJ6K9pjQAMV0F88o8EcRsdaHvEIE2MHBqggNq9WZSEdDTKDdRZE-8rXfuK0TjqE7bQEYBQhg=w408-h725-k-no",
+  "kgmid": "/g/1td_zpfy"
+},
+{
+  "title": "Atrês Imobiliária",
+  "price": null,
+  "categoryName": "Corretora de aluguel de imóveis",
+  "address": "R. 87, 305 - St. Sul, Goiânia - GO, 74093-300, Brasil",
+  "neighborhood": "Setor Sul",
+  "street": "R. 87, 305",
+  "city": "Goiânia",
+  "postalCode": "74093-300",
+  "state": "Goiás",
+  "countryCode": "BR",
+  "website": "http://www.atresimobiliaria.com.br/",
+  "phone": "+55 62 3093-2410",
+  "phoneUnformatted": "+556230932410",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6906618,
+    "lng": -49.2566619
+  },
+  "totalScore": 3.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ6wGi_2zxXpMR9enRCWAIS0I",
+  "categories": [
+    "Corretora de aluguel de imóveis",
+    "Imobiliária de aluguel de residências",
+    "Imobiliária de aluguel de condomínios",
+    "Imobiliária de aluguéis por temporada"
+  ],
+  "fid": "0x935ef16cffa201eb:0x424b086009d1e9f5",
+  "cid": "4776921038331177461",
+  "reviewsCount": 914,
+  "imagesCount": 45,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.713Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 18:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "Fechado"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Da empresa": [
+      {
+        "Se identifica como uma empresa de empreendedoras": true
+      }
+    ],
+    "Opções de serviço": [
+      {
+        "Agendamento on-line": true
+      },
+      {
+        "Serviços no local": true
+      },
+      {
+        "Inglês": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Comodidades": [
+      {
+        "Banheiro de gênero neutro": true
+      }
+    ],
+    "Público": [
+      {
+        "Empresa que acolhe a comunidade LGBTQ+": true
+      },
+      {
+        "Espaço seguro para pessoas transgênero": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento no local": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Atr%C3%AAs%20Imobili%C3%A1ria&query_place_id=ChIJ6wGi_2zxXpMR9enRCWAIS0I",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.510979031390868,-49.12472282695022,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 5,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOwuAfI7MYrrd6tpmlIFE5tqL2vWsTzFRCH6-aj=w408-h271-k-no",
+  "kgmid": "/g/1tf3p_1_"
+},
+{
+  "title": "Imobiliária Times",
+  "price": null,
+  "categoryName": "Imobiliária",
+  "address": "Rua 148 Esquina com 137 Número 660 Quadra 55 - St. Marista, Goiânia - GO, 74170-110, Brasil",
+  "neighborhood": "Setor Marista",
+  "street": "Rua 148 Esquina com 137 Número 660 Quadra 55",
+  "city": "Goiânia",
+  "postalCode": "74170-110",
+  "state": "GO",
+  "countryCode": "BR",
+  "website": "http://www.imobiliariatimes.com.br/",
+  "phone": "+55 62 99866-3222",
+  "phoneUnformatted": "+5562998663222",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": -16.6975369,
+    "lng": -49.2592265
+  },
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJFRIElkLxXpMRGmum1BHJ8rE",
+  "categories": [
+    "Imobiliária",
+    "Imobiliária de aluguel de residências",
+    "Imobiliária de aluguel de condomínios",
+    "Revenda de casas pré-fabricadas",
+    "Agente imobiliário"
+  ],
+  "fid": "0x935ef14296041215:0xb1f2c911d4a66b1a",
+  "cid": "12822532167496526618",
+  "reviewsCount": 55,
+  "imagesCount": 44,
+  "imageCategories": [],
+  "scrapedAt": "2025-11-10T23:00:44.713Z",
+  "googleFoodUrl": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "segunda-feira",
+      "hours": "08:00 to 19:00"
+    },
+    {
+      "day": "terça-feira",
+      "hours": "08:00 to 19:00"
+    },
+    {
+      "day": "quarta-feira",
+      "hours": "08:00 to 19:00"
+    },
+    {
+      "day": "quinta-feira",
+      "hours": "08:00 to 19:00"
+    },
+    {
+      "day": "sexta-feira",
+      "hours": "08:00 to 19:00"
+    },
+    {
+      "day": "sábado",
+      "hours": "08:00 to 16:00"
+    },
+    {
+      "day": "domingo",
+      "hours": "Fechado"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Opções de serviço": [
+      {
+        "Agendamento on-line": true
+      },
+      {
+        "Serviços no local": true
+      },
+      {
+        "Inglês": true
+      }
+    ],
+    "Acessibilidade": [
+      {
+        "Assento com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Banheiro com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Entrada com acessibilidade para pessoas em cadeira de rodas": true
+      },
+      {
+        "Estacionamento com acessibilidade para pessoas em cadeira de rodas": true
+      }
+    ],
+    "Estacionamento": [
+      {
+        "Estacionamento descoberto gratuito": true
+      },
+      {
+        "Estacionamento gratuito na rua": true
+      },
+      {
+        "Estacionamento no local": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Imobili%C3%A1ria%20Times&query_place_id=ChIJFRIElkLxXpMRGmum1BHJ8rE",
+  "searchPageUrl": "https://www.google.com/maps/search/Imobili%C3%A1ria/@-16.510979031390868,-49.12472282695022,13z?hl=pt-BR",
+  "searchString": "Imobiliária",
+  "language": "pt-BR",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOnLcVpEnJqzhF6RXQdJzt5ugOWfiA4NnDiNsDA=w458-h240-k-no",
+  "kgmid": "/g/1ptzdmb24"
+}]

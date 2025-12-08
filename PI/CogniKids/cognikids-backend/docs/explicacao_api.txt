@@ -1,0 +1,73 @@
+Como Funciona a API CogniKids (Explicação Didática)
+
+1. O que é uma API?
+API (Interface de Programação de Aplicações) é um conjunto de regras que permite que diferentes programas "conversem" entre si. No seu projeto, a API é responsável por receber dados de dispositivos/simuladores, processar, armazenar no banco de dados e fornecer informações para outros sistemas.
+
+2. Estrutura do Projeto
+- app.py / run.py: Arquivos principais para iniciar a aplicação Flask.
+- app/: Pasta principal do código.
+  - Controllers/: Onde ficam os arquivos que definem as rotas/endpoints (ex: auth_controller.py, iot_controller.py).
+  - Models/: Onde ficam os modelos de dados (ex: user_model.py).
+  - __init__.py: Configurações iniciais da aplicação, conexão com o banco, registro dos controllers.
+- requirements.txt: Lista de dependências (bibliotecas) do projeto.
+- Dockerfile e docker-compose.yml: Arquivos para rodar o projeto em containers Docker.
+- .env: Arquivo de variáveis de ambiente (ex: string de conexão do MongoDB).
+
+3. Como a API Recebe e Processa Dados
+
+a) Recebendo Dados (Exemplo: Dados IoT)
+1. Dispositivo ou Simulador envia uma requisição HTTP (POST) para o endpoint /api/iot/data com um JSON contendo dados biométricos.
+2. Controller (iot_controller.py) recebe essa requisição.
+3. O controller:
+   - Valida se o dispositivo existe.
+   - Valida se os dados estão no formato correto.
+   - Insere os dados na coleção registros_iot do MongoDB.
+4. A API responde com uma mensagem de sucesso ou erro.
+
+b) Autenticação
+- Endpoints como /api/auth/login recebem usuário e senha.
+- O controller verifica as credenciais no banco.
+- Se estiverem corretas, gera um token JWT para autenticação nas próximas requisições.
+
+c) Outros Endpoints
+- Existem endpoints para cadastro de usuários, consulta de dados, etc.
+- Cada endpoint tem um controller responsável por processar a lógica.
+
+4. Como a API se conecta ao Banco de Dados
+- Usa o Flask-PyMongo para conectar ao MongoDB.
+- A string de conexão está no arquivo .env.
+- Quando a API recebe dados, ela insere ou consulta informações nas coleções do MongoDB (ex: users, registros_iot, dispositivos).
+
+5. Documentação Interativa (Swagger UI)
+- A API expõe uma documentação automática em /docs usando o Swagger UI.
+- Você pode ver todos os endpoints, exemplos de requisições e respostas, e até testar a API por essa interface.
+
+6. Fluxo Completo (Exemplo Prático)
+1. O simulador gera dados biométricos e envia para a API.
+2. A API valida e armazena os dados no MongoDB.
+3. Você pode consultar esses dados usando outro endpoint ou visualizá-los no MongoDB Compass.
+
+7. Tecnologias Utilizadas
+- Flask: Framework web em Python.
+- Flask-PyMongo: Integração Flask + MongoDB.
+- MongoDB: Banco de dados NoSQL.
+- Swagger UI: Documentação interativa.
+- Docker: Containerização do projeto.
+- JWT: Autenticação segura.
+
+8. Exemplo de Requisição
+POST /api/iot/data
+{
+  "dispositivo_id": "123abc",
+  "dados_biometricos": {
+    "batimento": 80,
+    "temperatura": 36.5,
+    "gsr": 500
+  }
+}
+
+9. Dicas para Programadores Iniciantes
+- Sempre leia a documentação Swagger antes de usar um endpoint.
+- Use ferramentas como Postman ou Insomnia para testar requisições.
+- Verifique os logs do backend para entender erros.
+- Mantenha o arquivo .env seguro (não suba para o GitHub).

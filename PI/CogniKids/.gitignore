@@ -1,0 +1,119 @@
+# ====================================
+# CogniKids - .gitignore
+# ====================================
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===== Virtual Environments =====
+venv/
+ENV/
+env/
+.venv/
+
+# ===== IDE / Editors =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ===== Environment Variables (CRÍTICO!) =====
+.env
+*.env
+.env.*
+!.env.example
+!env.example
+
+# ===== Credenciais e Chaves =====
+*secret*
+*password*
+*credential*
+api_key*.txt
+*.pem
+*.key
+
+# ===== Dados e Logs =====
+*.csv
+*.log
+*.sqlite
+*.db
+data/
+logs/
+
+# ===== OS Generated =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===== Docker =====
+docker-compose.override.yml
+
+# ===== Jupyter Notebooks Checkpoints =====
+.ipynb_checkpoints/
+
+# ===== Pulseira M5Stack =====
+# Firmware e executáveis
+*.bin
+*.exe
+*.hex
+
+# Pastas do M5Burner
+bin/
+packages/
+
+# Config com credenciais (usar config.example.py)
+cognikids-pulseira-m5stack/config.py
+
+# ===== Arquivos Temporários =====
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# ===== Coverage Reports =====
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# ===== pytest =====
+.pytest_cache/
+
+# ===== mypy =====
+.mypy_cache/
+
+# ===== Machine Learning Models =====
+*.joblib
+*.pkl
+*.h5
+*.onnx

@@ -1,0 +1,93 @@
+# Versão do Docker Compose que estamos usando.
+version: '3.8'
+
+# Define os serviços (contêineres) que compõem nossa aplicação.
+services:
+  # 1. Serviço do Backend (nossa aplicação Flask)
+  api:
+    # 'build: .' diz ao Docker para construir a imagem usando o Dockerfile na pasta atual.
+    build: .
+    # Mapeia a porta 5001 do contêiner para a porta 5001 da nossa máquina.
+    # Assim, podemos acessar http://localhost:5001 no navegador.
+    ports:
+      - "5001:5001"
+    # Monta a pasta atual (nosso código-fonte) dentro do contêiner em /app.
+    # Isso permite que o servidor reinicie automaticamente quando alteramos o código (hot-reloading).
+    volumes:
+      - .:/app
+    # Carrega as variáveis de ambiente do nosso arquivo .env.
+    env_file:
+      - .env
+    # 'depends_on' garante que o contêiner do banco de dados inicie antes do nosso app.
+    depends_on:
+      - db
+
+  # 2. Serviço do Banco de Dados (MongoDB)
+  db:
+    # Usa uma imagem oficial do MongoDB. O Docker vai baixá-la automaticamente.
+    image: mongo:latest
+    # Mapeia a porta padrão do MongoDB para a nossa máquina (opcional, bom para debug).
+    ports:
+      - "27017:27017"
+    # Garante que os dados do MongoDB persistam mesmo se o contêiner for recriado.
+    volumes:
+      - mongo-data:/data/db
+
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app
+          ignore:
+            - __pycache__/
+            - .git/
+        - action: rebuild
+          path: requirements.txt
+
+  # 3. Serviço MQTT Broker (Mosquitto)
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+
+  # 4. Serviço Redis (Cache e Fila)
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+  # 5. Ponte MQTT -> Redis (mqtt_to_redis_bridge.py)
+  bridge:
+    build: .
+    command: python -u mqtt_to_redis_bridge.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      - db
+      - redis
+      - mosquitto
+
+  # 6. Consumidor de Alertas (alert_monitor.py)
+  consumer:
+    build: .
+    command: python -u alert_monitor.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      - db
+      - redis
+
+# Define um volume nomeado para persistir os dados do banco de dados.
+volumes:
+  mongo-data:

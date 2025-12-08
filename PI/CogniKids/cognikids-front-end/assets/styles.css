@@ -1,0 +1,204 @@
+/* 
+ * Estilos customizados para o CogniKids
+ * Cores vibrantes e design lúdico
+ */
+
+/* Paleta de cores */
+:root {
+    --roxo: #8B5CF6;
+    --rosa: #EC4899;
+    --amarelo: #FACC15;
+    --azul: #3B82F6;
+    --verde: #10B981;
+    --vermelho: #EF4444;
+    --laranja: #F59E0B;
+    --cinza-claro: #F9FAFB;
+    --cinza: #6B7280;
+    --cinza-escuro: #1F2937;
+}
+
+/* Fonte principal */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Gradientes */
+.gradient-purple-pink {
+    background: linear-gradient(135deg, var(--roxo) 0%, var(--rosa) 100%);
+}
+
+.gradient-blue-cyan {
+    background: linear-gradient(135deg, var(--azul) 0%, #06B6D4 100%);
+}
+
+.gradient-yellow-orange {
+    background: linear-gradient(135deg, var(--amarelo) 0%, var(--laranja) 100%);
+}
+
+/* Cards */
+.card {
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões */
+.button-primary {
+    background: var(--roxo);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+    background: var(--rosa);
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    background: white;
+    color: var(--roxo);
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+    border: 2px solid var(--roxo);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-secondary:hover {
+    background: var(--roxo);
+    color: white;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.badge-success {
+    background: var(--verde);
+    color: white;
+}
+
+.badge-warning {
+    background: var(--amarelo);
+    color: var(--cinza-escuro);
+}
+
+.badge-danger {
+    background: var(--vermelho);
+    color: white;
+}
+
+.badge-info {
+    background: var(--azul);
+    color: white;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+/* Efeitos de hover */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Textos */
+.text-gradient {
+    background: linear-gradient(135deg, var(--roxo), var(--rosa));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Sombras */
+.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Bordas */
+.border-gradient {
+    border: 3px solid;
+    border-image: linear-gradient(135deg, var(--roxo), var(--rosa)) 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        padding: 1rem;
+    }
+    
+    .button-primary,
+    .button-secondary {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.875rem;
+    }
+}

@@ -4,5 +4,5 @@
 
 Grupo Sensores de monitoramento em hortifruti
 
-Luca Atanazio, Lucas Faria, Pablo Henrique
+Luca Atanazio, Pablo Henrique
 
